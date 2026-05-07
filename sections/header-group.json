@@ -8,7 +8,7 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p>Welcome to Stiletto</p>",
+            "title": "<p>Free shipping on all US orders over $50</p>",
             "title_mobile": "",
             "link": ""
           }
@@ -16,7 +16,7 @@
         "5a2005ed-4438-4c3e-9549-f61724bea26f": {
           "type": "announcement",
           "settings": {
-            "title": "<p>Free shipping on orders over $250</p>",
+            "title": "<p>Lifetime warranty on every brush</p>",
             "title_mobile": "",
             "link": ""
           }
@@ -30,8 +30,8 @@
         "enable_sticky_announcement_bar": "desktop-and-mobile",
         "autoplay_enabled": true,
         "autoplay_delay": 4,
-        "color_background": "#faf7c3",
-        "color_text": "#242526"
+        "color_background": "#F4D5D2",
+        "color_text": "#171819"
       }
     },
     "header": {
