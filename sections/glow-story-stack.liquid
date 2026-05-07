@@ -1,0 +1,224 @@
+{%- liquid
+  assign prioritize_loading = false
+  if section.index == 1
+    assign prioritize_loading = true
+  endif
+-%}
+
+<div
+  class="
+    glow-section
+    section
+    {% if section.settings.full_bleed %}section--full-width{% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-story-stack"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background }};
+  "
+>
+  {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+    <div class="glow-results-compare__intro" style="margin-bottom: var(--glow-space-l, 64px);">
+      {%- unless section.settings.heading == blank -%}
+        <h2 class="glow-story-stack__heading ff-glow-display-2">{{ section.settings.heading }}</h2>
+      {%- endunless -%}
+      {%- unless section.settings.subheading == blank -%}
+        <div class="rte" style="line-height: 1.6; color: var(--glow-color-muted); margin-top: var(--glow-space-s);">{{ section.settings.subheading }}</div>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
+  <div class="glow-story-stack__inner">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'moment' -%}
+        <div
+          class="
+            glow-story-stack__moment
+            {% if block.settings.reverse %}glow-story-stack__moment--reverse{% endif %}
+          "
+          {{ block.shopify_attributes }}
+        >
+          <div class="glow-story-stack__media">
+            {%- render 'image',
+              image: block.settings.image,
+              wrapper_class: 'glow-story-stack__media-image',
+              sizes: '(min-width: 750px) 50vw, 100vw',
+              focal_point: block.settings.focal_point,
+              include_placeholder: true,
+              placeholder_name: 'lifestyle-2',
+              prioritize_loading: prioritize_loading
+            -%}
+          </div>
+          <div class="glow-story-stack__content">
+            {%- unless block.settings.eyebrow == blank -%}
+              <span class="glow-eyebrow">{{ block.settings.eyebrow }}</span>
+            {%- endunless -%}
+            {%- unless block.settings.heading == blank -%}
+              <h3 class="glow-story-stack__heading ff-glow-display-3">{{ block.settings.heading }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.body == blank -%}
+              <div class="glow-story-stack__body rte">{{ block.settings.body }}</div>
+            {%- endunless -%}
+            {%- if block.settings.link != blank and block.settings.link_text != blank -%}
+              {%- render 'button-block',
+                wrapper_class: 'glow-story-stack__button',
+                link: block.settings.link,
+                label: block.settings.link_text,
+                button_style: block.settings.button_style,
+                button_alignment: 'left'
+              -%}
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow story stack",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Intro"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    }
+  ],
+  "blocks": [
+    {
+      "type": "moment",
+      "name": "Moment (image + text)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "focal_point",
+          "label": "Focal point",
+          "default": "image_presentation",
+          "options": [
+            { "value": "image_presentation", "label": "From image" },
+            { "value": "center", "label": "Center" },
+            { "value": "top", "label": "Top" },
+            { "value": "bottom", "label": "Bottom" },
+            { "value": "left", "label": "Left" },
+            { "value": "right", "label": "Right" }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "reverse",
+          "label": "Image on right",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "OUR STORY"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "A moment in the routine"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body",
+          "default": "<p>Tell the story behind a product, a step in the routine, or a customer ritual.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link label",
+          "default": "Learn more"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "btn--callout",
+          "options": [
+            { "value": "btn--primary", "label": "Solid (filled)" },
+            { "value": "btn--secondary", "label": "Outline" },
+            { "value": "btn--callout", "label": "Text" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow story stack",
+      "blocks": [
+        { "type": "moment", "settings": { "heading": "A morning ritual", "reverse": false } },
+        { "type": "moment", "settings": { "heading": "Built to last", "reverse": true } },
+        { "type": "moment", "settings": { "heading": "Made with care", "reverse": false } }
+      ]
+    }
+  ]
+}
+{% endschema %}

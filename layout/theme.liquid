@@ -21,9 +21,28 @@
   --------------------------------------------------------------------
 -->
 
+{%- liquid
+  assign glow_html_classes = 'no-js'
+  if settings.glow_use_gotham_h1
+    assign glow_html_classes = glow_html_classes | append: ' glow-gotham-h1'
+  endif
+  if settings.glow_use_gotham_h2
+    assign glow_html_classes = glow_html_classes | append: ' glow-gotham-h2'
+  endif
+  if settings.glow_use_gotham_h3
+    assign glow_html_classes = glow_html_classes | append: ' glow-gotham-h3'
+  endif
+  if settings.glow_use_gotham_buttons
+    assign glow_html_classes = glow_html_classes | append: ' glow-gotham-buttons'
+  endif
+  if settings.glow_use_gotham_logo
+    assign glow_html_classes = glow_html_classes | append: ' glow-gotham-logo'
+  endif
+-%}
 <html
-  class="no-js"
+  class="{{ glow_html_classes }}"
   lang="{{ request.locale.iso_code }}"
+  data-glow-button-shape="{{ settings.glow_button_shape }}"
   style="
     --announcement-height: 1px;
     --mobile-sticky-header-height: 0px;
@@ -69,6 +88,9 @@
     {% render 'theme-setup' %}
     {% render 'theme-setting-vars' %}
     {%- render 'theme-globals' -%}
+    {% render 'glow-vars' %}
+    {{ 'glow-stiletto.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'glow-stiletto.js' | asset_url }}" defer></script>
 
     {{ content_for_header }}
   </head>

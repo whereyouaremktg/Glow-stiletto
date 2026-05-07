@@ -1,0 +1,198 @@
+{%- liquid
+  assign cols = section.settings.columns
+  assign filter = 'grayscale(1)'
+  unless section.settings.greyscale
+    assign filter = 'none'
+  endunless
+-%}
+
+<div
+  class="
+    glow-press-strip
+    section
+    section--full-width
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-press-strip"
+  style="
+    --glow-press-bg: {{ section.settings.background }};
+    --glow-press-cols: {{ cols }};
+    --glow-press-filter: {{ filter }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="glow-press-strip__inner">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'logo' -%}
+          <div class="glow-press-strip__item glow-press-strip__logo" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {%- render 'image',
+                image: block.settings.image,
+                wrapper_class: 'glow-press-strip__logo-image',
+                sizes_px: 200
+              -%}
+            {%- endif -%}
+            {%- unless block.settings.label == blank -%}
+              <div class="glow-press-strip__label">{{ block.settings.label }}</div>
+            {%- endunless -%}
+          </div>
+        {%- when 'pillar' -%}
+          <div class="glow-press-strip__item" {{ block.shopify_attributes }}>
+            {%- unless block.settings.label == blank -%}
+              <div class="glow-press-strip__label">{{ block.settings.label }}</div>
+            {%- endunless -%}
+            {%- unless block.settings.body == blank -%}
+              <div class="glow-press-strip__body">{{ block.settings.body }}</div>
+            {%- endunless -%}
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow press strip",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#F4D5D2"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns (desktop)",
+      "default": "4",
+      "options": [
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" },
+        { "value": "5", "label": "5" },
+        { "value": "6", "label": "6" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "greyscale",
+      "label": "Render logos greyscale",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label (optional, falls back if no image)"
+        }
+      ]
+    },
+    {
+      "type": "pillar",
+      "name": "Trust pillar (label + body)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "CRUELTY FREE"
+        },
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Body",
+          "default": "Never tested on animals, always made with love."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow press strip — trust pillars",
+      "blocks": [
+        {
+          "type": "pillar",
+          "settings": {
+            "label": "CRUELTY FREE",
+            "body": "Never tested on animals, always made with love."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "label": "ECO-FRIENDLY",
+            "body": "Sustainable materials designed to last a lifetime."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "label": "LIFETIME PROMISE",
+            "body": "We stand by our brushes with a lifetime warranty."
+          }
+        },
+        {
+          "type": "pillar",
+          "settings": {
+            "label": "FREE SHIPPING",
+            "body": "On all US orders over $50."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Glow press strip — logos",
+      "blocks": [
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}

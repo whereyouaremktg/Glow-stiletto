@@ -1,0 +1,49 @@
+{%- comment -%}
+  Glow Beauty — runtime CSS tokens
+  Renders @font-face for Gotham Ultra + palette/spacing variables driven from theme settings.
+  Loaded after Stiletto's theme-setting-vars so glow tokens override where intended.
+{%- endcomment -%}
+
+<style>
+  @font-face {
+    font-family: "GothamUltra";
+    src: url("{{ 'gotham-ultra.otf' | asset_url }}") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    /* Palette tokens */
+    --glow-blush: {{ settings.glow_color_blush }};
+    --glow-blush-strong: {{ settings.glow_color_blush_strong }};
+    --glow-cream: {{ settings.glow_color_cream }};
+    --glow-powder: {{ settings.glow_color_powder }};
+    --glow-warm-gray: {{ settings.glow_color_warm_gray }};
+    --glow-color-dark: {{ settings.glow_color_dark }};
+    --glow-color-dark-alt: {{ settings.glow_color_dark_alt }};
+    --glow-color-text: {{ settings.glow_color_text }};
+    --glow-color-text-inverse: {{ settings.glow_color_text_inverse }};
+    --glow-color-muted: {{ settings.glow_color_muted }};
+    --glow-chip-bg: {{ settings.glow_color_chip_bg }};
+    --glow-chip-text: {{ settings.glow_color_chip_text }};
+
+    /* Spacing scale */
+    --glow-space-xs: {{ settings.glow_space_xs }}px;
+    --glow-space-s: {{ settings.glow_space_s }}px;
+    --glow-space-m: {{ settings.glow_space_m }}px;
+    --glow-space-l: {{ settings.glow_space_l }}px;
+    --glow-space-xl: {{ settings.glow_space_xl }}px;
+
+    /* Buttons & containers */
+    --glow-button-border-weight: {{ settings.glow_button_border_weight }}px;
+    --glow-container-max-width: {{ settings.glow_container_max_width }}px;
+
+    /* Section rhythm */
+    --glow-section-padding-top: {{ settings.glow_section_padding_top }}px;
+    --glow-section-padding-bottom: {{ settings.glow_section_padding_bottom }}px;
+
+    /* Typography */
+    --glow-heading-letter-spacing: {{ settings.glow_heading_letter_spacing | times: 0.001 | append: 'em' }};
+  }
+</style>

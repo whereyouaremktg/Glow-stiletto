@@ -1435,5 +1435,251 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Glow",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Glow palette"
+      },
+      {
+        "type": "paragraph",
+        "content": "Brand color tokens used by glow-* sections. Each maps to a CSS custom property (e.g. --glow-blush)."
+      },
+      {
+        "type": "color",
+        "id": "glow_color_blush",
+        "label": "Blush — announcement bar, chips, accent strip, primary CTA",
+        "default": "#F4D5D2"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_blush_strong",
+        "label": "Blush — strong (hover, deeper accent)",
+        "default": "#E8B5B0"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_cream",
+        "label": "Cream — page background",
+        "default": "#FAF6F1"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_powder",
+        "label": "Powder blue — divider band",
+        "default": "#B8C5D6"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_warm_gray",
+        "label": "Warm gray — feature section background",
+        "default": "#EBE9E6"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_dark",
+        "label": "Rich black — type, dark sections, footer",
+        "default": "#171819"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_dark_alt",
+        "label": "Dark — alt surface",
+        "default": "#22292D"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_text",
+        "label": "Body text on light",
+        "default": "#171819"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_text_inverse",
+        "label": "Body text on dark",
+        "default": "#FAF6F1"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_muted",
+        "label": "Muted text — eyebrows, captions",
+        "default": "#7A7873"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_chip_bg",
+        "label": "Chip background — BEST SELLER, LIMITED EDITION",
+        "default": "#F4D5D2"
+      },
+      {
+        "type": "color",
+        "id": "glow_color_chip_text",
+        "label": "Chip text",
+        "default": "#171819"
+      },
+      {
+        "type": "header",
+        "content": "Glow type"
+      },
+      {
+        "type": "paragraph",
+        "content": "Gotham Ultra is loaded as a custom @font-face from assets/. Toggle where it applies."
+      },
+      {
+        "type": "checkbox",
+        "id": "glow_use_gotham_h1",
+        "label": "Apply Gotham Ultra to H1",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "glow_use_gotham_h2",
+        "label": "Apply Gotham Ultra to H2",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "glow_use_gotham_h3",
+        "label": "Apply Gotham Ultra to H3",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "glow_use_gotham_buttons",
+        "label": "Apply Gotham Ultra to buttons",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "glow_use_gotham_logo",
+        "label": "Apply Gotham Ultra to logo wordmark",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "glow_heading_letter_spacing",
+        "label": "Heading letter spacing",
+        "min": -50,
+        "max": 100,
+        "step": 5,
+        "unit": "/1000em",
+        "default": -10
+      },
+      {
+        "type": "header",
+        "content": "Glow spacing"
+      },
+      {
+        "type": "range",
+        "id": "glow_space_xs",
+        "label": "Space xs",
+        "min": 4,
+        "max": 24,
+        "step": 2,
+        "unit": "px",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "glow_space_s",
+        "label": "Space s",
+        "min": 8,
+        "max": 40,
+        "step": 4,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "glow_space_m",
+        "label": "Space m",
+        "min": 16,
+        "max": 64,
+        "step": 4,
+        "unit": "px",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "glow_space_l",
+        "label": "Space l",
+        "min": 32,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "default": 64
+      },
+      {
+        "type": "range",
+        "id": "glow_space_xl",
+        "label": "Space xl",
+        "min": 48,
+        "max": 200,
+        "step": 8,
+        "unit": "px",
+        "default": 96
+      },
+      {
+        "type": "header",
+        "content": "Glow buttons & container"
+      },
+      {
+        "type": "select",
+        "id": "glow_button_shape",
+        "label": "Button shape",
+        "options": [
+          { "value": "square", "label": "Square (2px corner)" },
+          { "value": "soft",   "label": "Soft (8px corner)" },
+          { "value": "pill",   "label": "Pill (fully rounded)" }
+        ],
+        "default": "pill"
+      },
+      {
+        "type": "range",
+        "id": "glow_button_border_weight",
+        "label": "Button border weight",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "unit": "px",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "glow_container_max_width",
+        "label": "Container max width",
+        "min": 1080,
+        "max": 1600,
+        "step": 20,
+        "unit": "px",
+        "default": 1320
+      },
+      {
+        "type": "header",
+        "content": "Glow section rhythm"
+      },
+      {
+        "type": "range",
+        "id": "glow_section_padding_top",
+        "label": "Default section top padding",
+        "min": 0,
+        "max": 200,
+        "step": 8,
+        "unit": "px",
+        "default": 96
+      },
+      {
+        "type": "range",
+        "id": "glow_section_padding_bottom",
+        "label": "Default section bottom padding",
+        "min": 0,
+        "max": 200,
+        "step": 8,
+        "unit": "px",
+        "default": 96
+      }
+    ]
   }
 ]

@@ -1,0 +1,218 @@
+{%- liquid
+  assign cols = section.settings.columns
+  assign prioritize_loading = false
+  if section.index == 1
+    assign prioritize_loading = true
+  endif
+-%}
+
+<div
+  class="
+    glow-section
+    section
+    {% if section.settings.full_bleed %}section--full-width{% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-routine-grid"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background }};
+    --glow-routine-cols: {{ cols }};
+  "
+>
+  {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
+    <div class="glow-routine-grid__intro">
+      {%- unless section.settings.heading == blank -%}
+        <h2 class="glow-routine-grid__heading ff-glow-display-2">{{ section.settings.heading }}</h2>
+      {%- endunless -%}
+      {%- unless section.settings.subheading == blank -%}
+        <div class="rte" style="line-height: 1.6; color: var(--glow-color-muted); margin-top: var(--glow-space-s);">{{ section.settings.subheading }}</div>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
+  <div class="glow-routine-grid__inner">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'step' -%}
+        {%- liquid
+          assign product = block.settings.product
+          assign image = block.settings.image
+          if image == blank and product != blank
+            assign image = product.featured_image
+          endif
+
+          assign link = block.settings.link
+          if link == blank and product != blank
+            assign link = product.url
+          endif
+
+          assign body = block.settings.body
+          if body == blank and product != blank
+            assign body = product.description | strip_html | truncatewords: 24
+          endif
+
+          assign heading = block.settings.heading
+          if heading == blank and product != blank
+            assign heading = product.title
+          endif
+        -%}
+
+        {%- capture step_index -%}{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}{%- endcapture -%}
+
+        <div class="glow-routine-grid__step" {{ block.shopify_attributes }}>
+          {%- if link != blank -%}<a href="{{ link }}" style="color: inherit; text-decoration: none;">{%- endif -%}
+            <div class="glow-routine-grid__media">
+              {%- render 'image',
+                image: image,
+                wrapper_class: 'glow-routine-grid__media-image',
+                sizes: '(min-width: 960px) 25vw, (min-width: 540px) 50vw, 100vw',
+                focal_point: 'image_presentation',
+                include_placeholder: true,
+                placeholder_name: 'product-1',
+                prioritize_loading: prioritize_loading
+              -%}
+            </div>
+            <div class="glow-routine-grid__index">{% if block.settings.show_index %}{{ step_index }} · {% endif %}{{ block.settings.eyebrow }}</div>
+            {%- unless heading == blank -%}
+              <h3 class="glow-routine-grid__step-heading">{{ heading }}</h3>
+            {%- endunless -%}
+            {%- unless body == blank -%}
+              <div class="glow-routine-grid__body">{{ body }}</div>
+            {%- endunless -%}
+          {%- if link != blank -%}</a>{%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow routine grid",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Intro"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The routine"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns (desktop)",
+      "default": "4",
+      "options": [
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product (image / heading / body / link fall back to product)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (overrides product image)"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_index",
+          "label": "Show step number",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow / step label",
+          "default": "STEP"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading (overrides product title)"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body (overrides product description)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (overrides product URL)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow routine grid",
+      "blocks": [
+        { "type": "step" },
+        { "type": "step" },
+        { "type": "step" },
+        { "type": "step" }
+      ]
+    }
+  ]
+}
+{% endschema %}

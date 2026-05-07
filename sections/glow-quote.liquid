@@ -1,0 +1,128 @@
+<div
+  class="
+    glow-quote
+    section
+    {% if section.settings.full_bleed %}section--full-width{% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-quote"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    --glow-section-bg: {{ section.settings.background }};
+    color: {{ section.settings.text_color }};
+  "
+>
+  <div class="glow-quote__inner">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'quote' -%}
+        {%- if block.settings.image != blank -%}
+          <div class="glow-quote__avatar" {{ block.shopify_attributes }}>
+            {%- render 'image',
+              image: block.settings.image,
+              sizes_px: 56,
+              focal_point: 'center'
+            -%}
+          </div>
+        {%- endif -%}
+        {%- unless block.settings.text == blank -%}
+          <blockquote class="glow-quote__text ff-glow-display-2" {% if block.settings.image == blank %}{{ block.shopify_attributes }}{% endif %}>
+            {{ block.settings.text }}
+          </blockquote>
+        {%- endunless -%}
+        {%- unless block.settings.attribution == blank -%}
+          <div class="glow-quote__attribution">{{ block.settings.attribution }}</div>
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow quote",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#171819"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Avatar image (optional)"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Quote",
+          "default": "<p>“The only brush I'll ever need. Detangles in seconds, no tugging.”</p>"
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution",
+          "default": "— ELLE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow quote",
+      "blocks": [
+        { "type": "quote" }
+      ]
+    }
+  ]
+}
+{% endschema %}

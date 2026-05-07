@@ -1,0 +1,359 @@
+{%- liquid
+  assign prioritize_loading = false
+  if section.index == 1
+    assign prioritize_loading = true
+  endif
+
+  assign mobile_order_class = ''
+  if section.settings.mobile_order == 'image_first'
+    assign mobile_order_class = 'glow-editorial-split--mobile-image-first'
+  else
+    assign mobile_order_class = 'glow-editorial-split--mobile-text-first'
+  endif
+-%}
+
+<div
+  class="
+    glow-editorial-split-wrap
+    section
+    {% if section.settings.full_bleed %}section--full-width{% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-editorial-split"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    --glow-section-bg: {{ section.settings.outer_bg }};
+    --glow-content-bg: {{ section.settings.content_bg }};
+    --glow-band-bg: {{ section.settings.band_bg }};
+  "
+>
+  {%- if section.settings.show_band -%}
+    <div class="glow-editorial-split__band">
+      <span class="glow-editorial-split__band-text">{{ section.settings.band_text }}</span>
+    </div>
+  {%- endif -%}
+
+  <div
+    class="
+      glow-editorial-split
+      glow-editorial-split--image-{{ section.settings.image_position }}
+      {{ mobile_order_class }}
+    "
+  >
+    <div class="glow-editorial-split__media">
+      {%- render 'image',
+        image: section.settings.image,
+        wrapper_class: 'glow-editorial-split__media-image',
+        sizes: '(min-width: 750px) 50vw, 100vw',
+        focal_point: section.settings.focal_point,
+        include_placeholder: true,
+        placeholder_name: 'lifestyle-2',
+        src_set_type: 'full-width',
+        prioritize_loading: prioritize_loading
+      -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'chip_overlay' and block.settings.text != blank -%}
+          <span class="glow-editorial-split__chip glow-chip" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="glow-editorial-split__content">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'rating' -%}
+            {%- unless block.settings.text == blank -%}
+              <div class="glow-editorial-split__rating" {{ block.shopify_attributes }}>
+                <span class="glow-editorial-split__stars" aria-hidden="true">★★★★★</span>
+                <span>{{ block.settings.text }}</span>
+              </div>
+            {%- endunless -%}
+          {%- when 'eyebrow' -%}
+            {%- unless block.settings.text == blank -%}
+              <span class="glow-eyebrow" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+            {%- endunless -%}
+          {%- when 'heading' -%}
+            {%- unless block.settings.text == blank -%}
+              <{{ block.settings.tag }} class="glow-editorial-split__heading ff-glow-display-2" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </{{ block.settings.tag }}>
+            {%- endunless -%}
+          {%- when 'subheading' -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="glow-editorial-split__subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+            {%- endunless -%}
+          {%- when 'body' -%}
+            {%- unless block.settings.text == blank -%}
+              <div class="glow-editorial-split__body rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            {%- endunless -%}
+          {%- when 'button' -%}
+            {%- render 'button-block',
+              wrapper_class: 'glow-editorial-split__button',
+              link: block.settings.link,
+              label: block.settings.text,
+              button_style: block.settings.button_style,
+              shopify_attributes: block.shopify_attributes,
+              button_alignment: 'left'
+            -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow editorial split",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "focal_point",
+      "label": "Focal point",
+      "default": "image_presentation",
+      "options": [
+        { "value": "image_presentation", "label": "From image" },
+        { "value": "center", "label": "Center" },
+        { "value": "top", "label": "Top" },
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position (desktop)",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_order",
+      "label": "Mobile order",
+      "default": "image_first",
+      "options": [
+        { "value": "image_first", "label": "Image first" },
+        { "value": "text_first", "label": "Text first" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Eyebrow band"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_band",
+      "label": "Show eyebrow band above section",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "band_text",
+      "label": "Band text",
+      "default": "THE LINEUP"
+    },
+    {
+      "type": "color",
+      "id": "band_bg",
+      "label": "Band background",
+      "default": "#B8C5D6"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "outer_bg",
+      "label": "Outer background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "color",
+      "id": "content_bg",
+      "label": "Text-side background",
+      "default": "#EBE9E6"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed (edge to edge)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chip_overlay",
+      "name": "Chip overlay (on image)",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Chip text",
+          "default": "BEST SELLER"
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "Star rating",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Rating label",
+          "default": "4.9/5 (2,400+ Reviews)"
+        }
+      ]
+    },
+    {
+      "type": "eyebrow",
+      "name": "Eyebrow",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Eyebrow",
+          "default": "FUNCTIONAL · RELIABLE · TIMELESS"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Heading",
+          "default": "The Detangling Brush"
+        },
+        {
+          "type": "select",
+          "id": "tag",
+          "label": "Heading tag",
+          "default": "h2",
+          "options": [
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Subheading",
+          "default": "Functional. Reliable. Timeless."
+        }
+      ]
+    },
+    {
+      "type": "body",
+      "name": "Body",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Body",
+          "default": "<p>Detangles wet or dry hair without pulling. Drainage hole keeps it dry. Metal bristles exfoliate the scalp, lift buildup, and bring out shine.</p>"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Label",
+          "default": "Shop the brush — $35"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--primary",
+          "options": [
+            { "value": "btn--primary", "label": "Solid (filled)" },
+            { "value": "btn--secondary", "label": "Outline" },
+            { "value": "btn--callout", "label": "Text" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow editorial split",
+      "blocks": [
+        { "type": "chip_overlay" },
+        { "type": "rating" },
+        { "type": "heading" },
+        { "type": "subheading" },
+        { "type": "body" },
+        { "type": "button" }
+      ]
+    }
+  ]
+}
+{% endschema %}
