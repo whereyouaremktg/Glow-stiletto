@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+
+# Large design mockup at repo root (not Liquid theme runtime assets)
+Glow Beauty Theme Refresh.png
