@@ -150,8 +150,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
-        "focal_point": "image_presentation",
+        "image": "shopify://shop_images/17.png",
+        "focal_point": "top",
         "image_position": "left",
         "mobile_order": "image_first",
         "show_band": true,
