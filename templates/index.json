@@ -36,7 +36,7 @@
         "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
-        "height": "large",
+        "height": "medium",
         "alignment": "left",
         "full_bleed": true,
         "outer_bg": "#faf6f1",
@@ -45,6 +45,112 @@
         "overlay_opacity": 25,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "multi_column_gfiWbn": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_7MVeEg": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Plastic bristles damage hair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_CJez46": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/brushing_2.gif",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Metal does it better",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine in one motion.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_fJj68N": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Built to last. Built for you",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_7MVeEg",
+        "image_column_CJez46",
+        "image_column_fJj68N"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 4,
+        "row_spacing": 4,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "#000000",
+        "text_color": "#faf6f1",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "featured_brush": {
@@ -436,123 +542,17 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
-    },
-    "multi_column_gfiWbn": {
-      "type": "multi-column",
-      "blocks": {
-        "image_column_7MVeEg": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/5.png",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Plastic bristles damage hair",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_CJez46": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/brushing_2.gif",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Metal does it better",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine — in one motion.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_fJj68N": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/productsselects_5.jpg",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Built to last. Built for you",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_column_7MVeEg",
-        "image_column_CJez46",
-        "image_column_fJj68N"
-      ],
-      "name": "t:sections.multi_column.presets.name",
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "heading_alignment": "left",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "small",
-        "columns": "3",
-        "column_spacing": 4,
-        "row_spacing": 4,
-        "column_alignment": "left",
-        "enable_slider_mobile": false,
-        "columns_mobile": "2",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": false,
-        "background_color": "#000000",
-        "text_color": "#faf6f1",
-        "button_background_color": "#000000",
-        "button_text_color": "#FFFFFF",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
     }
   },
   "order": [
     "glow_hero_main",
+    "multi_column_gfiWbn",
     "featured_brush",
     "glow_press_strip_RV3q8g",
     "featured_collection_grid_ABgxr6",
     "image_hero_split_PFWHYY",
     "grid_zVmt3V",
     "testimonials_EYEVmp",
-    "image_hero_gbQcrT",
-    "multi_column_gfiWbn"
+    "image_hero_gbQcrT"
   ]
 }
