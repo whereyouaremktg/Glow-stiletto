@@ -419,7 +419,7 @@
       "name": "t:sections.image_hero.presets.name",
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 60,
+        "desktop_height": 50,
         "mobile_height": 100,
         "image": "shopify://shop_images/GLOWshopify_1.png",
         "focal_point": "bottom",
