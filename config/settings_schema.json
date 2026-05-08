@@ -1560,11 +1560,10 @@
       {
         "type": "range",
         "id": "glow_heading_letter_spacing",
-        "label": "Heading letter spacing",
+        "label": "Heading letter spacing (× 1000em)",
         "min": -50,
         "max": 100,
         "step": 5,
-        "unit": "/1000em",
         "default": -10
       },
       {
