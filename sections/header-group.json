@@ -39,7 +39,7 @@
         "enable_sticky_announcement_bar": "desktop-and-mobile",
         "autoplay_enabled": true,
         "autoplay_delay": 4,
-        "color_background": "#f4d5d2",
+        "color_background": "#dec1bc",
         "color_text": "#171819"
       }
     },
@@ -106,7 +106,7 @@
       "settings": {
         "layout": "logo-left_nav-center",
         "enable_sticky_header": true,
-        "cart_icon": "cart",
+        "cart_icon": "bag",
         "divider_width": "0px",
         "enable_locale_selector": false,
         "enable_country_selector": false,
@@ -114,7 +114,7 @@
         "show_social_media_mobile": false,
         "logo": "shopify://shop_images/GlowBeauty_HorizontalLogo_Blue.png",
         "logo_width": 220,
-        "mobile_logo_width": 90,
+        "mobile_logo_width": 160,
         "menu": "main-menu",
         "secondary_menu": "",
         "featured_link_label": "",

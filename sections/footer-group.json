@@ -11,115 +11,6 @@
   "type": "footer",
   "name": "t:groups.footer_group.name",
   "sections": {
-    "multi_column_WDjz9q": {
-      "type": "multi-column",
-      "blocks": {
-        "icon_column_KDFRqz": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "moving-truck",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Easy Returns",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Your exchange ships out as soon as you email us.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--secondary"
-          }
-        },
-        "icon_column_cDQUaj": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "globe",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Worldwide Shipping",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Receive your order around  3-5 days after shipment</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--secondary"
-          }
-        },
-        "icon_column_EwNdUR": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "cotton",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Atelier Grade",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Made with love, using high-quality premium materials</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--secondary"
-          }
-        },
-        "icon_column_pqxnCT": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "bill",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Buy Now, Pay Later",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Instalments with 0% interest and no extra charges through Shop Pay</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--secondary"
-          }
-        }
-      },
-      "block_order": [
-        "icon_column_KDFRqz",
-        "icon_column_cDQUaj",
-        "icon_column_EwNdUR",
-        "icon_column_pqxnCT"
-      ],
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "medium",
-        "columns": "4",
-        "column_spacing": 28,
-        "row_spacing": 28,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "2",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": false,
-        "background_color": "#f7f7e8",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -212,7 +103,6 @@
     }
   },
   "order": [
-    "multi_column_WDjz9q",
     "footer"
   ]
 }

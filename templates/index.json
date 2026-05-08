@@ -1,12 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "glow_hero_main": {
       "type": "glow-hero",
       "blocks": {
-        "heading": {"type": "heading", "settings": {"text": "Welcome to Glow", "tag": "h1"}},
-        "button": {"type": "button", "settings": {"text": "Explore collection", "link": "shopify://collections/all", "button_style": "btn--primary"}}
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Welcome to Glow",
+            "tag": "h1"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Explore collection",
+            "link": "shopify://collections/all",
+            "button_style": "btn--primary"
+          }
+        }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
         "focal_point": "image_presentation",
@@ -22,26 +47,57 @@
         "padding_bottom": 0
       }
     },
-    "image_dyad": {
-      "type": "image-hero-split",
-      "blocks": {
-        "image-1": {"type": "image", "settings": {"image": "shopify://shop_images/IMG_0269.jpg", "focal_point": "image_presentation", "mobile_focal_point": "image_presentation", "title": "", "heading_tag": "h2", "text": "", "link": "", "link_text": "", "button_style": "btn--primary"}},
-        "image-2": {"type": "image", "settings": {"image": "shopify://shop_images/AU4A4370-2.jpg", "focal_point": "image_presentation", "mobile_focal_point": "image_presentation", "title": "", "heading_tag": "h2", "text": "", "link": "", "link_text": "", "button_style": "btn--primary"}}
-      },
-      "block_order": ["image-1", "image-2"],
-      "settings": {"image_aspect": "custom", "desktop_height": 70, "mobile_height": 60, "text_position": "center", "text_color": "#ffffff", "button_background_color": "#ffffff", "button_text_color": "#000000", "color_overlay": "#000000", "color_overlay_gradient": "", "overlay_opacity": 0, "enable_animation": true, "section_padding": "section--vertical-padding-none"}
-    },
     "featured_brush": {
       "type": "glow-editorial-split",
       "blocks": {
-        "chip": {"type": "chip_overlay", "settings": {"text": "BEST SELLER"}},
-        "rating": {"type": "rating", "settings": {"text": "4.9/5 (2,400+ Reviews)"}},
-        "heading": {"type": "heading", "settings": {"text": "The Detangling Brush", "tag": "h2"}},
-        "subheading": {"type": "subheading", "settings": {"text": "Functional. Reliable. Timeless."}},
-        "body": {"type": "body", "settings": {"text": "<p>Detangles wet or dry hair without pulling. Drainage hole keeps it dry. Metal bristles exfoliate the scalp, lift buildup, and bring out shine.</p>"}},
-        "button": {"type": "button", "settings": {"text": "Shop the brush — $33", "link": "shopify://products/glow-beauty-hair-brush", "button_style": "btn--primary"}}
+        "chip": {
+          "type": "chip_overlay",
+          "settings": {
+            "text": "BEST SELLER"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "text": "4.9/5 (2,400+ Reviews)"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "The Detangling Brush",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Functional. Reliable. Timeless."
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Detangles wet or dry hair without pulling. Drainage hole keeps it dry. Metal bristles exfoliate the scalp, lift buildup, and bring out shine.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Shop the brush — $35",
+            "link": "shopify://collections/all",
+            "button_style": "btn--primary"
+          }
+        }
       },
-      "block_order": ["chip", "rating", "heading", "subheading", "body", "button"],
+      "block_order": [
+        "chip",
+        "rating",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
       "settings": {
         "image": "shopify://shop_images/17.png",
         "focal_point": "top",
@@ -57,99 +113,184 @@
         "padding_bottom": 0
       }
     },
-    "featured_round": {
-      "type": "glow-editorial-split",
-      "blocks": {
-        "eyebrow": {"type": "eyebrow", "settings": {"text": "BLOWOUT, IN ONE PASS"}},
-        "heading": {"type": "heading", "settings": {"text": "The Round Brush", "tag": "h2"}},
-        "subheading": {"type": "subheading", "settings": {"text": "Volume + shine, faster."}},
-        "body": {"type": "body", "settings": {"text": "<p>Decreases dry time, creates effortless volume, and enhances curls without damaging hair. Designed to be your blowout's new best friend.</p>"}},
-        "button": {"type": "button", "settings": {"text": "Shop the Round Brush — $36", "link": "shopify://products/round-brush", "button_style": "btn--primary"}}
-      },
-      "block_order": ["eyebrow", "heading", "subheading", "body", "button"],
-      "settings": {
-        "focal_point": "image_presentation",
-        "image_position": "right",
-        "mobile_order": "image_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ebe9e6",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "featured_mini": {
-      "type": "glow-editorial-split",
-      "blocks": {
-        "eyebrow": {"type": "eyebrow", "settings": {"text": "ON THE GO"}},
-        "heading": {"type": "heading", "settings": {"text": "The Mini Detangling Brush", "tag": "h2"}},
-        "subheading": {"type": "subheading", "settings": {"text": "Big detangle. Small footprint."}},
-        "body": {"type": "body", "settings": {"text": "<p>The compact powerhouse. Same metal bristles and drainage hole as the original — sized to slip in any bag. For travel, the gym, the desk drawer.</p>"}},
-        "button": {"type": "button", "settings": {"text": "Shop the Mini — $27", "link": "shopify://products/the-mini-detangling-brush", "button_style": "btn--primary"}}
-      },
-      "block_order": ["eyebrow", "heading", "subheading", "body", "button"],
-      "settings": {
-        "focal_point": "image_presentation",
-        "image_position": "left",
-        "mobile_order": "image_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ebe9e6",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "featured_essentials": {
-      "type": "glow-editorial-split",
-      "blocks": {
-        "chip": {"type": "chip_overlay", "settings": {"text": "BEST VALUE"}},
-        "eyebrow": {"type": "eyebrow", "settings": {"text": "EVERYTHING YOU NEED"}},
-        "heading": {"type": "heading", "settings": {"text": "The Glow Essentials Kit", "tag": "h2"}},
-        "subheading": {"type": "subheading", "settings": {"text": "The full routine, in one."}},
-        "body": {"type": "body", "settings": {"text": "<p>The Detangling Brush, The Mini, The Beauty Bag, and a set of Silk Hair Ties. Bundled to save — designed to live in your bag.</p>"}},
-        "button": {"type": "button", "settings": {"text": "Shop the kit — $79", "link": "shopify://products/essentials-classic", "button_style": "btn--primary"}}
-      },
-      "block_order": ["chip", "eyebrow", "heading", "subheading", "body", "button"],
-      "settings": {
-        "focal_point": "image_presentation",
-        "image_position": "right",
-        "mobile_order": "image_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ebe9e6",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "limited_edition": {
-      "type": "glow-hero",
-      "blocks": {
-        "chip": {"type": "chip", "settings": {"text": "LIMITED EDITION"}},
-        "heading": {"type": "heading", "settings": {"text": "The Cowboy Collection", "tag": "h2"}},
-        "button": {"type": "button", "settings": {"text": "Discover more", "link": "shopify://collections/all", "button_style": "btn--primary"}}
-      },
-      "block_order": ["chip", "heading", "button"],
-      "disabled": true,
-      "settings": {"focal_point": "image_presentation", "mobile_focal_point": "image_presentation", "height": "large", "alignment": "center", "full_bleed": true, "outer_bg": "#faf6f1", "text_color": "#ffffff", "overlay_color": "#000000", "overlay_opacity": 35, "padding_top": 0, "padding_bottom": 0}
-    },
     "featured_collection_grid_ABgxr6": {
       "type": "featured-collection-grid",
       "blocks": {
-        "collection_XccgL4": {"type": "collection", "settings": {"collection": "the-originals"}}
+        "collection_XccgL4": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-originals"
+          }
+        }
       },
-      "block_order": ["collection_XccgL4"],
+      "block_order": [
+        "collection_XccgL4"
+      ],
       "name": "t:sections.featured_collection_grid.presets.name",
-      "settings": {"heading": "THE GLOW LINEUP", "heading_tag": "h2", "subheading": "<p>The Detangling Brush, Round Brush, & Mini.</p>", "link": "", "link_text": "", "button_style": "btn--primary", "maximum_products": 3, "columns": "3", "mobile_columns": "2", "enable_animation": true, "divider_style": "none", "section_padding": "section--vertical-padding-top-bottom"}
+      "settings": {
+        "heading": "THE GLOW LINEUP",
+        "heading_tag": "h2",
+        "subheading": "<p>The Detangling Brush, Round Brush, & Mini.</p>",
+        "link": "",
+        "link_text": "",
+        "button_style": "btn--primary",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_dyad": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1FEFCF72-D4BC-48C2-BC7A-A02DE299F560.png",
+            "focal_point": "top",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/19_50f6b461-f71b-48cd-be2b-550312dd0361.png",
+            "focal_point": "left",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2"
+      ],
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 70,
+        "mobile_height": 60,
+        "text_position": "center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "glow_press_strip_RV3q8g": {
+      "type": "glow-press-strip",
+      "blocks": {
+        "logo_LRctLk": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Revolve-Logo.png",
+            "label": ""
+          }
+        },
+        "logo_wU7z6n": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
+            "label": ""
+          }
+        },
+        "logo_KMgbMH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Urban_Outfitters_logo_svg.png",
+            "label": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_LRctLk",
+        "logo_wU7z6n",
+        "logo_KMgbMH"
+      ],
+      "name": "Glow press strip — logos",
+      "settings": {
+        "background": "#dec1bc",
+        "columns": "3",
+        "greyscale": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_hero_split_PFWHYY": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image_YUt96r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Email_marketing_portrait_size_1_a302eab9-763c-413f-9e67-f34beb0e0e97.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_w6h4iM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/boar_brush_reveal_story_series.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "<p>Shop the bristle brush </p>",
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_YUt96r",
+        "image_w6h4iM"
+      ],
+      "name": "t:sections.image_hero_split.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "text_position": "center",
+        "text_color": "#b2cae7",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
     }
   },
-  "order": ["glow_hero_main", "image_dyad", "featured_brush", "featured_round", "featured_mini", "featured_essentials", "limited_edition", "featured_collection_grid_ABgxr6"]
+  "order": [
+    "glow_hero_main",
+    "featured_brush",
+    "featured_collection_grid_ABgxr6",
+    "image_dyad",
+    "glow_press_strip_RV3q8g",
+    "image_hero_split_PFWHYY"
+  ]
 }
