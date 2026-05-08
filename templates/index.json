@@ -222,7 +222,7 @@
         "image_aspect": "original",
         "desktop_height": 100,
         "mobile_height": 100,
-        "text_position": "flex-end",
+        "text_position": "center",
         "text_color": "#ffffff",
         "button_background_color": "#E8B5B0",
         "button_text_color": "#000000",
@@ -233,65 +233,201 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "1778273486f801d632": {
-      "type": "apps",
+    "grid_zVmt3V": {
+      "type": "grid",
       "blocks": {
-        "judge_me_reviews_all_reviews_page_hEQFbU": {
-          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_page/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "item_8WRxz9": {
+          "type": "item",
           "settings": {
-            "max_width": 1200,
-            "review_source": "all",
-            "show_all_reviews_in_same_tab": false,
-            "show_first": "product",
-            "empty_state": "empty_widget"
+            "width": "33",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "image",
+            "image": "shopify://shop_images/B58C6D25-2B42-4D0E-87D7-EEFDCC55F057.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "flex-start_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "shopify://products/the-detangling-duo",
+            "link_text": "SHOP THE DUO",
+            "button_style": "btn--callout",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
+          }
+        },
+        "item_TWqhmV": {
+          "type": "item",
+          "settings": {
+            "width": "66",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "image",
+            "image": "shopify://shop_images/maryselects_4.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "shopify://products/round-brush",
+            "link_text": "SHOP THE ROUND BRUSH",
+            "button_style": "btn--callout",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
+          }
+        },
+        "item_6FNPjx": {
+          "type": "item",
+          "settings": {
+            "width": "100",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "image",
+            "image": "shopify://shop_images/GB_WEBSITE_horizontal_8f326320-fd0f-49cf-8596-72bffd55649e.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "shopify://products/the-mini-detangling-brush",
+            "link_text": "SHOP THE MINI",
+            "button_style": "btn--callout",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_all_reviews_page_hEQFbU"
+        "item_8WRxz9",
+        "item_TWqhmV",
+        "item_6FNPjx"
       ],
+      "name": "t:sections.grid.presets.name",
       "settings": {
-        "heading": "App section",
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "content_alignment": "left",
+        "enable_animation": true,
+        "full_width": false,
+        "spacing": 0,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "testimonials_EYEVmp": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_eiwLf7": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
+            "aspect_ratio": "portrait",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“I will never buy another hair brush! These are the best and I have several of them now. I keep them everywhere & recently bought a mini to add to my work bag.”",
+            "author": "- Elizabeth T. (Real Glow Customer)"
+          }
+        },
+        "testimonial_LK3jqL": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "image": "shopify://shop_images/A3B60B78-8D95-4BD8-9920-CF92FE38C72C.png",
+            "aspect_ratio": "square",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“It is truly detangling, in all instances of my hair. Greasy, smooth, wet, dry all of the above! The quality is so nice and beautiful, and the stainless steel bristles make it feel like I’m at a salon every time I use it. I’m obsessed and will recommend to everyone I can!.”",
+            "author": "- Mya R. (Real Glow Customer)"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_eiwLf7",
+        "testimonial_LK3jqL"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "image_size": "small",
+        "quote_font": "heading",
+        "background_color": "",
+        "text_color": "#000000",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "quote_ckywJ6": {
-      "type": "quote",
-      "blocks": {
-        "quote_4DNpJY": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>“I will never buy another hair brush! These are the best and I have several of them now. I keep them everywhere & recently bought a mini to add to my work bag.”</p>",
-            "title": "Elizabeth T. (Real Glow Customer)",
-            "quote_tag": "h4",
-            "font_size": "small"
-          }
-        },
-        "quote_YXnmAj": {
-          "type": "quote",
-          "settings": {
-            "quote": "<h6><strong>It is truly detangling, in all instances of my hair. Greasy, smooth, wet, dry all of the above! The quality is so nice and beautiful, and the stainless steel bristles make it feel like I’m at a salon every time I use it. I’m obsessed and will recommend to everyone I can!</strong></h6>",
-            "title": "Mya R. (Real Glow Customer)",
-            "quote_tag": "h4",
-            "font_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "quote_4DNpJY",
-        "quote_YXnmAj"
-      ],
-      "name": "t:sections.quotes.presets.name",
+    "image_hero_gbQcrT": {
+      "type": "image-hero",
+      "name": "t:sections.image_hero.presets.name",
       "settings": {
-        "autoplay_enabled": true,
-        "autoplay_delay": 7,
-        "pagination_style": "dots",
-        "font_choice": "ff-body",
+        "image_aspect": "custom",
+        "desktop_height": 60,
+        "mobile_height": 100,
+        "image": "shopify://shop_images/Tezza-5698.jpg",
+        "focal_point": "center",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
         "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
+        "section_padding": "section--vertical-padding-none"
       }
     }
   },
@@ -301,7 +437,8 @@
     "glow_press_strip_RV3q8g",
     "featured_collection_grid_ABgxr6",
     "image_hero_split_PFWHYY",
-    "1778273486f801d632",
-    "quote_ckywJ6"
+    "grid_zVmt3V",
+    "testimonials_EYEVmp",
+    "image_hero_gbQcrT"
   ]
 }
