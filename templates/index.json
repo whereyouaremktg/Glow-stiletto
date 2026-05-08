@@ -41,6 +41,12 @@
     "featured_brush": {
       "type": "glow-editorial-split",
       "blocks": {
+        "eyebrow_e6gN7D": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "The Lineup"
+          }
+        },
         "chip": {
           "type": "chip_overlay",
           "settings": {
@@ -77,11 +83,12 @@
           "settings": {
             "text": "Shop the brush — $35",
             "link": "shopify://collections/all",
-            "button_style": "btn--primary"
+            "button_style": "btn--secondary"
           }
         }
       },
       "block_order": [
+        "eyebrow_e6gN7D",
         "chip",
         "rating",
         "heading",
