@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "glow_hero_main": {
@@ -19,13 +28,19 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
+        "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
         "height": "large",
         "alignment": "center",
         "full_bleed": true,
-        "outer_bg": "#FAF6F1",
-        "text_color": "#FFFFFF",
+        "outer_bg": "#faf6f1",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 25,
         "padding_top": 0,
@@ -38,36 +53,46 @@
         "image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/IMG_0269.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "title": "",
             "heading_tag": "h2",
             "text": "",
             "link": "",
-            "link_text": ""
+            "link_text": "",
+            "button_style": "btn--primary"
           }
         },
         "image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/AU4A4370-2.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "title": "",
             "heading_tag": "h2",
             "text": "",
             "link": "",
-            "link_text": ""
+            "link_text": "",
+            "button_style": "btn--primary"
           }
         }
       },
-      "block_order": ["image-1", "image-2"],
+      "block_order": [
+        "image-1",
+        "image-2"
+      ],
       "settings": {
         "image_aspect": "custom",
         "desktop_height": 70,
         "mobile_height": 60,
         "text_position": "center",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
         "color_overlay": "#000000",
+        "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
@@ -78,19 +103,28 @@
       "blocks": {
         "chip": {
           "type": "chip_overlay",
-          "settings": { "text": "BEST SELLER" }
+          "settings": {
+            "text": "BEST SELLER"
+          }
         },
         "rating": {
           "type": "rating",
-          "settings": { "text": "4.9/5 (2,400+ Reviews)" }
+          "settings": {
+            "text": "4.9/5 (2,400+ Reviews)"
+          }
         },
         "heading": {
           "type": "heading",
-          "settings": { "text": "The Detangling Brush", "tag": "h2" }
+          "settings": {
+            "text": "The Detangling Brush",
+            "tag": "h2"
+          }
         },
         "subheading": {
           "type": "subheading",
-          "settings": { "text": "Functional. Reliable. Timeless." }
+          "settings": {
+            "text": "Functional. Reliable. Timeless."
+          }
         },
         "body": {
           "type": "body",
@@ -107,15 +141,24 @@
           }
         }
       },
-      "block_order": ["chip", "rating", "heading", "subheading", "body", "button"],
+      "block_order": [
+        "chip",
+        "rating",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
       "settings": {
+        "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
+        "focal_point": "image_presentation",
         "image_position": "left",
         "mobile_order": "image_first",
         "show_band": true,
         "band_text": "THE LINEUP",
-        "band_bg": "#B8C5D6",
-        "outer_bg": "#FAF6F1",
-        "content_bg": "#EBE9E6",
+        "band_bg": "#b8c5d6",
+        "outer_bg": "#faf6f1",
+        "content_bg": "#ebe9e6",
         "full_bleed": true,
         "padding_top": 0,
         "padding_bottom": 0
@@ -126,11 +169,16 @@
       "blocks": {
         "chip": {
           "type": "chip",
-          "settings": { "text": "LIMITED EDITION" }
+          "settings": {
+            "text": "LIMITED EDITION"
+          }
         },
         "heading": {
           "type": "heading",
-          "settings": { "text": "The Cowboy Collection", "tag": "h2" }
+          "settings": {
+            "text": "The Cowboy Collection",
+            "tag": "h2"
+          }
         },
         "button": {
           "type": "button",
@@ -141,58 +189,53 @@
           }
         }
       },
-      "block_order": ["chip", "heading", "button"],
+      "block_order": [
+        "chip",
+        "heading",
+        "button"
+      ],
+      "disabled": true,
       "settings": {
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
         "height": "large",
         "alignment": "center",
         "full_bleed": true,
-        "outer_bg": "#FAF6F1",
-        "text_color": "#FFFFFF",
+        "outer_bg": "#faf6f1",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 35,
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "trust_pillars": {
-      "type": "glow-press-strip",
+    "featured_collection_grid_ABgxr6": {
+      "type": "featured-collection-grid",
       "blocks": {
-        "p1": {
-          "type": "pillar",
+        "collection_XccgL4": {
+          "type": "collection",
           "settings": {
-            "label": "CRUELTY FREE",
-            "body": "Never tested on animals, always made with love."
-          }
-        },
-        "p2": {
-          "type": "pillar",
-          "settings": {
-            "label": "ECO-FRIENDLY",
-            "body": "Sustainable materials designed to last a lifetime."
-          }
-        },
-        "p3": {
-          "type": "pillar",
-          "settings": {
-            "label": "LIFETIME PROMISE",
-            "body": "We stand by our brushes with a lifetime warranty."
-          }
-        },
-        "p4": {
-          "type": "pillar",
-          "settings": {
-            "label": "FREE SHIPPING",
-            "body": "On all US orders over $50."
+            "collection": "the-originals"
           }
         }
       },
-      "block_order": ["p1", "p2", "p3", "p4"],
+      "block_order": [
+        "collection_XccgL4"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
-        "background": "#F4D5D2",
-        "columns": "4",
-        "greyscale": true,
-        "padding_top": 56,
-        "padding_bottom": 56
+        "heading": "THE GLOW LINEUP",
+        "heading_tag": "h2",
+        "subheading": "<p>The Detangling Brush, Round Brush, & Mini.</p>",
+        "link": "",
+        "link_text": "",
+        "button_style": "btn--primary",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     }
   },
@@ -201,6 +244,6 @@
     "image_dyad",
     "featured_brush",
     "limited_edition",
-    "trust_pillars"
+    "featured_collection_grid_ABgxr6"
   ]
 }

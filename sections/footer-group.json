@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:groups.footer_group.name",
@@ -87,8 +96,8 @@
       "settings": {
         "title": "",
         "heading_tag": "h2",
-        "subheading": "",
         "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
         "heading_alignment": "center",
         "content_vertical_alignment": "center",
         "content_background_padding": "medium",
@@ -122,14 +131,20 @@
             "collapse_on_mobile": false,
             "title": "",
             "show_title_on_desktop": false,
-            "text": "<p>All product content for the theme demo was kindly provided by <a href=\"https://boskemperstudio.com/\" target=\"_blank\" title=\"https://boskemperstudio.com/\">BOSKEMPER</a>.</p>",
+            "text": "<p>GLOWBEAUTY</p>",
+            "image": "shopify://shop_images/April_2026_story_series_copy_4.png",
             "image_max_width": 150,
             "image_placement": "above_text",
-            "show_social_icons": false,
-            "enable_follow_on_shop": false
+            "show_social_icons": true,
+            "enable_follow_on_shop": true
           }
         },
-        "footer-1": { "type": "spacer", "settings": { "desktop_width": 20 } },
+        "footer-1": {
+          "type": "spacer",
+          "settings": {
+            "desktop_width": 20
+          }
+        },
         "footer-2": {
           "type": "links",
           "settings": {
@@ -160,6 +175,7 @@
             "collapse_on_mobile": false,
             "title": "",
             "show_title_on_desktop": true,
+            "enable_collect_customer_name": false,
             "text": "<h1>Sign up and save on your first order</h1>",
             "show_social_icons": false,
             "enable_follow_on_shop": false
@@ -167,11 +183,15 @@
         },
         "3ee4ef35-e03a-4eb7-88f8-89d62abde1b2": {
           "type": "spacer",
-          "settings": { "desktop_width": 100 }
+          "settings": {
+            "desktop_width": 100
+          }
         },
         "263e7a92-4801-4587-8776-772350a4af66": {
           "type": "spacer",
-          "settings": { "desktop_width": 100 }
+          "settings": {
+            "desktop_width": 100
+          }
         }
       },
       "block_order": [
@@ -191,5 +211,8 @@
       }
     }
   },
-  "order": ["multi_column_WDjz9q", "footer"]
+  "order": [
+    "multi_column_WDjz9q",
+    "footer"
+  ]
 }
