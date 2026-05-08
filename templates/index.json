@@ -18,10 +18,19 @@
             "text": "Your Brush Matters More Than You Think",
             "tag": "h1"
           }
+        },
+        "button_VMr7kt": {
+          "type": "button",
+          "settings": {
+            "text": "Explore collection",
+            "link": "shopify://collections",
+            "button_style": "btn--primary"
+          }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "button_VMr7kt"
       ],
       "settings": {
         "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
