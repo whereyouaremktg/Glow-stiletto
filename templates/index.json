@@ -15,29 +15,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "Welcome to Glow",
+            "text": "Your Brush Matters More Than You Think",
             "tag": "h1"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "text": "Explore collection",
-            "link": "shopify://collections/all",
-            "button_style": "btn--primary"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading"
       ],
       "settings": {
         "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "height": "large",
-        "alignment": "center",
+        "alignment": "left",
         "full_bleed": true,
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
@@ -224,7 +215,7 @@
         "mobile_height": 100,
         "text_position": "center",
         "text_color": "#ffffff",
-        "button_background_color": "#E8B5B0",
+        "button_background_color": "#e8b5b0",
         "button_text_color": "#000000",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
@@ -263,8 +254,8 @@
             "link_text": "SHOP THE DUO",
             "button_style": "btn--callout",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
@@ -298,8 +289,8 @@
             "link_text": "SHOP THE ROUND BRUSH",
             "button_style": "btn--callout",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
@@ -333,8 +324,8 @@
             "link_text": "SHOP THE MINI",
             "button_style": "btn--callout",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
@@ -420,8 +411,8 @@
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
