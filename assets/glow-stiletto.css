@@ -12,21 +12,21 @@ html.glow-gotham-h1 h1,
 html.glow-gotham-h1 .ff-glow-display-1 {
   font-family: "GothamUltra", var(--font-heading), serif;
   font-weight: 400;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
   text-transform: uppercase;
 }
 html.glow-gotham-h2 h2,
 html.glow-gotham-h2 .ff-glow-display-2 {
   font-family: "GothamUltra", var(--font-heading), serif;
   font-weight: 400;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
   text-transform: uppercase;
 }
 html.glow-gotham-h3 h3,
 html.glow-gotham-h3 .ff-glow-display-3 {
   font-family: "GothamUltra", var(--font-heading), serif;
   font-weight: 400;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
   text-transform: uppercase;
 }
 html.glow-gotham-buttons .btn span,
@@ -52,7 +52,45 @@ html[data-glow-button-shape="soft"] .btn,
 html[data-glow-button-shape="soft"] .glow-btn { border-radius: 8px; }
 html[data-glow-button-shape="square"] .btn,
 html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
-.btn, .glow-btn { border-width: var(--glow-button-border-weight, 1px); }
+
+/* ---------- Neo-brutalist button treatment ---------- */
+.btn,
+.glow-btn {
+  --glow-btn-shadow: var(--glow-color-dark, #171819);
+  border: var(--glow-button-border-weight, 2px) solid var(--glow-btn-shadow);
+  box-shadow: 4px 4px 0 0 var(--glow-btn-shadow);
+  transition: transform 90ms ease-out, box-shadow 90ms ease-out, background-color 120ms ease-out;
+  font-weight: 700;
+}
+.btn:hover,
+.glow-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 var(--glow-btn-shadow);
+}
+.btn:active,
+.glow-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 0 var(--glow-btn-shadow);
+}
+/* Light/inverse buttons get a brand shadow */
+.btn--secondary {
+  --glow-btn-shadow: var(--glow-color-dark, #171819);
+  background: transparent;
+}
+.btn--primary { --glow-btn-shadow: var(--glow-color-dark, #171819); }
+
+/* Text/callout buttons stay flat (no brutalist treatment) */
+.btn--callout {
+  border: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn--callout:hover,
+.btn--callout:active {
+  transform: none;
+  box-shadow: none;
+}
 
 /* ---------- Glow chip (BEST SELLER, LIMITED EDITION) ---------- */
 .glow-chip {
@@ -143,11 +181,11 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 .glow-hero--align-center .glow-hero__inner { align-items: center; text-align: center; }
 .glow-hero__heading {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(40px, 7vw, 96px);
+  font-size: clamp(34px, 5.5vw, 72px);
   line-height: 1.05;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
 }
 .glow-hero__body {
   max-width: 56ch;
@@ -166,7 +204,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-results-compare__heading {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(24px, 3vw, 40px);
   line-height: 1.1;
   margin: 0 0 var(--glow-space-s, 16px);
   text-transform: uppercase;
@@ -292,11 +330,11 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-editorial-split__heading {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(28px, 4vw, 56px);
+  font-size: clamp(26px, 3.6vw, 44px);
   line-height: 1.05;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
 }
 .glow-editorial-split__subheading {
   font-size: clamp(15px, 1.2vw, 18px);
@@ -362,7 +400,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-story-stack__heading {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: clamp(22px, 2.5vw, 32px);
   line-height: 1.1;
   margin: 0 0 var(--glow-space-s, 16px);
   text-transform: uppercase;
@@ -506,11 +544,11 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-quote__text {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(22px, 3vw, 40px);
+  font-size: clamp(20px, 2.5vw, 32px);
   line-height: 1.25;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: var(--glow-heading-letter-spacing, -0.01em);
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
   color: var(--glow-color-dark);
 }
 .glow-quote__attribution {
@@ -537,7 +575,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-routine-grid__heading {
   font-family: "GothamUltra", var(--font-heading), serif;
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: clamp(22px, 2.5vw, 32px);
   line-height: 1.1;
   margin: 0;
   text-transform: uppercase;
