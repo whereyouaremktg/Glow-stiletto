@@ -25,17 +25,6 @@
             "show_custom_badges": true
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_popup_option": "Size",
-            "variant_popup_icon": "measuring-tape",
-            "variant_popup_text": "Size guide",
-            "variant_popup_page": "size-guide",
-            "swatch_size": "medium",
-            "chip_layout": "natural"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -62,7 +51,6 @@
       },
       "block_order": [
         "product_header",
-        "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "text"
