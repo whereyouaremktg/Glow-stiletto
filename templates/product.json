@@ -15,12 +15,12 @@
         "product_header": {
           "type": "product_header",
           "settings": {
-            "show_divider": false,
+            "show_divider": true,
             "show_vendor": false,
             "show_sku": false,
             "show_discount": false,
             "discount_format": "percent_off",
-            "show_product_rating": true,
+            "show_product_rating": false,
             "show_sale_badge": false,
             "show_custom_badges": true
           }
