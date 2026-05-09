@@ -28,11 +28,13 @@
         {%- when 'logo' -%}
           <div class="glow-press-strip__item glow-press-strip__logo" {{ block.shopify_attributes }}>
             {%- if block.settings.image != blank -%}
-              {%- render 'image',
-                image: block.settings.image,
-                wrapper_class: 'glow-press-strip__logo-image',
-                sizes_px: 200
-              -%}
+              <img
+                class="glow-press-strip__logo-image"
+                src="{{ block.settings.image | image_url: width: 400 }}"
+                alt="{{ block.settings.image.alt | default: block.settings.label | escape }}"
+                loading="lazy"
+                decoding="async"
+              >
             {%- endif -%}
             {%- unless block.settings.label == blank -%}
               <div class="glow-press-strip__label">{{ block.settings.label }}</div>
@@ -152,40 +154,16 @@
   ],
   "presets": [
     {
-      "name": "Glow press strip — trust pillars",
+      "name": "Glow press strip",
       "blocks": [
-        {
-          "type": "pillar",
-          "settings": {
-            "label": "CRUELTY FREE",
-            "body": "Never tested on animals, always made with love."
-          }
-        },
-        {
-          "type": "pillar",
-          "settings": {
-            "label": "ECO-FRIENDLY",
-            "body": "Sustainable materials designed to last a lifetime."
-          }
-        },
-        {
-          "type": "pillar",
-          "settings": {
-            "label": "LIFETIME PROMISE",
-            "body": "We stand by our brushes with a lifetime warranty."
-          }
-        },
-        {
-          "type": "pillar",
-          "settings": {
-            "label": "FREE SHIPPING",
-            "body": "On all US orders over $50."
-          }
-        }
+        { "type": "pillar", "settings": { "label": "CRUELTY FREE", "body": "Never tested on animals, always made with love." } },
+        { "type": "pillar", "settings": { "label": "ECO-FRIENDLY", "body": "Sustainable materials designed to last a lifetime." } },
+        { "type": "pillar", "settings": { "label": "LIFETIME PROMISE", "body": "We stand by our brushes with a lifetime warranty." } },
+        { "type": "pillar", "settings": { "label": "FREE SHIPPING", "body": "On all US orders over $50." } }
       ]
     },
     {
-      "name": "Glow press strip — logos",
+      "name": "Glow press logos",
       "blocks": [
         { "type": "logo" },
         { "type": "logo" },
