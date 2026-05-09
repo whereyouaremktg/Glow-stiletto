@@ -501,10 +501,14 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   gap: 6px;
   align-items: center;
   justify-content: center;
+  min-width: 0;
 }
 .glow-press-strip__logo img {
   max-height: 44px;
+  max-width: 100%;
   width: auto;
+  height: auto;
+  object-fit: contain;
   filter: var(--glow-press-filter, grayscale(1));
   opacity: 0.85;
 }
@@ -523,7 +527,10 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   max-width: 30ch;
 }
 @media (max-width: 749px) {
-  .glow-press-strip__inner { grid-template-columns: repeat(2, 1fr); }
+  .glow-press-strip__inner { grid-template-columns: repeat(2, 1fr); gap: var(--glow-space-s, 16px); }
+}
+@media (max-width: 540px) {
+  .glow-press-strip__inner { grid-template-columns: 1fr; gap: var(--glow-space-m, 24px); }
 }
 
 /* ============================================================
