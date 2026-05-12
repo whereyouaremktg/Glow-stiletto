@@ -60,7 +60,7 @@
     "product_listing_show_vendor": false,
     "enable_border_on_hover": false,
     "enable_quick_add": true,
-    "enable_quick_view": true,
+    "enable_quick_view": false,
     "product_listing_show_siblings_product_image": false,
     "show_product_card_chips": true,
     "product_listing_aspect_ratio": "portrait",

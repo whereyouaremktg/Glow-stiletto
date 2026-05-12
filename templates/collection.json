@@ -34,7 +34,7 @@
       "type": "main-collection-product-grid",
       "settings": {
         "columns_desktop": "4",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "rows": "4",
         "show_item_count": true,
         "show_sort": true,
