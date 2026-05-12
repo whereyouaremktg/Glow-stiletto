@@ -590,6 +590,97 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "grid_aPqkXj": {
+      "type": "grid",
+      "blocks": {
+        "item_MNYJjw": {
+          "type": "item",
+          "settings": {
+            "width": "50",
+            "height": 800,
+            "mobile_height": 500,
+            "media_type": "image",
+            "image": "shopify://shop_images/194.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "flex-start_flex-end",
+            "accent": "",
+            "title": "THE SMOOTHING BRUSH",
+            "heading_tag": "h5",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h2",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>A fan favorite now back in stock</p>",
+            "text_font_class": "fs-body-100",
+            "link": "shopify://collections/smoothing-brush",
+            "link_text": "SHOP NOW",
+            "button_style": "btn--secondary",
+            "background_color": "#f4d5d2",
+            "text_color": "#171819",
+            "button_background_color": "#f4d5d2",
+            "button_text_color": "#000000",
+            "color_overlay": "#b2cae7",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "item_D47Nh7": {
+          "type": "item",
+          "settings": {
+            "width": "50",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "image",
+            "image": "shopify://shop_images/Finals-6.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "flex-end_flex-start",
+            "accent": "Ballerina Detangling brush",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#171819",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_MNYJjw",
+        "item_D47Nh7"
+      ],
+      "name": "t:sections.grid.presets.name",
+      "settings": {
+        "heading": "We've Restocked Your Favorites",
+        "heading_tag": "h2",
+        "subheading": "",
+        "content_alignment": "center",
+        "enable_animation": true,
+        "full_width": false,
+        "spacing": 0,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
     }
   },
   "order": [
@@ -602,6 +693,7 @@
     "image_hero_split_PFWHYY",
     "grid_zVmt3V",
     "testimonials_EYEVmp",
-    "image_hero_gbQcrT"
+    "image_hero_gbQcrT",
+    "grid_aPqkXj"
   ]
 }

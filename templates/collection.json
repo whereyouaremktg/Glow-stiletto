@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -6,18 +15,19 @@
         "show_breadcrumbs": false,
         "show_collection_description": true,
         "show_collection_image": true,
+        "image": "shopify://shop_images/boar_brush_reveal_story_series.png",
         "image_aspect": "custom",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "focal_point": "center",
-        "text_position": "center_center",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "focal_point": "image_presentation",
+        "text_position": "flex-end_flex-end",
         "text_position_mobile": "center_center",
         "text_color": "#ffffff",
-        "color_overlay": "#000000",
+        "color_overlay": "#aaaaaa",
         "color_overlay_gradient": "",
-        "overlay_opacity": 30,
+        "overlay_opacity": 0,
         "enable_animation": true,
-        "section_padding": "section--vertical-padding-bottom-only"
+        "section_padding": "section--vertical-padding-none"
       }
     },
     "main-collection-product-grid": {
@@ -44,5 +54,8 @@
       }
     }
   },
-  "order": ["banner", "main-collection-product-grid"]
+  "order": [
+    "banner",
+    "main-collection-product-grid"
+  ]
 }
