@@ -15,14 +15,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "Your Brush Matters More Than You Think",
+            "text": "GLOW TURNS 4",
             "tag": "h1"
+          }
+        },
+        "body_w46GcJ": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Celebrate our 4th birthday by taking 20% off everything + free shipping. No discount codes needed. </p>"
           }
         },
         "button_VMr7kt": {
           "type": "button",
           "settings": {
-            "text": "Explore collection",
+            "text": "SHOP THE SALE",
             "link": "shopify://collections",
             "button_style": "btn--primary"
           }
@@ -30,19 +36,20 @@
       },
       "block_order": [
         "heading",
+        "body_w46GcJ",
         "button_VMr7kt"
       ],
       "settings": {
-        "image": "shopify://shop_images/129_ae9c91bc-fdf6-4f65-9f68-175dee3a13c8.png",
+        "image": "shopify://shop_images/birthday_2026_story_series_b07005b3-100d-4e9d-81cb-1b6be97b904a.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "height": "large",
-        "alignment": "left",
+        "alignment": "center",
         "full_bleed": true,
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 25,
+        "overlay_color": "#b2cae7",
+        "overlay_opacity": 10,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -543,6 +550,46 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
+    },
+    "promo_banner_wNrYDp": {
+      "type": "promo-banner",
+      "name": "t:sections.promo_banner.presets.name",
+      "settings": {
+        "min_height": 780,
+        "min_height_mobile": 500,
+        "left_column_width": 40,
+        "giant_heading": "<p>THE BDAY SALE DETAILS</p>",
+        "giant_heading_font_size": 100,
+        "giant_heading_font_size_mobile": 50,
+        "left_column_alignment": "left",
+        "left_column_alignment_mobile": "left",
+        "heading": "20% Off Site Wide + Free Shipping",
+        "heading_tag": "h4",
+        "heading_font_class": "fs-heading-3-base",
+        "text": "",
+        "right_column_alignment": "left",
+        "right_column_alignment_mobile": "left",
+        "link": "shopify://collections",
+        "link_text": "Button",
+        "button_style": "btn--secondary",
+        "link_2": "shopify://collections",
+        "link_text_2": "Button",
+        "button_style_2": "btn--secondary",
+        "image": "shopify://shop_images/birthday_2026_story_series_copy_2.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "background_color": "#faf6f1",
+        "text_color": "#171819",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "show_frame": true,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
@@ -554,6 +601,7 @@
     "image_hero_split_PFWHYY",
     "grid_zVmt3V",
     "testimonials_EYEVmp",
-    "image_hero_gbQcrT"
+    "image_hero_gbQcrT",
+    "promo_banner_wNrYDp"
   ]
 }
