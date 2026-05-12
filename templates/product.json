@@ -40,12 +40,16 @@
             "divider_width": "none"
           }
         },
-        "text": {
-          "type": "text",
+        "description_d7xbN9": {
+          "type": "description",
           "settings": {
+            "title": "Description",
+            "title_tag": "h3",
             "text_font_class": "fs-body-100",
-            "text": "<p></p>{{ product.description }}",
-            "column_placement": "right"
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false,
+            "icon": "none"
           }
         }
       },
@@ -53,18 +57,18 @@
         "product_header",
         "quantity_selector",
         "buy_buttons",
-        "text"
+        "description_d7xbN9"
       ],
       "settings": {
         "enable_sticky_product_details": true,
         "show_breadcrumbs": true,
         "show_navigation_buttons": true,
         "auto_collapse_rows": false,
-        "show_featured_media_first": false,
+        "show_featured_media_first": true,
         "gallery_style": "thumbnails",
         "gallery_style_mobile": "carousel",
         "gallery_size": "medium",
-        "gallery_overflow": "2",
+        "gallery_overflow": "never",
         "enable_video_looping": true,
         "enable_product_lightbox": true,
         "image_aspect_ratio": "natural",
@@ -75,9 +79,33 @@
         "enable_gift_card_recipient": true,
         "enable_animation": true
       }
+    },
+    "video_hero_VzyLJW": {
+      "type": "video-hero",
+      "name": "t:sections.video_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "video": "shopify://files/videos/Glow Beauty - Hero Video.mp4",
+        "media_link": "",
+        "focal_point": "center",
+        "focal_point_mobile": "center",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "video_hero_VzyLJW"
   ]
 }
