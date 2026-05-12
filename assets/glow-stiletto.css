@@ -31,10 +31,15 @@ html.glow-gotham-h3 .ff-glow-display-3 {
 }
 html.glow-gotham-buttons .btn span,
 html.glow-gotham-buttons .btn,
-html.glow-gotham-buttons .glow-btn,
+html.glow-gotham-buttons .glow-btn {
+  font-family: "GothamUltra", var(--font-heading), sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-style: italic;
+}
 html.glow-gotham-buttons .glow-chip {
   font-family: "GothamUltra", var(--font-heading), sans-serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 html.glow-gotham-logo .header__logo,
