@@ -12,7 +12,7 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_breadcrumbs": false,
+        "show_breadcrumbs": true,
         "show_collection_description": true,
         "show_collection_image": true,
         "image": "shopify://shop_images/boar_brush_reveal_story_series.png",
