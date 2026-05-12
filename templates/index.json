@@ -145,6 +145,237 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "image_hero_split_PFWHYY": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image_YUt96r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Email_marketing_portrait_size_1.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_w6h4iM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "You Deserve A Glow Up",
+            "heading_tag": "h2",
+            "text": "<p>See why the Detangler Brush is a must have in your morning routine</p>",
+            "link": "shopify://products/glow-beauty-hair-brush",
+            "link_text": "Learn More",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_YUt96r",
+        "image_w6h4iM"
+      ],
+      "name": "t:sections.image_hero_split.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "text_position": "center",
+        "text_color": "#ffffff",
+        "button_background_color": "#e8b5b0",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "featured_brush": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "eyebrow_e6gN7D": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "The Lineup"
+          }
+        },
+        "chip": {
+          "type": "chip_overlay",
+          "settings": {
+            "text": "BEST SELLER"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "text": "4.9/5 (2,400+ Reviews)"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "The Detangling Brush",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Functional. Reliable. Timeless."
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Detangles wet or dry hair without pulling. Drainage hole keeps it dry. Metal bristles exfoliate the scalp, lift buildup, and bring out shine.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Shop the brush — $35",
+            "link": "shopify://collections/all",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow_e6gN7D",
+        "chip",
+        "rating",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/17.png",
+        "focal_point": "top",
+        "image_position": "left",
+        "mobile_order": "text_first",
+        "show_band": false,
+        "band_text": "",
+        "band_bg": "#b8c5d6",
+        "outer_bg": "#faf6f1",
+        "content_bg": "#ffffff",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multi_column_gfiWbn": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_7MVeEg": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Plastic bristles damage hair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_CJez46": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/brushing_2.gif",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Metal does it better",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine in one motion.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_fJj68N": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Built to last. Built for you",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_7MVeEg",
+        "image_column_CJez46",
+        "image_column_fJj68N"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 4,
+        "row_spacing": 4,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": true,
+        "background_color": "#e2dedc",
+        "text_color": "#171819",
+        "button_background_color": "#faf6f1",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "grid_zVmt3V": {
       "type": "grid",
       "blocks": {
@@ -272,79 +503,6 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "featured_brush": {
-      "type": "glow-editorial-split",
-      "blocks": {
-        "eyebrow_e6gN7D": {
-          "type": "eyebrow",
-          "settings": {
-            "text": "The Lineup"
-          }
-        },
-        "chip": {
-          "type": "chip_overlay",
-          "settings": {
-            "text": "BEST SELLER"
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "text": "4.9/5 (2,400+ Reviews)"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "text": "The Detangling Brush",
-            "tag": "h2"
-          }
-        },
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "text": "Functional. Reliable. Timeless."
-          }
-        },
-        "body": {
-          "type": "body",
-          "settings": {
-            "text": "<p>Detangles wet or dry hair without pulling. Drainage hole keeps it dry. Metal bristles exfoliate the scalp, lift buildup, and bring out shine.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "text": "Shop the brush — $35",
-            "link": "shopify://collections/all",
-            "button_style": "btn--secondary"
-          }
-        }
-      },
-      "block_order": [
-        "eyebrow_e6gN7D",
-        "chip",
-        "rating",
-        "heading",
-        "subheading",
-        "body",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/17.png",
-        "focal_point": "top",
-        "image_position": "left",
-        "mobile_order": "text_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ffffff",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "glow_press_strip_RV3q8g": {
       "type": "glow-press-strip",
       "blocks": {
@@ -375,6 +533,7 @@
         "logo_wU7z6n",
         "logo_KMgbMH"
       ],
+      "disabled": true,
       "name": "Glow press strip — logos",
       "settings": {
         "background": "#dec1bc",
@@ -382,112 +541,6 @@
         "greyscale": true,
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "multi_column_gfiWbn": {
-      "type": "multi-column",
-      "blocks": {
-        "image_column_7MVeEg": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/5.png",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Plastic bristles damage hair",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_CJez46": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/brushing_2.gif",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Metal does it better",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine in one motion.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_fJj68N": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/productsselects_5.jpg",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Built to last. Built for you",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_column_7MVeEg",
-        "image_column_CJez46",
-        "image_column_fJj68N"
-      ],
-      "name": "t:sections.multi_column.presets.name",
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "small",
-        "columns": "3",
-        "column_spacing": 4,
-        "row_spacing": 4,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "1",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": true,
-        "background_color": "#e2dedc",
-        "text_color": "#171819",
-        "button_background_color": "#faf6f1",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "featured_collection_grid_ABgxr6": {
@@ -517,58 +570,6 @@
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "image_hero_split_PFWHYY": {
-      "type": "image-hero-split",
-      "blocks": {
-        "image_YUt96r": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Email_marketing_portrait_size_1.png",
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "title": "",
-            "heading_tag": "h2",
-            "text": "",
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_w6h4iM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "title": "You Deserve A Glow Up",
-            "heading_tag": "h2",
-            "text": "<p>See why the Detangler Brush is a must have in your morning routine</p>",
-            "link": "shopify://products/glow-beauty-hair-brush",
-            "link_text": "Learn More",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_YUt96r",
-        "image_w6h4iM"
-      ],
-      "name": "t:sections.image_hero_split.presets.name",
-      "settings": {
-        "image_aspect": "original",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "text_position": "center",
-        "text_color": "#ffffff",
-        "button_background_color": "#e8b5b0",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 0,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
       }
     },
     "testimonials_EYEVmp": {
@@ -617,17 +618,41 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "video_hero_ELjfdg": {
+      "type": "video-hero",
+      "name": "t:sections.video_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 100,
+        "video": "shopify://files/videos/Glow Beauty - Hero Video.mp4",
+        "media_link": "",
+        "focal_point": "center",
+        "focal_point_mobile": "center",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
     }
   },
   "order": [
     "glow_hero_main",
     "grid_aPqkXj",
-    "grid_zVmt3V",
-    "featured_brush",
-    "glow_press_strip_RV3q8g",
-    "multi_column_gfiWbn",
-    "featured_collection_grid_ABgxr6",
     "image_hero_split_PFWHYY",
+    "featured_brush",
+    "multi_column_gfiWbn",
+    "grid_zVmt3V",
+    "glow_press_strip_RV3q8g",
+    "video_hero_ELjfdg",
+    "featured_collection_grid_ABgxr6",
     "testimonials_EYEVmp"
   ]
 }
