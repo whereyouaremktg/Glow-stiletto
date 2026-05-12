@@ -61,37 +61,55 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 /* ---------- Neo-brutalist button treatment ---------- */
 .btn,
 .glow-btn {
-  --glow-btn-shadow: var(--glow-color-dark, #171819);
+  --glow-btn-shadow: var(--glow-button-border, var(--glow-color-dark, #171819));
   border: var(--glow-button-border-weight, 2px) solid var(--glow-btn-shadow);
   box-shadow: 4px 4px 0 0 var(--glow-btn-shadow);
-  transition: transform 90ms ease-out, box-shadow 90ms ease-out, background-color 120ms ease-out;
+  transition: transform 90ms ease-out, box-shadow 90ms ease-out, background-color 120ms ease-out, color 120ms ease-out;
   font-weight: 700;
 }
+.btn,
+.glow-btn,
+.btn--primary,
+.btn--primary span {
+  background-color: var(--glow-button-bg, #F4D5D2);
+  color: var(--glow-button-text, #171819);
+}
 .btn:hover,
-.glow-btn:hover {
+.glow-btn:hover,
+.btn--primary:hover {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 0 var(--glow-btn-shadow);
+  background-color: var(--glow-button-bg-hover, var(--glow-button-bg, #E8B5B0));
+  color: var(--glow-button-text-hover, var(--glow-button-text, #171819));
 }
 .btn:active,
-.glow-btn:active {
+.glow-btn:active,
+.btn--primary:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 var(--glow-btn-shadow);
 }
-.btn--secondary {
-  --glow-btn-shadow: var(--glow-color-dark, #171819);
-  background: transparent;
+.btn--secondary,
+.btn--secondary span {
+  background-color: var(--glow-button-secondary-bg, transparent);
+  color: var(--glow-button-secondary-text, var(--glow-color-dark, #171819));
 }
-.btn--primary { --glow-btn-shadow: var(--glow-color-dark, #171819); }
+.btn--secondary:hover {
+  background-color: var(--glow-button-bg-hover, var(--glow-button-bg, #F4D5D2));
+  color: var(--glow-button-text-hover, var(--glow-button-text, #171819));
+}
 .btn--callout {
   border: 0;
   box-shadow: none;
   padding-left: 0;
   padding-right: 0;
+  background: transparent;
+  color: inherit;
 }
 .btn--callout:hover,
 .btn--callout:active {
   transform: none;
   box-shadow: none;
+  background: transparent;
 }
 
 /* ---------- Glow chip (BEST SELLER, LIMITED EDITION) ---------- */
