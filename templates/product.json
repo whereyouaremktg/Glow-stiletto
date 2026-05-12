@@ -53,9 +53,9 @@
           "settings": {
             "expand_by_default": false,
             "column_placement": "right",
-            "heading": "Collapsible row",
+            "heading": "Why Stylist Trust",
             "heading_tag": "h3",
-            "icon": "none",
+            "icon": "scissors",
             "content": "<p>Add your collapsible row content here.</p>",
             "page_for_content": "",
             "custom_liquid": ""
@@ -68,20 +68,7 @@
             "column_placement": "right",
             "heading": "Collapsible row",
             "heading_tag": "h3",
-            "icon": "none",
-            "content": "<p>Add your collapsible row content here.</p>",
-            "page_for_content": "",
-            "custom_liquid": ""
-          }
-        },
-        "accordion_9WJDe8": {
-          "type": "accordion",
-          "settings": {
-            "expand_by_default": false,
-            "column_placement": "right",
-            "heading": "Collapsible row",
-            "heading_tag": "h3",
-            "icon": "none",
+            "icon": "stiletto",
             "content": "<p>Add your collapsible row content here.</p>",
             "page_for_content": "",
             "custom_liquid": ""
@@ -94,8 +81,7 @@
         "buy_buttons",
         "text_mKbFTT",
         "accordion_HaFDhV",
-        "accordion_GBeV3f",
-        "accordion_9WJDe8"
+        "accordion_GBeV3f"
       ],
       "settings": {
         "enable_sticky_product_details": true,
@@ -141,43 +127,16 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "17786282618a17de01": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_reviews_grid_widget_3Qwkfr": {
-          "type": "shopify://apps/judge-me-reviews/blocks/reviews_grid_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": true,
-            "review_selection": "product_reviews",
-            "products": [],
-            "show_media_only": false,
-            "display_order": "media_first",
-            "card_grouping": "per_media",
-            "columns_desktop": 3,
-            "rows_desktop": 3,
-            "columns_mobile": "2",
-            "rows_mobile": 6,
-            "show_stars": true,
-            "show_reviewer_name": true,
-            "show_review_title_on_hover_desktop": true,
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "card_spacing": "medium",
-            "header_text_color": "#000000",
-            "star_and_reviewer_name_color": "#F9F9F9",
-            "drop_shadow_color": "#000000",
-            "overlay_and_background_color": "#000000",
-            "content_color": "#F9F9F9",
-            "header_text": "From our customers",
-            "show_average_rating": true
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_reviews_grid_widget_3Qwkfr"
-      ],
+    "recently_viewed_products_LRtQe9": {
+      "type": "recently-viewed-products",
+      "name": "t:sections.recently_viewed_products.presets.name",
       "settings": {
-        "heading": "App section",
+        "title": "Recently viewed",
+        "heading_tag": "h2",
+        "subheading": "",
+        "maximum_products": 8,
+        "columns": "4",
+        "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -187,6 +146,6 @@
   "order": [
     "main",
     "video_hero_VzyLJW",
-    "17786282618a17de01"
+    "recently_viewed_products_LRtQe9"
   ]
 }
