@@ -33,13 +33,13 @@ html.glow-gotham-buttons .btn span,
 html.glow-gotham-buttons .btn,
 html.glow-gotham-buttons .glow-btn {
   font-family: "GothamUltra", var(--font-heading), sans-serif;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--glow-button-letter-spacing, 0.14em);
   text-transform: uppercase;
-  font-style: italic;
+  font-style: var(--glow-button-font-style, italic);
 }
 html.glow-gotham-buttons .glow-chip {
   font-family: "GothamUltra", var(--font-heading), sans-serif;
-  letter-spacing: 0.18em;
+  letter-spacing: var(--glow-chip-letter-spacing, 0.18em);
   text-transform: uppercase;
 }
 html.glow-gotham-logo .header__logo,
@@ -103,7 +103,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   border-radius: 999px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: var(--glow-chip-letter-spacing, 0.18em);
   text-transform: uppercase;
   font-family: "GothamUltra", var(--font-heading), sans-serif;
   line-height: 1;
@@ -130,7 +130,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   display: inline-block;
   font-family: "GothamUltra", var(--font-heading), sans-serif;
   font-size: 12px;
-  letter-spacing: 0.22em;
+  letter-spacing: var(--glow-eyebrow-letter-spacing, 0.22em);
   text-transform: uppercase;
   color: var(--glow-color-muted);
 }

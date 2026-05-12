@@ -45,5 +45,9 @@
 
     /* Typography */
     --glow-heading-letter-spacing: {{ settings.glow_heading_letter_spacing | times: 0.001 | append: 'em' }};
+    --glow-button-letter-spacing: {{ settings.glow_button_letter_spacing | times: 0.001 | append: 'em' }};
+    --glow-button-font-style: {% if settings.glow_button_italic %}italic{% else %}normal{% endif %};
+    --glow-eyebrow-letter-spacing: {{ settings.glow_eyebrow_letter_spacing | times: 0.001 | append: 'em' }};
+    --glow-chip-letter-spacing: {{ settings.glow_chip_letter_spacing | times: 0.001 | append: 'em' }};
   }
 </style>
