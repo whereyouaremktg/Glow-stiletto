@@ -46,6 +46,28 @@
     "header": {
       "type": "header",
       "blocks": {
+        "full_width_meganav_zGCeg6": {
+          "type": "full_width_meganav",
+          "settings": {
+            "dropdown_parent_link": "Shop-all",
+            "column_count": 3,
+            "show_column_borders": true,
+            "show_promo": true,
+            "promo_width": 440,
+            "promo_height": 250,
+            "secondary_position": "right",
+            "image": "shopify://shop_images/birthday_2026_story_series_copy_2.png",
+            "focal_point": "image_presentation",
+            "promo_text": "IT'S OUR BIRTHDAY",
+            "link": "shopify://collections/glow-beauty",
+            "link_text": "SHOP THE SALE",
+            "text_position": "flex-start_flex-end",
+            "text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "full_width_meganav_WXyTTy": {
           "type": "full_width_meganav",
           "settings": {
@@ -78,6 +100,7 @@
         }
       },
       "block_order": [
+        "full_width_meganav_zGCeg6",
         "full_width_meganav_WXyTTy",
         "mobile_menu_images_cpJiWE"
       ],
