@@ -49,7 +49,7 @@
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
         "overlay_color": "#b2cae7",
-        "overlay_opacity": 10,
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -367,7 +367,7 @@
         "row_spacing_mobile": 20,
         "column_alignment_mobile": "left",
         "background_behind_columns": true,
-        "background_color": "#e2dedc",
+        "background_color": "#b2cae7",
         "text_color": "#171819",
         "button_background_color": "#faf6f1",
         "button_text_color": "#ffffff",
@@ -543,6 +543,29 @@
         "padding_bottom": 0
       }
     },
+    "video_hero_ELjfdg": {
+      "type": "video-hero",
+      "name": "t:sections.video_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 100,
+        "video": "shopify://files/videos/Glow Beauty - Hero Video.mp4",
+        "media_link": "",
+        "focal_point": "center",
+        "focal_point_mobile": "center",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
     "featured_collection_grid_ABgxr6": {
       "type": "featured-collection-grid",
       "blocks": {
@@ -617,29 +640,6 @@
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "video_hero_ELjfdg": {
-      "type": "video-hero",
-      "name": "t:sections.video_hero.presets.name",
-      "settings": {
-        "image_aspect": "original",
-        "desktop_height": 50,
-        "mobile_height": 100,
-        "video": "shopify://files/videos/Glow Beauty - Hero Video.mp4",
-        "media_link": "",
-        "focal_point": "center",
-        "focal_point_mobile": "center",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 40,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
       }
     }
   },
