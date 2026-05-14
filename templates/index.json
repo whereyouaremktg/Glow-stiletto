@@ -22,7 +22,7 @@
         "body_w46GcJ": {
           "type": "body",
           "settings": {
-            "text": "<p>Celebrate our 4th birthday by taking 20% off everything + free shipping. No discount codes needed. </p>"
+            "text": "<p>Celebrate our 4th birthday by taking 20% off everything + free shipping. </p>"
           }
         },
         "button_VMr7kt": {
@@ -49,7 +49,7 @@
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
         "overlay_color": "#b2cae7",
-        "overlay_opacity": 0,
+        "overlay_opacity": 5,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -689,7 +689,7 @@
         "background_color": "",
         "text_color": "#000000",
         "button_background_color": "#000000",
-        "button_text_color": "#FFFFFF",
+        "button_text_color": "#ffffff",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"

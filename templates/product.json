@@ -47,41 +47,13 @@
             "enable_sticky_atc_bar_mobile": true,
             "divider_width": "none"
           }
-        },
-        "accordion_HaFDhV": {
-          "type": "accordion",
-          "settings": {
-            "expand_by_default": false,
-            "column_placement": "right",
-            "heading": "Why Stylist Trust",
-            "heading_tag": "h3",
-            "icon": "scissors",
-            "content": "<p>Add your collapsible row content here.</p>",
-            "page_for_content": "",
-            "custom_liquid": ""
-          }
-        },
-        "accordion_GBeV3f": {
-          "type": "accordion",
-          "settings": {
-            "expand_by_default": false,
-            "column_placement": "right",
-            "heading": "Collapsible row",
-            "heading_tag": "h3",
-            "icon": "stiletto",
-            "content": "<p>Add your collapsible row content here.</p>",
-            "page_for_content": "",
-            "custom_liquid": ""
-          }
         }
       },
       "block_order": [
         "product_header",
         "text_mKbFTT",
         "quantity_selector",
-        "buy_buttons",
-        "accordion_HaFDhV",
-        "accordion_GBeV3f"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_product_details": true,
@@ -159,10 +131,10 @@
         "aspect_ratio": "natural",
         "focal_point": "image_presentation",
         "content_alignment": "left",
-        "background_color": "#D9A49C",
+        "background_color": "#d9a49c",
         "text_color": "#000000",
         "button_background_color": "#000000",
-        "button_text_color": "#FFFFFF",
+        "button_text_color": "#ffffff",
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
@@ -197,8 +169,8 @@
             "link_text": "",
             "button_style": "btn--primary",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
@@ -232,8 +204,8 @@
             "link_text": "",
             "button_style": "btn--primary",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
@@ -267,8 +239,8 @@
             "link_text": "",
             "button_style": "btn--primary",
             "background_color": "",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
             "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
