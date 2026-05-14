@@ -49,9 +49,9 @@
         "full_width_meganav_zGCeg6": {
           "type": "full_width_meganav",
           "settings": {
-            "dropdown_parent_link": "Shop-all",
-            "column_count": 3,
-            "show_column_borders": true,
+            "dropdown_parent_link": "Bundle-+-save",
+            "column_count": 1,
+            "show_column_borders": false,
             "show_promo": true,
             "promo_width": 440,
             "promo_height": 250,
