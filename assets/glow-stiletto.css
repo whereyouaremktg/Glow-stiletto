@@ -84,8 +84,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .btn,
 .glow-btn,
-.btn--primary,
-.btn--primary span {
+.btn--primary {
   background-color: var(--glow-button-bg, #F4D5D2);
   color: var(--glow-button-text, #171819);
 }
@@ -103,10 +102,14 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 var(--glow-btn-shadow);
 }
-.btn--secondary,
-.btn--secondary span {
+.btn--secondary {
   background-color: var(--glow-button-secondary-bg, transparent);
   color: var(--glow-button-secondary-text, var(--glow-color-dark, #171819));
+}
+.btn span,
+.glow-btn span {
+  background: transparent;
+  color: inherit;
 }
 .btn--secondary:hover {
   background-color: var(--glow-button-bg-hover, var(--glow-button-bg, #F4D5D2));
