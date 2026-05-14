@@ -73,7 +73,7 @@
         "full_width_meganav_zGCeg6"
       ],
       "settings": {
-        "layout": "logo-center_nav-below",
+        "layout": "logo-left_nav-center",
         "enable_sticky_header": true,
         "cart_icon": "bag",
         "divider_width": "0px",
@@ -87,7 +87,7 @@
         "menu": "main-menu-copy",
         "secondary_menu": "",
         "featured_link_label": "",
-        "featured_link_color": "#f7f7e8",
+        "featured_link_color": "#58c3ff",
         "enable_transparent_on_home": true,
         "enable_transparent_template_list": "",
         "color_text_transparent": "#ffffff",

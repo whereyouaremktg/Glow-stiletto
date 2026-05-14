@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,261 +18,238 @@
         "custom_content_width": 700
       }
     },
-    "hero": {
-      "type": "glow-hero",
+    "video_hero": {
+      "type": "video-hero",
       "blocks": {
-        "eyebrow": {
-          "type": "eyebrow",
+        "accent_UNnEqh": {
+          "type": "accent",
+          "disabled": true,
           "settings": {
-            "text": "FOUNDER"
+            "accent": "Accent"
           }
         },
-        "heading": {
+        "heading_FGFQwJ": {
           "type": "heading",
           "settings": {
-            "text": "Meet Marissa",
-            "tag": "h1"
+            "title": "About us",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
           }
         },
-        "body": {
-          "type": "body",
+        "play_button_3YjpDL": {
+          "type": "play-button",
+          "disabled": true,
           "settings": {
-            "text": "<p>Hairstylist. Salon owner. Educator. Creator of The Glow Method — and the brand that put pro-grade tools in the hands of everyone who refuses to settle for less than salon-quality at home.</p>"
+            "video_source": "external",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "aspect_ratio": "square",
+            "text": "Watch now",
+            "icon_style": "outline"
+          }
+        },
+        "spacer_pnjNWe": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
           }
         }
       },
-      "block_order": ["eyebrow", "heading", "body"],
+      "block_order": [
+        "accent_UNnEqh",
+        "heading_FGFQwJ",
+        "play_button_3YjpDL",
+        "spacer_pnjNWe"
+      ],
       "settings": {
-        "image": "",
+        "image_aspect": "original",
+        "desktop_height": 80,
+        "mobile_height": 50,
+        "video": "shopify://files/videos/Glow Beauty - Hero Video.mp4",
+        "media_link": "",
         "focal_point": "image_presentation",
-        "mobile_focal_point": "image_presentation",
-        "height": "large",
-        "alignment": "left",
-        "full_bleed": true,
-        "outer_bg": "#faf6f1",
+        "focal_point_mobile": "image_presentation",
+        "text_position": "flex-start_flex-end",
+        "text_position_mobile": "center_center",
         "text_color": "#ffffff",
-        "overlay_color": "#171819",
-        "overlay_opacity": 25,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
       }
     },
-    "founder_story": {
-      "type": "glow-editorial-split",
+    "image_with_text_split": {
+      "type": "image-with-text-split",
       "blocks": {
-        "eyebrow": {
-          "type": "eyebrow",
+        "accent": {
+          "type": "accent",
           "settings": {
-            "text": "THE STORY"
+            "accent": "OUR FOUNDER"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "14 years behind the chair",
-            "tag": "h2"
+            "title": "MEET MARISSA",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
           }
         },
         "subheading": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
-            "text": "She saw the good, the bad and the frizzy — then built the fix."
+            "subheading": "Use these sections to promote a particular feature with editorial photography.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
           }
         },
-        "body": {
-          "type": "body",
+        "text": {
+          "type": "text",
           "settings": {
-            "text": "<p>As a hairstylist, salon owner, and educator with more than 14 years in the industry, Marissa has seen it all — the good, the bad, and the frizzy of haircare tools.</p><p>As the creator of <strong>The Glow Method</strong>, she specializes in blonding, extensions, and shadowing — working with clients and stylists across the country. The more chairs she sat behind and the more stylists she trained, the more she noticed the same gap in every salon and bathroom: tools that worked never looked the part, and tools that looked beautiful never performed.</p><p>Glow Beauty was born to close that gap — pro-grade tools that perform like they belong in a salon and look like they belong on a vanity.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "text": "Shop the lineup",
-            "link": "shopify://collections/all",
-            "button_style": "btn--secondary"
+            "text": "<p>As a hairstylist, salon owner & educator with more than 14 years in the industry, Marissa has seen the good, the bad and the frizzy of haircare tools and products. <br/><br/>Creator of The Glow Method, Marissa specializes in blonding hair color, extensions and shadowing. Working with clients and stylists across the country, she realized there was so much missing from salons and home care routines. <br/><br/>Glow Beauty was born out of the need for tools that performed well and felt luxurious but still looked beautiful in every environment.</p>",
+            "text_font_class": "fs-body-100"
           }
         }
       },
-      "block_order": ["eyebrow", "heading", "subheading", "body", "button"],
+      "block_order": [
+        "accent",
+        "heading",
+        "spacer",
+        "subheading",
+        "text"
+      ],
       "settings": {
-        "image": "",
-        "focal_point": "image_presentation",
-        "image_position": "left",
-        "mobile_order": "image_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ffffff",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "pull_quote": {
-      "type": "glow-quote",
-      "blocks": {
-        "quote": {
-          "type": "quote",
-          "settings": {
-            "image": "",
-            "text": "For me, beauty is in all the details — especially your tools.",
-            "attribution": "Marissa, Founder"
-          }
-        }
-      },
-      "block_order": ["quote"],
-      "settings": {
-        "background": "#e8b5b0",
-        "text_color": "#171819",
-        "full_bleed": true,
-        "padding_top": 96,
-        "padding_bottom": 96
-      }
-    },
-    "philosophy": {
-      "type": "glow-editorial-split",
-      "blocks": {
-        "eyebrow": {
-          "type": "eyebrow",
-          "settings": {
-            "text": "THE PHILOSOPHY"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "text": "Beauty products should be beautiful.",
-            "tag": "h2"
-          }
-        },
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "text": "Form meets function — never one without the other."
-          }
-        },
-        "body": {
-          "type": "body",
-          "settings": {
-            "text": "<p>Hair stylists are visual people. So why is it that most hair tools don't feel like they belong in a salon?</p><p>Every Glow Beauty product is designed with stylists and their clients in mind. We obsess over the details most brands skip — the weight in your hand, the drainage hole on the wet brush, the metal bristles that actually exfoliate the scalp, the finish that still looks beautiful six months in.</p><p>Form meets function. Tools professionals can take pride in, and clients can't put down.</p>"
-          }
-        }
-      },
-      "block_order": ["eyebrow", "heading", "subheading", "body"],
-      "settings": {
-        "image": "",
-        "focal_point": "image_presentation",
         "image_position": "right",
-        "mobile_order": "image_first",
-        "show_band": false,
-        "band_text": "",
-        "band_bg": "#b8c5d6",
-        "outer_bg": "#faf6f1",
-        "content_bg": "#ffffff",
-        "full_bleed": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_mobile_position": "above-content",
+        "image_padding": "none",
+        "image": "shopify://shop_images/meet_Marissa.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "content_alignment": "left",
+        "background_color": "#f7f7e8",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
       }
     },
-    "values": {
-      "type": "glow-story-stack",
+    "rich_text-1": {
+      "type": "rich-text",
       "blocks": {
-        "moment_1": {
-          "type": "moment",
+        "spacer-1": {
+          "type": "spacer",
           "settings": {
-            "image": "",
-            "focal_point": "image_presentation",
-            "reverse": false,
-            "eyebrow": "01 / PERFORMANCE",
-            "heading": "Built behind the chair, tested everywhere else.",
-            "body": "<p>Every brush is engineered with a working stylist's checklist: glides through wet or dry hair without pulling, exfoliates the scalp on the way through, lifts oils and product buildup, and survives daily use without falling apart.</p>",
-            "link": "shopify://collections/all",
-            "link_text": "Shop the brushes",
-            "button_style": "btn--callout"
+            "space": 40
           }
         },
-        "moment_2": {
-          "type": "moment",
+        "accent": {
+          "type": "accent",
           "settings": {
-            "image": "",
-            "focal_point": "image_presentation",
-            "reverse": true,
-            "eyebrow": "02 / DESIGN",
-            "heading": "Made to live on the counter, not hidden in a drawer.",
-            "body": "<p>Quiet color palettes. Considered weight. Real metal, not plastic that warps after a year. We designed Glow to be the tool you reach for first and the one you're proud to leave out.</p>",
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--callout"
+            "accent": "WHY WE STARTED GLOW"
           }
         },
-        "moment_3": {
-          "type": "moment",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "image": "",
-            "focal_point": "image_presentation",
-            "reverse": false,
-            "eyebrow": "03 / COMMUNITY",
-            "heading": "For stylists and the clients who trust them.",
-            "body": "<p>Glow is sold in salons across the country and used in The Glow Method curriculum. Stylists get pro pricing and dedicated support; clients get the same tools their colorist swears by — without the gatekeeping.</p>",
-            "link": "/pages/salon",
-            "link_text": "Salon partners",
-            "button_style": "btn--callout"
+            "title": "“For me, beauty is in all the details, especially your tools.”",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "spacer-2": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hair stylists are visual people. So why is it that most hair tools don’t feel like they belong in a salon? Glow Beauty products are created with stylists and their clients in mind. Form meets function for tools that professionals can take pride in to create styles beyond their clients’ wildest dreams.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer-3": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
           }
         }
       },
-      "block_order": ["moment_1", "moment_2", "moment_3"],
+      "block_order": [
+        "spacer-1",
+        "accent",
+        "heading",
+        "spacer-2",
+        "text",
+        "spacer-3"
+      ],
       "settings": {
-        "heading": "What we build for",
-        "subheading": "<p>Three things we don't compromise on — ever.</p>",
-        "background": "#faf6f1",
-        "full_bleed": true,
-        "padding_top": 96,
-        "padding_bottom": 96
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
       }
     },
-    "gallery": {
+    "gallery_carousel": {
       "type": "gallery-carousel",
       "blocks": {
-        "image_1": {
+        "image-1": {
           "type": "image",
           "settings": {
             "focal_point": "image_presentation",
-            "title": "Behind the chair",
-            "text": "<p>Marissa working with a client in the salon.</p>"
+            "title": "Vegan Leather",
+            "text": "<p>Our luxurious PU leather is 100% vegan (not all faux leather is vegan) & not only feels oh so soft, but also (unlike leather) our PU doesn’t dry out over time. All our fabrications are kind to our furry friends, including our leather.</p>"
           }
         },
-        "image_2": {
+        "image-2": {
           "type": "image",
           "settings": {
             "focal_point": "image_presentation",
-            "title": "The Glow Method",
-            "text": "<p>Teaching stylists across the country.</p>"
+            "title": "Recycled Polyester",
+            "text": "<p>Recycled polyester, often called rPet, is made from recycled plastic bottles. It is a great way to divert plastic from our landfills. The production of recycled polyester requires far fewer resources than that of new fibres & generates fewer CO2 emissions. </p>"
           }
         },
-        "image_3": {
+        "image-3": {
           "type": "image",
           "settings": {
             "focal_point": "image_presentation",
-            "title": "The studio",
-            "text": "<p>Where the tools get tested before they ever ship.</p>"
+            "title": "Textile Printing",
+            "text": "<p>All prints are created in house in Melbourne. The benefits of digitality printing include: no minimum order quantities, flexibility with colours/complexity & cost-effectiveness due to no setup costs, therefore reducing the labour required to produce each print.</p>"
           }
         }
       },
-      "block_order": ["image_1", "image_2", "image_3"],
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3"
+      ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_tag": "h2",
         "subheading": "",
         "link": "",
         "link_text": "",
+        "button_style": "btn--callout",
         "columns": "3",
         "mobile_columns": "1",
         "loop_carousel": true,
-        "aspect_ratio": "portrait",
-        "image_caption_style": "beneath",
+        "aspect_ratio": "square",
         "image_caption_size": "fs-body-100",
+        "image_caption_style": "beneath",
         "overlay_text_background_style": "gradient",
         "overlay_text_color": "#ffffff",
         "overlay_text_background": "#000000",
@@ -272,56 +258,95 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "faq": {
+    "rich_text-3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "space": 12
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "spacer"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "collapsible_row_list": {
       "type": "collapsible-row-list",
       "blocks": {
-        "item_1": {
+        "item-1": {
           "type": "item",
           "settings": {
             "expand_by_default": false,
             "icon": "leaf",
-            "title": "What is The Glow Method?",
-            "text": "<p>Marissa's signature approach to blonding, extensions, and shadowing — the techniques she teaches stylists across the country. It's also the philosophy that shapes every product we make: visible, beautiful results without the damage.</p>"
+            "title": "Low Waste",
+            "text": "<p>Overproduction in fashion is one of the world’s biggest environmental threats. To counter this issue, we have developed a close relation to our supplier, & adopted a bespoke arrangement which allows us to have no minimum quantities on orders. This allows us to produce small runs of inventory instead of mass bulk. This is to reduce waste & to ensure that our customers are repping unique styles.<br/></p>"
           }
         },
-        "item_2": {
+        "item-2": {
           "type": "item",
           "settings": {
             "expand_by_default": false,
-            "icon": "scissors",
-            "title": "Are Glow brushes really salon-grade?",
-            "text": "<p>Yes. They're the same brushes Marissa and her stylists use in the chair every day. Metal bristles, drainage holes on the wet brush, extension-safe, built to last. If a stylist wouldn't use it, we don't sell it.</p>"
+            "icon": "t-shirt",
+            "title": "Worn For Good",
+            "text": "<p>We have teamed up with the wonderful women at Worn For Good to donate pieces. This is to ensure all our pieces & even samples get a happy home & therefore not contributing to waste & landfill, as well as donating to some incredible charities.</p>"
           }
         },
-        "item_3": {
+        "item-3": {
           "type": "item",
           "settings": {
             "expand_by_default": false,
             "icon": "package-open",
-            "title": "Do you offer salon wholesale?",
-            "text": "<p>We do. Glow partners with salons across the U.S. through our wholesale program — pro pricing, marketing support, and access to The Glow Method curriculum. Reach out via the salon login link in the header.</p>"
-          }
-        },
-        "item_4": {
-          "type": "item",
-          "settings": {
-            "expand_by_default": false,
-            "icon": "globe",
-            "title": "Where do you ship?",
-            "text": "<p>We ship throughout the United States. Orders over $50 ship free.</p>"
+            "title": "Packaging",
+            "text": "<p>Our 100% recycled plastic dust bags will be equipped with a convenient drawstring closure. These dust bags are designed to be reusable, making them versatile for various purposes beyond just packaging fashion items. By opting for recycled plastic, we aim to minimise the demand for new plastic production and encourage the recycling of existing plastic materials.</p>"
           }
         }
       },
-      "block_order": ["item_1", "item_2", "item_3", "item_4"],
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "disabled": true,
       "settings": {
-        "title": "Frequently asked",
+        "title": "",
         "heading_tag": "h2",
         "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
         "subheading": "",
         "subheading_tag": "h3",
         "subheading_font_class": "fs-heading-5-base",
-        "heading_alignment": "left",
         "item_heading_font": "heading",
+        "auto_collapse_rows": false,
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom",
@@ -329,56 +354,103 @@
         "custom_content_width": 800
       }
     },
-    "cta_hero": {
-      "type": "image-hero",
+    "rich_text-4": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text-5": {
+      "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Try the tools Marissa swears by",
+            "title": "Designed in Melbourne",
             "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-3"
+            "heading_font_class": "fs-heading-2-base"
           }
         },
-        "button": {
-          "type": "button",
+        "spacer": {
+          "type": "spacer",
           "settings": {
-            "text": "Shop the lineup",
-            "link": "shopify://collections/all",
-            "button_style": "btn--primary"
+            "space": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our head office is located in Melbourne & our supplier is located in Toronto. This opportunity gives our company great insights as how our product is produced & builds wonderful relationships with our suppliers. We are very proud of the relationships & credentials we have with them.<br/></p>",
+            "text_font_class": "fs-body-100"
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "spacer",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "image_hero": {
+      "type": "image-hero",
+      "disabled": true,
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 60,
-        "mobile_height": 70,
+        "desktop_height": 80,
+        "mobile_height": 80,
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
         "text_color": "#ffffff",
-        "button_background_color": "#f4d5d2",
-        "button_text_color": "#171819",
-        "color_overlay": "#171819",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
-        "overlay_opacity": 25,
+        "overlay_opacity": 20,
         "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
+        "section_padding": "section--vertical-padding-top-only"
       }
     }
   },
   "order": [
     "main",
-    "hero",
-    "founder_story",
-    "pull_quote",
-    "philosophy",
-    "values",
-    "gallery",
-    "faq",
-    "cta_hero"
+    "video_hero",
+    "image_with_text_split",
+    "rich_text-1",
+    "gallery_carousel",
+    "rich_text-3",
+    "collapsible_row_list",
+    "rich_text-4",
+    "rich_text-5",
+    "image_hero"
   ]
 }
