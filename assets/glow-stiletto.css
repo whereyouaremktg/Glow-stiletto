@@ -7,6 +7,21 @@
 /* ---------- Page baseline ---------- */
 body { background: var(--glow-cream); color: var(--glow-color-text); }
 
+/* ---------- Global type: Gotham Ultra for all headings + buttons ---------- */
+h1, h2, h3, h4, h5, h6,
+.ff-heading, .ff-subheading,
+.fs-heading-1-base, .fs-heading-2-base, .fs-heading-3-base,
+.fs-heading-4-base, .fs-heading-5-base, .fs-heading-6-base {
+  font-family: "GothamUltra", var(--font-heading), serif;
+  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
+  text-transform: uppercase;
+}
+.btn, .btn span, .glow-btn {
+  font-family: "GothamUltra", var(--font-heading), sans-serif;
+  letter-spacing: var(--glow-button-letter-spacing, 0.14em);
+  text-transform: uppercase;
+}
+
 /* ---------- Typography: Gotham Ultra opt-in ---------- */
 html.glow-gotham-h1 h1,
 html.glow-gotham-h1 .ff-glow-display-1 {

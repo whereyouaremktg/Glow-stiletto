@@ -27,6 +27,10 @@
     /* Body font override — Proxima Nova is primary, theme font_body falls back */
     --font-body: "Proxima Nova", {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
 
+    /* Heading + button font override — Gotham Ultra is primary, theme font_heading falls back */
+    --font-heading: "GothamUltra", {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
+    --font-button: "GothamUltra", {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
+
     /* Palette tokens */
     --glow-blush: {{ settings.glow_color_blush }};
     --glow-blush-strong: {{ settings.glow_color_blush_strong }};
