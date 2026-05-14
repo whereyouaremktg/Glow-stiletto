@@ -29,7 +29,7 @@
           "type": "button",
           "settings": {
             "text": "SHOP THE SALE",
-            "link": "shopify://collections",
+            "link": "shopify://collections/glow-beauty",
             "button_style": "btn--primary"
           }
         }
