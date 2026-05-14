@@ -46,6 +46,14 @@
     "header": {
       "type": "header",
       "blocks": {
+        "mobile_menu_images_rrkwVd": {
+          "type": "mobile_menu_images",
+          "settings": {
+            "menu_name": "",
+            "aspect_ratio": "square",
+            "thumbnail_width": 60
+          }
+        },
         "full_width_meganav_zGCeg6": {
           "type": "full_width_meganav",
           "settings": {
@@ -70,6 +78,7 @@
         }
       },
       "block_order": [
+        "mobile_menu_images_rrkwVd",
         "full_width_meganav_zGCeg6"
       ],
       "settings": {

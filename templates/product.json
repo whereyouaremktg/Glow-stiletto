@@ -47,18 +47,32 @@
             "enable_sticky_atc_bar_mobile": true,
             "divider_width": "none"
           }
+        },
+        "accordion_abzpgi": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Details",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
         "product_header",
         "text_mKbFTT",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "accordion_abzpgi"
       ],
       "settings": {
         "enable_sticky_product_details": true,
-        "show_breadcrumbs": true,
-        "show_navigation_buttons": true,
+        "show_breadcrumbs": false,
+        "show_navigation_buttons": false,
         "auto_collapse_rows": false,
         "show_featured_media_first": false,
         "gallery_style": "thumbnails",
