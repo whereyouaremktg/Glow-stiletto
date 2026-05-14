@@ -220,7 +220,7 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   line-height: 1.05;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: var(--glow-heading-letter-spacing, 0.02em);
+  letter-spacing: 0.12em;
 }
 .glow-hero__body {
   max-width: 56ch;
