@@ -1,8 +1,10 @@
 {%- comment -%}
   Glow Beauty — runtime CSS tokens
-  Renders @font-face for Gotham Ultra + palette/spacing variables driven from theme settings.
+  Renders @font-face for Gotham Ultra + Proxima Nova + palette/spacing variables driven from theme settings.
   Loaded after Stiletto's theme-setting-vars so glow tokens override where intended.
 {%- endcomment -%}
+
+<link rel="preconnect" href="https://245729861.fs1.hubspotusercontent-na2.net" crossorigin>
 
 <style>
   @font-face {
@@ -13,7 +15,18 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("https://245729861.fs1.hubspotusercontent-na2.net/hubfs/245729861/Proxima%20Nova%20Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
+    /* Body font override — Proxima Nova is primary, theme font_body falls back */
+    --font-body: "Proxima Nova", {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
+
     /* Palette tokens */
     --glow-blush: {{ settings.glow_color_blush }};
     --glow-blush-strong: {{ settings.glow_color_blush_strong }};
