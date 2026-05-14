@@ -22,7 +22,7 @@
         "body_w46GcJ": {
           "type": "body",
           "settings": {
-            "text": "<p>Celebrate our 4th birthday by taking 20% off everything + free shipping. </p>"
+            "text": "<p><strong>Celebrate our 4th birthday by taking 20% off everything + free shipping. </strong></p>"
           }
         },
         "button_VMr7kt": {
@@ -44,7 +44,7 @@
         "focal_point": "top",
         "mobile_focal_point": "image_presentation",
         "height": "large",
-        "alignment": "center",
+        "alignment": "left",
         "full_bleed": true,
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
@@ -143,6 +143,36 @@
         "spacing": 0,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "collection_list_grid_PnLJ9A": {
+      "type": "collection-list-grid",
+      "name": "t:sections.collection_list_grid.presets.name",
+      "settings": {
+        "heading": "The LINEUP",
+        "heading_tag": "h4",
+        "subheading": "",
+        "link": "shopify://collections",
+        "link_text": "",
+        "button_style": "btn--callout",
+        "columns": "3",
+        "mobile_columns": "2",
+        "collection_list": [
+          "detangling-duo",
+          "smoothing-brush",
+          "the-detangling-brush",
+          "the-essentials-kit",
+          "the-mini-brush",
+          "the-styling-duo"
+        ],
+        "collection_listing_aspect_ratio": "natural",
+        "label_style": "beneath",
+        "overlay_title_background_style": "solid",
+        "overlay_text_color": "#171819",
+        "overlay_title_background": "#f4d5d2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "multi_column_gfiWbn": {
@@ -348,7 +378,7 @@
           "settings": {
             "text": "Shop the brush — $35",
             "link": "shopify://collections/all",
-            "button_style": "btn--secondary"
+            "button_style": "btn--primary"
           }
         }
       },
@@ -579,6 +609,7 @@
       "block_order": [
         "collection_XccgL4"
       ],
+      "disabled": true,
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
         "heading": "THE GLOW LINEUP",
@@ -634,62 +665,9 @@
       "name": "t:sections.testimonials.presets.name",
       "settings": {
         "image_size": "small",
-        "quote_font": "heading",
+        "quote_font": "body",
         "background_color": "",
         "text_color": "#000000",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "image_with_text_6JiBAB": {
-      "type": "image-with-text",
-      "blocks": {
-        "text_BGf8GW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Trusted by top salon artists in the US</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "heading_JmFLDJ": {
-          "type": "heading",
-          "settings": {
-            "title": "TRUSTED BY TOP SALONS",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-1-base"
-          }
-        },
-        "button_JgGJEG": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--secondary"
-          }
-        }
-      },
-      "block_order": [
-        "text_BGf8GW",
-        "heading_JmFLDJ",
-        "button_JgGJEG"
-      ],
-      "name": "t:sections.image_with_text.presets.name",
-      "settings": {
-        "image_position": "left",
-        "image": "shopify://shop_images/finals_11.jpg",
-        "aspect_ratio": "natural",
-        "focal_point": "image_presentation",
-        "image_caption": "",
-        "text_alignment": "left",
-        "show_small_image": true,
-        "image_small": "shopify://shop_images/10.png",
-        "image_small_aspect": "square",
-        "image_small_focal_point": "image_presentation",
-        "background_color": "",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -699,6 +677,7 @@
   "order": [
     "glow_hero_main",
     "grid_aPqkXj",
+    "collection_list_grid_PnLJ9A",
     "multi_column_gfiWbn",
     "image_hero_split_PFWHYY",
     "featured_brush",
@@ -706,7 +685,6 @@
     "glow_press_strip_RV3q8g",
     "video_hero_ELjfdg",
     "featured_collection_grid_ABgxr6",
-    "testimonials_EYEVmp",
-    "image_with_text_6JiBAB"
+    "testimonials_EYEVmp"
   ]
 }
