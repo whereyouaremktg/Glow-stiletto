@@ -85,7 +85,7 @@
             "button_style": "btn--secondary",
             "background_color": "#f4d5d2",
             "text_color": "#171819",
-            "button_background_color": "#f4d5d2",
+            "button_background_color": "#171819",
             "button_text_color": "#000000",
             "color_overlay": "#b2cae7",
             "color_overlay_gradient": "",
