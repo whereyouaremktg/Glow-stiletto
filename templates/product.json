@@ -25,6 +25,14 @@
             "show_custom_badges": true
           }
         },
+        "text_mKbFTT": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-200",
+            "text": "<p>We reimagined this haircare staple to be functional, reliable and timeless.</p>",
+            "column_placement": "right"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -38,14 +46,6 @@
             "enable_sticky_atc_bar_desktop": true,
             "enable_sticky_atc_bar_mobile": true,
             "divider_width": "none"
-          }
-        },
-        "text_mKbFTT": {
-          "type": "text",
-          "settings": {
-            "text_font_class": "fs-body-100",
-            "text": "{{ product.description }}",
-            "column_placement": "right"
           }
         },
         "accordion_HaFDhV": {
@@ -77,9 +77,9 @@
       },
       "block_order": [
         "product_header",
+        "text_mKbFTT",
         "quantity_selector",
         "buy_buttons",
-        "text_mKbFTT",
         "accordion_HaFDhV",
         "accordion_GBeV3f"
       ],
@@ -90,10 +90,10 @@
         "auto_collapse_rows": false,
         "show_featured_media_first": true,
         "gallery_style": "thumbnails",
-        "gallery_style_mobile": "carousel",
-        "gallery_size": "medium",
+        "gallery_style_mobile": "thumbnails",
+        "gallery_size": "xlarge",
         "gallery_overflow": "never",
-        "enable_video_looping": true,
+        "enable_video_looping": false,
         "enable_product_lightbox": true,
         "image_aspect_ratio": "natural",
         "enable_multiple_variant_media": false,
@@ -117,14 +117,181 @@
         "focal_point_mobile": "center",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
-        "overlay_opacity": 40,
+        "overlay_opacity": 0,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_with_text_split_hgPXA4": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "heading_pc4yj4": {
+          "type": "heading",
+          "settings": {
+            "title": "TRUSTED BY SALON PROFESSIONALS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text_iLDFzk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GLOW brushes are put to the test every day at some of the top salons in the world. They are designed to last + work with all hair types.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pc4yj4",
+        "text_iLDFzk"
+      ],
+      "name": "t:sections.image_with_text_split.presets.name",
+      "settings": {
+        "image_position": "right",
+        "image_mobile_position": "below-content",
+        "image_padding": "none",
+        "image": "shopify://shop_images/30.png",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "content_alignment": "left",
+        "background_color": "#D9A49C",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "grid_rGNz8b": {
+      "type": "grid",
+      "blocks": {
+        "item_WCH44z": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "video",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "background_video": "shopify://files/videos/Kait Bywater UGC video.mov",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "item_nT6Hix": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 800,
+            "mobile_height": 500,
+            "media_type": "video",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "background_video": "shopify://files/videos/7ea197db7fd54d588d93e13b1378dde9.mov",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "item_KDgwHk": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 500,
+            "media_type": "video",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "background_video": "shopify://files/videos/Jane Talbert UGC video 2.MOV",
+            "video_focal_point": "center",
+            "mobile_video_focal_point": "center",
+            "media_fit": "cover",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "item_WCH44z",
+        "item_nT6Hix",
+        "item_KDgwHk"
+      ],
+      "name": "t:sections.grid.presets.name",
+      "settings": {
+        "heading": "REAL RESULTS",
+        "heading_tag": "h3",
+        "subheading": "<p>See the Glow brush in action </p>",
+        "content_alignment": "left",
+        "enable_animation": true,
+        "full_width": true,
+        "spacing": 24,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "recently_viewed_products_LRtQe9": {
@@ -146,6 +313,8 @@
   "order": [
     "main",
     "video_hero_VzyLJW",
+    "image_with_text_split_hgPXA4",
+    "grid_rGNz8b",
     "recently_viewed_products_LRtQe9"
   ]
 }

@@ -145,6 +145,112 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "multi_column_gfiWbn": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_7MVeEg": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Plastic bristles damage hair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_CJez46": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/brushing_2.gif",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Metal does it better",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine in one motion.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_fJj68N": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "Built to last. Built for you",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_7MVeEg",
+        "image_column_CJez46",
+        "image_column_fJj68N"
+      ],
+      "name": "Education",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 4,
+        "row_spacing": 4,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": true,
+        "background_color": "#b2cae7",
+        "text_color": "#171819",
+        "button_background_color": "#faf6f1",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "image_hero_split_PFWHYY": {
       "type": "image-hero-split",
       "blocks": {
@@ -268,112 +374,6 @@
         "full_bleed": true,
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "multi_column_gfiWbn": {
-      "type": "multi-column",
-      "blocks": {
-        "image_column_7MVeEg": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/5.png",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Plastic bristles damage hair",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>They snag. Create static. Break strands. Your brush shouldn’t be working against you.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_CJez46": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/brushing_2.gif",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Metal does it better",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Stainless steel bristles glide through knots without breakage. They exfoliate the scalp, distribute oils, and add shine in one motion.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_column_fJj68N": {
-          "type": "image_column",
-          "settings": {
-            "image": "shopify://shop_images/productsselects_5.jpg",
-            "image_width": 100,
-            "aspect_ratio": "square",
-            "enable_image_crop_circle": true,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "Built to last. Built for you",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Wet or dry. All hair types. Extension-safe. Behind the chair or at home. This is the brush you’ve been missing.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_column_7MVeEg",
-        "image_column_CJez46",
-        "image_column_fJj68N"
-      ],
-      "name": "t:sections.multi_column.presets.name",
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "small",
-        "columns": "3",
-        "column_spacing": 4,
-        "row_spacing": 4,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "1",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": true,
-        "background_color": "#b2cae7",
-        "text_color": "#171819",
-        "button_background_color": "#faf6f1",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "grid_zVmt3V": {
@@ -641,18 +641,72 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "image_with_text_6JiBAB": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_BGf8GW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Trusted by top salon artists in the US</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "heading_JmFLDJ": {
+          "type": "heading",
+          "settings": {
+            "title": "TRUSTED BY TOP SALONS",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "button_JgGJEG": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "text_BGf8GW",
+        "heading_JmFLDJ",
+        "button_JgGJEG"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify://shop_images/finals_11.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "text_alignment": "left",
+        "show_small_image": true,
+        "image_small": "shopify://shop_images/10.png",
+        "image_small_aspect": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
     "glow_hero_main",
     "grid_aPqkXj",
+    "multi_column_gfiWbn",
     "image_hero_split_PFWHYY",
     "featured_brush",
-    "multi_column_gfiWbn",
     "grid_zVmt3V",
     "glow_press_strip_RV3q8g",
     "video_hero_ELjfdg",
     "featured_collection_grid_ABgxr6",
-    "testimonials_EYEVmp"
+    "testimonials_EYEVmp",
+    "image_with_text_6JiBAB"
   ]
 }
