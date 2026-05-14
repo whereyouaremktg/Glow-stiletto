@@ -21,6 +21,21 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: var(--glow-button-letter-spacing, 0.14em);
   text-transform: uppercase;
 }
+/* Navigation stays in body font (Proxima Nova) */
+.header__links,
+.header__links a,
+.header__links button,
+.header__links-list,
+.fs-navigation-base,
+.navigation__submenu-trigger,
+.drawer-menu__link,
+.meganav__list-parent a,
+.meganav__list-parent h4 {
+  font-family: var(--font-body), sans-serif;
+  text-transform: none;
+  letter-spacing: var(--font-navigation-base-letter-spacing, 0);
+  font-weight: 500;
+}
 
 /* ---------- Typography: Gotham Ultra opt-in ---------- */
 html.glow-gotham-h1 h1,
