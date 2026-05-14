@@ -209,8 +209,8 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .glow-hero__body {
   max-width: 56ch;
-  font-size: clamp(15px, 1.2vw, 18px);
-  line-height: 1.6;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.5;
 }
 
 /* ============================================================
