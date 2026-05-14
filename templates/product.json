@@ -272,10 +272,10 @@
         "heading": "REAL RESULTS",
         "heading_tag": "h3",
         "subheading": "<p>See the Glow brush in action </p>",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "enable_animation": true,
         "full_width": true,
-        "spacing": 24,
+        "spacing": 9,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
