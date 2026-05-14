@@ -22,7 +22,7 @@
         "body_w46GcJ": {
           "type": "body",
           "settings": {
-            "text": "<p><strong>Celebrate our 4th birthday by taking 20% off everything + free shipping. </strong></p>"
+            "text": "<p><strong>Celebrate our 4th birthday by taking 20% off everything </strong></p>"
           }
         },
         "button_VMr7kt": {
@@ -44,7 +44,7 @@
         "focal_point": "top",
         "mobile_focal_point": "image_presentation",
         "height": "full",
-        "alignment": "center",
+        "alignment": "right",
         "full_bleed": true,
         "outer_bg": "#faf6f1",
         "text_color": "#ffffff",
