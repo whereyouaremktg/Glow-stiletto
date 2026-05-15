@@ -575,6 +575,7 @@
     },
     "video_hero_ELjfdg": {
       "type": "video-hero",
+      "disabled": true,
       "name": "t:sections.video_hero.presets.name",
       "settings": {
         "image_aspect": "original",
