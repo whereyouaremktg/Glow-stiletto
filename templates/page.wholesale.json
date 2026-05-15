@@ -17,6 +17,287 @@
         "custom_content_width": 700
       }
     },
+    "hero": {
+      "type": "image-hero",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "FOR SALONS & STYLISTS"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Loved behind the chair.",
+            "heading_tag": "h1",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Glow is in salons across the country. Carry the brush your clients won't stop asking about.",
+            "subheading_tag": "h2",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer-2": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Apply for wholesale",
+            "link": "#shopify-section-177888514119bdea36",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "spacer", "subheading", "spacer-2", "button"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 80,
+        "mobile_height": 80,
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#f4d5d2",
+        "button_text_color": "#171819",
+        "color_overlay": "#171819",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 35,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "stats_strip": {
+      "type": "multi-column",
+      "blocks": {
+        "col_1": {
+          "type": "image_column",
+          "settings": {
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "01",
+            "heading": "Salon partners nationwide",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>From boutique studios to multi-location salons.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "col_2": {
+          "type": "image_column",
+          "settings": {
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "4.9★",
+            "heading": "2,400+ five-star reviews",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>From stylists and clients alike.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "col_3": {
+          "type": "image_column",
+          "settings": {
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "14 yrs",
+            "heading": "Founder behind the chair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Created by Marissa — stylist, salon owner, educator.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["col_1", "col_2", "col_3"],
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 24,
+        "row_spacing": 24,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "#faf6f1",
+        "text_color": "#171819",
+        "button_background_color": "#f4d5d2",
+        "button_text_color": "#171819",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "why_glow": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "WHY STYLISTS LOVE GLOW"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Built to work as hard as you do.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Metal bristles, not plastic.</strong> Glide through wet or dry hair without snagging. Exfoliate the scalp on the way through.</p><p><strong>Drainage hole on the wet brush.</strong> Doesn't trap water, doesn't get gross.</p><p><strong>Extension-safe.</strong> Won't pull tape-ins or wefts. Works on every hair type.</p><p><strong>Built to last.</strong> Real materials. Stylists report them surviving years of daily salon use.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer-2": {
+          "type": "spacer",
+          "settings": {
+            "space": 20
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Apply now",
+            "link": "#shopify-section-177888514119bdea36",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "spacer", "text", "spacer-2", "button"],
+      "settings": {
+        "image_position": "left",
+        "image_mobile_position": "above-content",
+        "image_padding": "none",
+        "image": "",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "content_alignment": "left",
+        "background_color": "#faf6f1",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "salon_testimonial": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "image": "",
+            "aspect_ratio": "portrait",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“These are the only brushes I keep at every station. My stylists asked me to start ordering more after the first week. Clients constantly ask where they can buy one — and now I can sell it to them.”",
+            "author": "— Salon owner, Scottsdale AZ"
+          }
+        }
+      },
+      "block_order": ["testimonial_1"],
+      "settings": {
+        "image_size": "small",
+        "quote_font": "heading",
+        "background_color": "#e8b5b0",
+        "text_color": "#171819",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "form_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "BECOME A STOCKIST"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Apply to carry Glow",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer-1": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tell us a bit about your salon and we'll be in touch within 48 business hours. Small studios, solo stylists, and multi-location salons all welcome.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "spacer-1", "text"],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 720
+      }
+    },
     "177888514119bdea36": {
       "type": "apps",
       "blocks": {
@@ -47,10 +328,300 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "what_you_get": {
+      "type": "multi-column",
+      "blocks": {
+        "benefit_1": {
+          "type": "image_column",
+          "settings": {
+            "image": "",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "01",
+            "heading": "Pro pricing",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Wholesale rates on the full Glow lineup. Healthy margins built in. No minimums after your first order.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "benefit_2": {
+          "type": "image_column",
+          "settings": {
+            "image": "",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "02",
+            "heading": "Marketing support",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Product photography, co-branded social assets, in-salon displays, and launch kits. We help you sell it.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "benefit_3": {
+          "type": "image_column",
+          "settings": {
+            "image": "",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": true,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "03",
+            "heading": "Education access",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Your team gets access to The Glow Method — Marissa's curriculum on blonding, extensions, and shadowing.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["benefit_1", "benefit_2", "benefit_3"],
+      "settings": {
+        "title": "What you get as a Glow partner",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "<p>Built to make stocking Glow easy from day one.</p>",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 32,
+        "row_spacing": 32,
+        "column_alignment": "center",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": true,
+        "background_color": "#e2dedc",
+        "text_color": "#171819",
+        "button_background_color": "#faf6f1",
+        "button_text_color": "#171819",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "gallery": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "In the salon",
+            "text": "<p>Stylist using the Detangling Brush during a blowout service.</p>"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "On the station",
+            "text": "<p>Glow brushes living on a stylist's station between clients.</p>"
+          }
+        },
+        "image_3": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "At the retail wall",
+            "text": "<p>Glow on display at a partner salon.</p>"
+          }
+        },
+        "image_4": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "Behind the chair",
+            "text": "<p>Marissa teaching a Glow Method class.</p>"
+          }
+        }
+      },
+      "block_order": ["image_1", "image_2", "image_3", "image_4"],
+      "settings": {
+        "heading": "Glow in the wild",
+        "heading_tag": "h2",
+        "subheading": "<p>Real partners, real chairs.</p>",
+        "link": "",
+        "link_text": "",
+        "columns": "3",
+        "mobile_columns": "1",
+        "loop_carousel": true,
+        "aspect_ratio": "portrait",
+        "image_caption_style": "beneath",
+        "image_caption_size": "fs-body-75",
+        "overlay_text_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_text_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "faq": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "q_1": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "package-open",
+            "title": "What are the minimums?",
+            "text": "<p>Brushes are ordered in groups of 10 per color for your first order. After that, no minimums — reorder what you need, when you need it.</p>"
+          }
+        },
+        "q_2": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "scissors",
+            "title": "Who qualifies?",
+            "text": "<p>Licensed stylists, salons, salon suites, and beauty professionals with an active business. We review every application — small salons and solo stylists welcome.</p>"
+          }
+        },
+        "q_3": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "leaf",
+            "title": "How fast do orders ship?",
+            "text": "<p>Most wholesale orders ship within 2–3 business days of approval. Restocks ship same-day where possible.</p>"
+          }
+        },
+        "q_4": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "globe",
+            "title": "Do you offer marketing assets?",
+            "text": "<p>Yes — product photography, co-branded social templates, in-salon display cards, and launch kits to introduce Glow to your clients.</p>"
+          }
+        },
+        "q_5": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "t-shirt",
+            "title": "Can my team take The Glow Method?",
+            "text": "<p>Yes — Glow partner salons get priority access and discounted seats for Marissa's blonding, extensions, and shadowing curriculum.</p>"
+          }
+        }
+      },
+      "block_order": ["q_1", "q_2", "q_3", "q_4", "q_5"],
+      "settings": {
+        "title": "Frequently asked",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "heading_alignment": "left",
+        "item_heading_font": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "final_cta": {
+      "type": "image-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to carry Glow?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Apply in under 2 minutes. Hear back in under 48 hours.",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer-2": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Apply now",
+            "link": "#shopify-section-177888514119bdea36",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["heading", "spacer", "subheading", "spacer-2", "button"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 60,
+        "mobile_height": 70,
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#f4d5d2",
+        "button_text_color": "#171819",
+        "color_overlay": "#171819",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 30,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
     }
   },
   "order": [
     "main",
-    "177888514119bdea36"
+    "hero",
+    "stats_strip",
+    "why_glow",
+    "salon_testimonial",
+    "form_intro",
+    "177888514119bdea36",
+    "what_you_get",
+    "gallery",
+    "faq",
+    "final_cta"
   ]
 }
