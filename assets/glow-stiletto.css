@@ -426,3 +426,13 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   max-width: 70ch;
   color: var(--glow-color-text, #171819);
 }
+
+/* Hide Smile.io launcher while Upcart drawer is open.
+   The body.glow-cart-open class is toggled by glow-stiletto.js. */
+body.glow-cart-open #smile-home,
+body.glow-cart-open #smile-shopify-app-host,
+body.glow-cart-open [id^="smile-"],
+body.glow-cart-open iframe[src*="smile.io"] {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
