@@ -673,6 +673,41 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "1779069824cde89395": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_video_slider_qwExqy": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-video-slider/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "show-by-tag": false,
+            "layout": "wave",
+            "shadow": "basic",
+            "show-rating": true,
+            "show-reviewer-name": true,
+            "hide-arrows-mobile": true,
+            "auto-play": true,
+            "show-border": false,
+            "border-width": 1,
+            "border-radius": 16,
+            "text-color": "",
+            "rating-icon-color": "",
+            "border-color": "",
+            "play-button-color": "",
+            "shadow-color": "",
+            "product-id": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_video_slider_qwExqy"
+      ],
+      "settings": {
+        "heading": "Glow In The WILD",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
@@ -686,6 +721,7 @@
     "glow_press_strip_RV3q8g",
     "video_hero_ELjfdg",
     "featured_collection_grid_ABgxr6",
-    "testimonials_EYEVmp"
+    "testimonials_EYEVmp",
+    "1779069824cde89395"
   ]
 }
