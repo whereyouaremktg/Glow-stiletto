@@ -364,7 +364,7 @@
           "type": "button",
           "settings": {
             "text": "Shop the brush — $35",
-            "link": "shopify://collections/all",
+            "link": "shopify://products/the-detangling-brush",
             "button_style": "btn--primary"
           }
         }
