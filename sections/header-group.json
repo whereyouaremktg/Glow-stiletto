@@ -14,6 +14,14 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_LcgkCf": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p>Take 20% off your order at checkout - no code needed!</p>",
+            "title_mobile": "",
+            "link": ""
+          }
+        },
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
@@ -24,6 +32,7 @@
         }
       },
       "block_order": [
+        "announcement_LcgkCf",
         "announcement-bar-1"
       ],
       "settings": {
