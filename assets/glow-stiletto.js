@@ -68,4 +68,54 @@
   // Theme editor: re-init when sections are loaded/reordered
   document.addEventListener('shopify:section:load', function (e) { initAll(e.target); });
   document.addEventListener('shopify:section:reorder', function (e) { initAll(e.target); });
+
+  // Toggle body.glow-cart-open whenever Upcart's drawer is visible.
+  // CSS uses this class to hide overlays (Smile launcher, etc) that
+  // would otherwise sit on top of the cart.
+  function initCartOpenWatcher() {
+    var DRAWER_SELECTORS = '[id^="upcart"], [class*="upcart"], .Upcart-Cart, .upcart-cart, .upcart-drawer';
+    var BODY_CLASS = 'glow-cart-open';
+    var lastState = null;
+
+    function isDrawerOpen() {
+      var nodes = document.querySelectorAll(DRAWER_SELECTORS);
+      for (var i = 0; i < nodes.length; i++) {
+        var el = nodes[i];
+        // Skip the embed/script tags injected by the app block
+        if (el.tagName === 'SCRIPT' || el.tagName === 'STYLE' || el.tagName === 'LINK') continue;
+        var rect = el.getBoundingClientRect();
+        if (rect.width > 100 && rect.height > 100) {
+          var style = window.getComputedStyle(el);
+          if (style.display !== 'none' && style.visibility !== 'hidden' && parseFloat(style.opacity) > 0.1) {
+            return true;
+          }
+        }
+      }
+      return false;
+    }
+
+    function syncBodyClass() {
+      var open = isDrawerOpen();
+      if (open === lastState) return;
+      lastState = open;
+      document.body.classList.toggle(BODY_CLASS, open);
+    }
+
+    var mo = new MutationObserver(function () {
+      // Throttle: run once per animation frame
+      if (mo._raf) return;
+      mo._raf = requestAnimationFrame(function () {
+        mo._raf = null;
+        syncBodyClass();
+      });
+    });
+    mo.observe(document.body, { attributes: true, childList: true, subtree: true, attributeFilter: ['style', 'class', 'aria-hidden'] });
+    syncBodyClass();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCartOpenWatcher);
+  } else {
+    initCartOpenWatcher();
+  }
 })();
