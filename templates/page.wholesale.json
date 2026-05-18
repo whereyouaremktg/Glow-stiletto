@@ -53,13 +53,6 @@
           "settings": {
             "space": 24
           }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "#shopify-section-177888514119bdea36",
-            "button_style": "btn--primary"
-          }
         }
       },
       "block_order": [
@@ -67,13 +60,13 @@
         "heading",
         "spacer",
         "subheading",
-        "spacer-2",
-        "button"
+        "spacer-2"
       ],
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 80,
-        "mobile_height": 80,
+        "desktop_height": 60,
+        "mobile_height": 60,
+        "image": "shopify://shop_images/10.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -87,192 +80,6 @@
         "overlay_opacity": 35,
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "stats_strip": {
-      "type": "multi-column",
-      "blocks": {
-        "col_1": {
-          "type": "image_column",
-          "settings": {
-            "image_position": "above_text",
-            "small_caption": "",
-            "accent": "01",
-            "heading": "Salon partners nationwide",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>From boutique studios to multi-location salons.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "col_2": {
-          "type": "image_column",
-          "settings": {
-            "image_position": "above_text",
-            "small_caption": "",
-            "accent": "4.9★",
-            "heading": "2,400+ five-star reviews",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>From stylists and clients alike.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "col_3": {
-          "type": "image_column",
-          "settings": {
-            "image_position": "above_text",
-            "small_caption": "",
-            "accent": "14 yrs",
-            "heading": "Founder behind the chair",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Created by Marissa — stylist, salon owner, educator.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "col_1",
-        "col_2",
-        "col_3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "small",
-        "columns": "3",
-        "column_spacing": 24,
-        "row_spacing": 24,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "1",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "center",
-        "background_behind_columns": false,
-        "background_color": "#faf6f1",
-        "text_color": "#171819",
-        "button_background_color": "#f4d5d2",
-        "button_text_color": "#171819",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "why_glow": {
-      "type": "image-with-text-split",
-      "blocks": {
-        "accent": {
-          "type": "accent",
-          "settings": {
-            "accent": "WHY STYLISTS LOVE GLOW"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Built to work as hard as you do.",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-3"
-          }
-        },
-        "spacer": {
-          "type": "spacer",
-          "settings": {
-            "space": 16
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Metal bristles, not plastic.</strong> Glide through wet or dry hair without snagging. Exfoliate the scalp on the way through.</p><p><strong>Drainage hole on the wet brush.</strong> Doesn't trap water, doesn't get gross.</p><p><strong>Extension-safe.</strong> Won't pull tape-ins or wefts. Works on every hair type.</p><p><strong>Built to last.</strong> Real materials. Stylists report them surviving years of daily salon use.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "spacer-2": {
-          "type": "spacer",
-          "settings": {
-            "space": 20
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "#shopify-section-177888514119bdea36",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "accent",
-        "heading",
-        "spacer",
-        "text",
-        "spacer-2",
-        "button"
-      ],
-      "settings": {
-        "image_position": "left",
-        "image_mobile_position": "above-content",
-        "image_padding": "none",
-        "image": "",
-        "aspect_ratio": "square",
-        "focal_point": "image_presentation",
-        "content_alignment": "left",
-        "background_color": "#faf6f1",
-        "text_color": "#171819",
-        "button_background_color": "#171819",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "salon_testimonial": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_1": {
-          "type": "testimonial",
-          "settings": {
-            "product": "",
-            "image_position": "right",
-            "image": "",
-            "aspect_ratio": "portrait",
-            "focal_point": "image_presentation",
-            "show_rating": true,
-            "rating": 5,
-            "quote": "“These are the only brushes I keep at every station. My stylists asked me to start ordering more after the first week. Clients constantly ask where they can buy one — and now I can sell it to them.”",
-            "author": "— Salon owner, Scottsdale AZ"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_1"
-      ],
-      "settings": {
-        "image_size": "small",
-        "quote_font": "heading",
-        "background_color": "#e8b5b0",
-        "text_color": "#171819",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "form_intro": {
@@ -330,9 +137,9 @@
             "form_id": "463791",
             "text_color": "#202020",
             "button_background_color": "#202020",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#1878B9",
-            "errors_color": "#E02229",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
             "text_alignment": "center",
             "form_alignment": "center",
             "padding_top": 0,
@@ -352,18 +159,118 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
+    "why_glow": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "WHY STYLISTS LOVE GLOW"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Built to work as hard as you do.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Metal bristles, not plastic.</strong> Glide through wet or dry hair without snagging. Exfoliate the scalp on the way through.</p><p><strong>Drainage hole on the wet brush.</strong> Doesn't trap water, doesn't get gross.</p><p><strong>Extension-safe.</strong> Won't pull tape-ins or wefts. Works on every hair type.</p><p><strong>Built to last.</strong> Real materials. Stylists report them surviving years of daily salon use.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "spacer-2": {
+          "type": "spacer",
+          "settings": {
+            "space": 20
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "#shopify-section-177888514119bdea36",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "accent",
+        "heading",
+        "spacer",
+        "text",
+        "spacer-2",
+        "button"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image_mobile_position": "above-content",
+        "image_padding": "none",
+        "image": "shopify://shop_images/April_2026_story_series_copy_3.png",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "content_alignment": "left",
+        "background_color": "#faf6f1",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "salon_testimonial": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“These are the only brushes I keep at every station. My stylists asked me to start ordering more after the first week. Clients constantly ask where they can buy one — and now I can sell it to them.”",
+            "author": "— Salon owner, Scottsdale AZ"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_size": "small",
+        "quote_font": "heading",
+        "background_color": "#e8b5b0",
+        "text_color": "#171819",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "what_you_get": {
       "type": "multi-column",
       "blocks": {
         "benefit_1": {
           "type": "image_column",
           "settings": {
-            "image": "",
             "image_width": 100,
             "aspect_ratio": "square",
             "enable_image_crop_circle": true,
             "focal_point": "image_presentation",
             "image_position": "above_text",
+            "image_link": "",
             "small_caption": "",
             "accent": "01",
             "heading": "Pro pricing",
@@ -380,12 +287,12 @@
         "benefit_2": {
           "type": "image_column",
           "settings": {
-            "image": "",
             "image_width": 100,
             "aspect_ratio": "square",
             "enable_image_crop_circle": true,
             "focal_point": "image_presentation",
             "image_position": "above_text",
+            "image_link": "",
             "small_caption": "",
             "accent": "02",
             "heading": "Marketing support",
@@ -402,12 +309,12 @@
         "benefit_3": {
           "type": "image_column",
           "settings": {
-            "image": "",
             "image_width": 100,
             "aspect_ratio": "square",
             "enable_image_crop_circle": true,
             "focal_point": "image_presentation",
             "image_position": "above_text",
+            "image_link": "",
             "small_caption": "",
             "accent": "03",
             "heading": "Education access",
@@ -502,6 +409,7 @@
         "subheading": "<p>Real partners, real chairs.</p>",
         "link": "",
         "link_text": "",
+        "button_style": "btn--callout",
         "columns": "3",
         "mobile_columns": "1",
         "loop_carousel": true,
@@ -581,6 +489,7 @@
         "subheading_tag": "h3",
         "subheading_font_class": "fs-heading-5-base",
         "item_heading_font": "heading",
+        "auto_collapse_rows": false,
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom",
@@ -623,6 +532,7 @@
           "type": "button",
           "settings": {
             "link": "#shopify-section-177888514119bdea36",
+            "link_text": "Read more",
             "button_style": "btn--primary"
           }
         }
@@ -638,6 +548,7 @@
         "image_aspect": "custom",
         "desktop_height": 60,
         "mobile_height": 70,
+        "image": "shopify://shop_images/April_2026_story_series_copy_2.png",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
         "media_link": "",
@@ -657,11 +568,10 @@
   "order": [
     "main",
     "hero",
-    "stats_strip",
-    "why_glow",
-    "salon_testimonial",
     "form_intro",
     "177888514119bdea36",
+    "why_glow",
+    "salon_testimonial",
     "what_you_get",
     "gallery",
     "faq",
