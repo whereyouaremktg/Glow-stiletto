@@ -128,11 +128,6 @@
           "custom_css_card": "/* Custom CSS */"
         }
       },
-      "4252583770683550135": {
-        "type": "shopify://apps/redo/blocks/redo_app_embed/c613644b-6df4-4d11-b336-43a5c06745a1",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -176,6 +171,11 @@
       },
       "13897900069594145190": {
         "type": "shopify://apps/accessibility-assistant/blocks/app-embed/e146c6fb-5384-4cc3-946f-03621d06f241",
+        "disabled": true,
+        "settings": {}
+      },
+      "4252583770683550135": {
+        "type": "shopify://apps/redo/blocks/redo_app_embed/c613644b-6df4-4d11-b336-43a5c06745a1",
         "disabled": true,
         "settings": {}
       }
