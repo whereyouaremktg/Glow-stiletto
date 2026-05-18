@@ -1,0 +1,185 @@
+{%- liquid
+  assign heading = section.settings.heading
+  assign intro = section.settings.intro
+-%}
+
+<div
+  class="
+    faq
+    section
+    section--divider-{{ section.settings.divider_style }}
+    {{ section.settings.section_padding }}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="faq"
+  style="
+    {% if section.settings.content_width == 'custom' %}
+      --content-width: {{ section.settings.custom_content_width }}px;
+    {% endif %}
+  "
+>
+  <div class="faq__inner">
+    {%- unless heading == blank -%}
+      <h2 class="faq__heading ff-heading fs-heading-3-base">{{ heading }}</h2>
+    {%- endunless -%}
+
+    {%- unless intro == blank -%}
+      <div class="faq__intro ff-body fs-body-100 rte">{{ intro }}</div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="faq__list">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'qa' -%}
+            <details class="faq__details" {{ block.shopify_attributes }}>
+              <summary class="faq__summary ff-heading fs-heading-5-base">
+                <span class="faq__question">{{ block.settings.question }}</span>
+                <span class="faq__icon" aria-hidden="true">
+                  {% render 'icon', icon: 'plus' %}
+                </span>
+              </summary>
+              <div class="faq__answer ff-body fs-body-100 rte">
+                {{ block.settings.answer }}
+              </div>
+            </details>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "section",
+  "class": "shopify-section--faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently asked"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro (optional)"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "Divider",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "solid", "label": "Solid" }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "Section padding",
+      "options": [
+        { "value": "section--vertical-padding-none", "label": "None" },
+        { "value": "section--vertical-padding-top-bottom", "label": "Top and bottom" },
+        { "value": "section--vertical-padding-top-only", "label": "Top only" },
+        { "value": "section--vertical-padding-bottom-only", "label": "Bottom only" }
+      ],
+      "default": "section--vertical-padding-top-bottom"
+    },
+    {
+      "type": "radio",
+      "id": "content_width",
+      "label": "Content width",
+      "options": [
+        { "value": "full", "label": "Full" },
+        { "value": "custom", "label": "Custom" }
+      ],
+      "default": "custom"
+    },
+    {
+      "type": "range",
+      "id": "custom_content_width",
+      "label": "Custom content width",
+      "min": 400,
+      "max": 1000,
+      "step": 50,
+      "unit": "px",
+      "default": 800
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qa",
+      "name": "Q&A",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Will it hurt my scalp if I have fine hair?",
+            "answer": "<p>The metal bristles are designed to glide, not dig. Hundreds of fine-haired customers say it feels gentler than the plastic detanglers they were using before. Use light pressure and let the brush do the work.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use it in the shower?",
+            "answer": "<p>Yes. The brush works on wet or dry hair. A drainage hole in the cushion lets water out so it doesn't sit and cause damage.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Will it cause breakage?",
+            "answer": "<p>Used with normal pressure, the bristles glide through hair instead of pulling on it, which reduces breakage compared to plastic brushes that bend and snag. Work from the ends up on severe tangles. Don't force it.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Does it work on extensions?",
+            "answer": "<p>Yes. It's safe on all hair types and extensions. Many of the stylists who recommend us use it specifically for brushing through extensions and color-treated hair.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "How do I clean it?",
+            "answer": "<p>TODO before publishing — Paul to provide cleaning steps.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Will the bristles fall out?",
+            "answer": "<p>TODO before publishing — Paul to provide QC standard and warranty language.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
