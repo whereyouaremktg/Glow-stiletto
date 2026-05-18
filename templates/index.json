@@ -363,8 +363,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "text": "Shop the brush — $35",
-            "link": "shopify://products/the-detangling-brush",
+            "text": "Shop the brush",
+            "link": "shopify://products/the-smoothing-brush",
             "button_style": "btn--primary"
           }
         }
@@ -382,6 +382,66 @@
         "image": "shopify://shop_images/17.png",
         "focal_point": "top",
         "image_position": "left",
+        "mobile_order": "text_first",
+        "show_band": false,
+        "band_text": "",
+        "band_bg": "#b8c5d6",
+        "outer_bg": "#faf6f1",
+        "content_bg": "#ffffff",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "glow_editorial_split_HjtWWU": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "chip_overlay_AP3hb4": {
+          "type": "chip_overlay",
+          "settings": {
+            "text": "RESTOCKED FAVORITE"
+          }
+        },
+        "rating_h9hDeJ": {
+          "type": "rating",
+          "settings": {
+            "text": "4.9/5 (2,400+ Reviews)"
+          }
+        },
+        "heading_nXYgzQ": {
+          "type": "heading",
+          "settings": {
+            "text": "THE SMOOTHING BRUSH",
+            "tag": "h2"
+          }
+        },
+        "body_kgtHyX": {
+          "type": "body",
+          "settings": {
+            "text": "<p>100% natural boar + nylon bristles. Boar hydrates from root to tip, nylon exfoliates the scalp. Hand-polished acetate handle finished by hand. Made to live on your vanity, not in a drawer.</p>"
+          }
+        },
+        "button_krDUbJ": {
+          "type": "button",
+          "settings": {
+            "text": "Shop the brush — $35",
+            "link": "shopify://products/the-detangling-brush",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "chip_overlay_AP3hb4",
+        "rating_h9hDeJ",
+        "heading_nXYgzQ",
+        "body_kgtHyX",
+        "button_krDUbJ"
+      ],
+      "name": "Smoothing Brush",
+      "settings": {
+        "image": "shopify://shop_images/boar_brush_reveal_story_series.png",
+        "focal_point": "top",
+        "image_position": "right",
         "mobile_order": "text_first",
         "show_band": false,
         "band_text": "",
@@ -755,6 +815,7 @@
     "collection_list_grid_PnLJ9A",
     "multi_column_gfiWbn",
     "featured_brush",
+    "glow_editorial_split_HjtWWU",
     "image_hero_split_PFWHYY",
     "grid_zVmt3V",
     "testimonials_EYEVmp",
