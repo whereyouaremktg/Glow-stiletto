@@ -145,6 +145,45 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "glow_press_strip_BwpKGF": {
+      "type": "glow-press-strip",
+      "blocks": {
+        "logo_jFcHLA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Urban_Outfitters_logo_svg.png",
+            "label": ""
+          }
+        },
+        "logo_y3qaKV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Revolve-Logo.png",
+            "label": ""
+          }
+        },
+        "logo_VW7giK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
+            "label": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_jFcHLA",
+        "logo_y3qaKV",
+        "logo_VW7giK"
+      ],
+      "name": "Glow press strip",
+      "settings": {
+        "background": "#F4D5D2",
+        "columns": "3",
+        "greyscale": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "collection_list_grid_PnLJ9A": {
       "type": "collection-list-grid",
       "name": "t:sections.collection_list_grid.presets.name",
@@ -281,58 +320,6 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "image_hero_split_PFWHYY": {
-      "type": "image-hero-split",
-      "blocks": {
-        "image_YUt96r": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Email_marketing_portrait_size_1.png",
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "title": "",
-            "heading_tag": "h2",
-            "text": "",
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--primary"
-          }
-        },
-        "image_w6h4iM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "title": "You Deserve A Glow Up",
-            "heading_tag": "h2",
-            "text": "<p>See why the Detangler Brush is a must have in your morning routine</p>",
-            "link": "shopify://products/glow-beauty-hair-brush",
-            "link_text": "Learn More",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_YUt96r",
-        "image_w6h4iM"
-      ],
-      "name": "t:sections.image_hero_split.presets.name",
-      "settings": {
-        "image_aspect": "original",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "text_position": "center",
-        "text_color": "#ffffff",
-        "button_background_color": "#e8b5b0",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 0,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
-      }
-    },
     "featured_brush": {
       "type": "glow-editorial-split",
       "blocks": {
@@ -404,6 +391,58 @@
         "full_bleed": true,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "image_hero_split_PFWHYY": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image_YUt96r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Email_marketing_portrait_size_1.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_w6h4iM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Glow_Beauty_product_photos_website_2_6a656bb7-2f5a-4796-8e93-b784869b9121.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "You Deserve A Glow Up",
+            "heading_tag": "h2",
+            "text": "<p>See why the Detangler Brush is a must have in your morning routine</p>",
+            "link": "shopify://products/glow-beauty-hair-brush",
+            "link_text": "Learn More",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_YUt96r",
+        "image_w6h4iM"
+      ],
+      "name": "t:sections.image_hero_split.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "text_position": "center",
+        "text_color": "#ffffff",
+        "button_background_color": "#e8b5b0",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
       }
     },
     "grid_zVmt3V": {
@@ -533,6 +572,53 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "testimonials_EYEVmp": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_eiwLf7": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
+            "aspect_ratio": "portrait",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“I will never buy another hair brush! These are the best and I have several of them now. I keep them everywhere & recently bought a mini to add to my work bag.”",
+            "author": "- Elizabeth T. (Real Glow Customer)"
+          }
+        },
+        "testimonial_LK3jqL": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_position": "right",
+            "image": "shopify://shop_images/A3B60B78-8D95-4BD8-9920-CF92FE38C72C.png",
+            "aspect_ratio": "square",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“It is truly detangling, in all instances of my hair. Greasy, smooth, wet, dry all of the above! The quality is so nice and beautiful, and the stainless steel bristles make it feel like I’m at a salon every time I use it. I’m obsessed and will recommend to everyone I can!.”",
+            "author": "- Mya R. (Real Glow Customer)"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_eiwLf7",
+        "testimonial_LK3jqL"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "image_size": "small",
+        "quote_font": "body",
+        "background_color": "",
+        "text_color": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "glow_press_strip_RV3q8g": {
       "type": "glow-press-strip",
       "blocks": {
@@ -575,7 +661,6 @@
     },
     "video_hero_ELjfdg": {
       "type": "video-hero",
-      "disabled": true,
       "name": "t:sections.video_hero.presets.name",
       "settings": {
         "image_aspect": "original",
@@ -627,53 +712,6 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "testimonials_EYEVmp": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_eiwLf7": {
-          "type": "testimonial",
-          "settings": {
-            "product": "",
-            "image_position": "right",
-            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
-            "aspect_ratio": "portrait",
-            "focal_point": "image_presentation",
-            "show_rating": true,
-            "rating": 5,
-            "quote": "“I will never buy another hair brush! These are the best and I have several of them now. I keep them everywhere & recently bought a mini to add to my work bag.”",
-            "author": "- Elizabeth T. (Real Glow Customer)"
-          }
-        },
-        "testimonial_LK3jqL": {
-          "type": "testimonial",
-          "settings": {
-            "product": "",
-            "image_position": "right",
-            "image": "shopify://shop_images/A3B60B78-8D95-4BD8-9920-CF92FE38C72C.png",
-            "aspect_ratio": "square",
-            "focal_point": "image_presentation",
-            "show_rating": true,
-            "rating": 5,
-            "quote": "“It is truly detangling, in all instances of my hair. Greasy, smooth, wet, dry all of the above! The quality is so nice and beautiful, and the stainless steel bristles make it feel like I’m at a salon every time I use it. I’m obsessed and will recommend to everyone I can!.”",
-            "author": "- Mya R. (Real Glow Customer)"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_eiwLf7",
-        "testimonial_LK3jqL"
-      ],
-      "name": "t:sections.testimonials.presets.name",
-      "settings": {
-        "image_size": "small",
-        "quote_font": "body",
-        "background_color": "",
-        "text_color": "#000000",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
     "1779069824cde89395": {
       "type": "apps",
       "blocks": {
@@ -713,15 +751,16 @@
   "order": [
     "glow_hero_main",
     "grid_aPqkXj",
+    "glow_press_strip_BwpKGF",
     "collection_list_grid_PnLJ9A",
     "multi_column_gfiWbn",
-    "image_hero_split_PFWHYY",
     "featured_brush",
+    "image_hero_split_PFWHYY",
     "grid_zVmt3V",
+    "testimonials_EYEVmp",
     "glow_press_strip_RV3q8g",
     "video_hero_ELjfdg",
     "featured_collection_grid_ABgxr6",
-    "testimonials_EYEVmp",
     "1779069824cde89395"
   ]
 }
