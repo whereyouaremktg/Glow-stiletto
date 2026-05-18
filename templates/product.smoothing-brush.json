@@ -77,7 +77,7 @@
         "show_featured_media_first": false,
         "gallery_style": "thumbnails",
         "gallery_style_mobile": "carousel",
-        "gallery_size": "medium",
+        "gallery_size": "large",
         "gallery_overflow": "2",
         "enable_video_looping": true,
         "enable_product_lightbox": true,
@@ -88,39 +88,6 @@
         "hide_mobile_carousel_dots": false,
         "enable_gift_card_recipient": true,
         "enable_animation": true
-      }
-    },
-    "177888635977bfb031": {
-      "type": "apps",
-      "blocks": {
-        "loox_reviews_loox_gallery_carousel_section_nVAEVJ": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-gallery-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "maxWidth": 1100,
-            "borderRadius": 60,
-            "itemsPerView": 5,
-            "mobileItemsPerView": 1,
-            "imageRatio": "1",
-            "reviewerNameColor": "#ffffff",
-            "starsColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
-            "shadow": "none",
-            "border_active": false,
-            "border_width": 2,
-            "border_color": "#000000",
-            "productIds": ""
-          }
-        }
-      },
-      "block_order": [
-        "loox_reviews_loox_gallery_carousel_section_nVAEVJ"
-      ],
-      "settings": {
-        "heading": "What They're Saying",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "carried_at_heading": {
@@ -148,17 +115,17 @@
     "carried_at_logos": {
       "type": "glow-press-strip",
       "blocks": {
+        "logo_RcgygW": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Revolve-Logo.png",
+            "label": ""
+          }
+        },
         "logo_anthro": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
-            "label": ""
-          }
-        },
-        "logo_revolve": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Revolve-Logo.png",
             "label": ""
           }
         },
@@ -171,16 +138,96 @@
         }
       },
       "block_order": [
+        "logo_RcgygW",
         "logo_anthro",
-        "logo_revolve",
         "logo_urban"
       ],
       "settings": {
         "background": "#faf6f1",
-        "columns": "3",
+        "columns": "4",
         "greyscale": true,
-        "padding_top": 16,
-        "padding_bottom": 48
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "177888635977bfb031": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_gallery_carousel_section_nVAEVJ": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-gallery-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 60,
+            "itemsPerView": 5,
+            "mobileItemsPerView": 1,
+            "imageRatio": "1",
+            "reviewerNameColor": "#ffffff",
+            "starsColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "none",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_gallery_carousel_section_nVAEVJ"
+      ],
+      "settings": {
+        "heading": "What They're Saying",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "qa_1": {
+          "type": "qa",
+          "settings": {
+            "question": "Will it hurt my scalp if I have fine hair?",
+            "answer": "<p>The metal bristles are designed to glide, not dig. Hundreds of fine-haired customers say it feels gentler than the plastic detanglers they were using before. Use light pressure and let the brush do the work.</p>"
+          }
+        },
+        "qa_2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use it in the shower?",
+            "answer": "<p>Yes. The brush works on wet or dry hair. A drainage hole in the cushion lets water out so it doesn't sit and cause damage.</p>"
+          }
+        },
+        "qa_3": {
+          "type": "qa",
+          "settings": {
+            "question": "Will it cause breakage?",
+            "answer": "<p>Used with normal pressure, the bristles glide through hair instead of pulling on it, which reduces breakage compared to plastic brushes that bend and snag. Work from the ends up on severe tangles. Don't force it.</p>"
+          }
+        },
+        "qa_4": {
+          "type": "qa",
+          "settings": {
+            "question": "Does it work on extensions?",
+            "answer": "<p>Yes. It's safe on all hair types and extensions. Many of the stylists who recommend us use it specifically for brushing through extensions and color-treated hair.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "qa_1",
+        "qa_2",
+        "qa_3",
+        "qa_4"
+      ],
+      "settings": {
+        "heading": "Frequently asked",
+        "intro": "",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 1000
       }
     },
     "image_with_text_i84F9P": {
@@ -220,7 +267,7 @@
         "background_color": "",
         "text_color": "#000000",
         "button_background_color": "#000000",
-        "button_text_color": "#FFFFFF",
+        "button_text_color": "#ffffff",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -431,81 +478,18 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
-    },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "qa_1": {
-          "type": "qa",
-          "settings": {
-            "question": "Will it hurt my scalp if I have fine hair?",
-            "answer": "<p>The metal bristles are designed to glide, not dig. Hundreds of fine-haired customers say it feels gentler than the plastic detanglers they were using before. Use light pressure and let the brush do the work.</p>"
-          }
-        },
-        "qa_2": {
-          "type": "qa",
-          "settings": {
-            "question": "Can I use it in the shower?",
-            "answer": "<p>Yes. The brush works on wet or dry hair. A drainage hole in the cushion lets water out so it doesn't sit and cause damage.</p>"
-          }
-        },
-        "qa_3": {
-          "type": "qa",
-          "settings": {
-            "question": "Will it cause breakage?",
-            "answer": "<p>Used with normal pressure, the bristles glide through hair instead of pulling on it, which reduces breakage compared to plastic brushes that bend and snag. Work from the ends up on severe tangles. Don't force it.</p>"
-          }
-        },
-        "qa_4": {
-          "type": "qa",
-          "settings": {
-            "question": "Does it work on extensions?",
-            "answer": "<p>Yes. It's safe on all hair types and extensions. Many of the stylists who recommend us use it specifically for brushing through extensions and color-treated hair.</p>"
-          }
-        },
-        "qa_5": {
-          "type": "qa",
-          "settings": {
-            "question": "How do I clean it?",
-            "answer": "<p>TODO before publishing — Paul to provide cleaning steps.</p>"
-          }
-        },
-        "qa_6": {
-          "type": "qa",
-          "settings": {
-            "question": "Will the bristles fall out?",
-            "answer": "<p>TODO before publishing — Paul to provide QC standard and warranty language.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "qa_1",
-        "qa_2",
-        "qa_3",
-        "qa_4",
-        "qa_5",
-        "qa_6"
-      ],
-      "settings": {
-        "heading": "Frequently asked",
-        "intro": "",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom",
-        "content_width": "custom",
-        "custom_content_width": 800
-      }
     }
   },
   "order": [
     "main",
-    "177888635977bfb031",
     "carried_at_heading",
     "carried_at_logos",
+    "177888635977bfb031",
+    "faq",
     "image_with_text_i84F9P",
     "video_hero_VzyLJW",
     "image_with_text_split_hgPXA4",
     "grid_rGNz8b",
-    "recently_viewed_products_LRtQe9",
-    "faq"
+    "recently_viewed_products_LRtQe9"
   ]
 }
