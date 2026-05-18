@@ -79,9 +79,10 @@
     "quick_search_suggested_links": [
       "best-sellers"
     ],
-    "social_facebook_link": "#",
-    "social_instagram_link": "#",
-    "social_tiktok_link": "#",
+    "social_facebook_link": "https://www.facebook.com/glowbeautyhairofficial/",
+    "social_instagram_link": "https://www.instagram.com/glowbeauty.hair/",
+    "social_tiktok_link": "https://www.tiktok.com/@glowbeautyhair",
+    "favicon": "shopify://shop_images/Glow_LogoMark_Black.svg",
     "enable_back_to_top": true,
     "glow_use_gotham_logo": false,
     "glow_heading_letter_spacing": 100,
