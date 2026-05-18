@@ -48,6 +48,7 @@
       "blocks": {
         "mobile_menu_images_rrkwVd": {
           "type": "mobile_menu_images",
+          "disabled": true,
           "settings": {
             "menu_name": "",
             "aspect_ratio": "square",
