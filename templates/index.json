@@ -424,8 +424,8 @@
         "button_krDUbJ": {
           "type": "button",
           "settings": {
-            "text": "Shop the brush — $35",
-            "link": "shopify://products/the-detangling-brush",
+            "text": "Shop the brush",
+            "link": "shopify://products/the-smoothing-brush",
             "button_style": "btn--primary"
           }
         }
