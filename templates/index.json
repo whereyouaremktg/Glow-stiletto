@@ -15,14 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "text": "GLOW TURNS 4",
+            "text": "GLOW BIRTHDAY SALE",
             "tag": "h1"
           }
         },
         "body_w46GcJ": {
           "type": "body",
           "settings": {
-            "text": "<p><strong>Celebrate our 4th birthday by taking 20% off everything </strong></p>"
+            "text": "<p><strong>Celebrate Our 4th Birthday By Taking 20% Off Everything + Free Shipping</strong></p>"
           }
         },
         "button_VMr7kt": {
@@ -177,7 +177,7 @@
       ],
       "name": "Glow press strip",
       "settings": {
-        "background": "#F4D5D2",
+        "background": "#f4d5d2",
         "columns": "3",
         "greyscale": true,
         "padding_top": 40,
