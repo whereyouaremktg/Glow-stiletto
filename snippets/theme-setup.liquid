@@ -82,6 +82,11 @@
     coreData: {
       n: "Stiletto",
       v: "v5.2.2",
+    },
+    customer: {
+      isLoggedIn: {% if customer %}true{% else %}false{% endif %},
+      tags: {% if customer %}{{ customer.tags | json }}{% else %}[]{% endif %},
+      isWholesaler: {% if customer.tags contains 'wholesaler' %}true{% else %}false{% endif %}
     }
   }
 
