@@ -93,7 +93,77 @@
     "glow_button_shape": "soft",
     "product_card_swatch_size": "small",
     "quick_search_max_result_size": 6,
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "11532412952436166569": {
+        "type": "shopify://apps/loox-reviews/blocks/loox-inject/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+        "disabled": false,
+        "settings": {}
+      },
+      "13897900069594145190": {
+        "type": "shopify://apps/accessibility-assistant/blocks/app-embed/e146c6fb-5384-4cc3-946f-03621d06f241",
+        "disabled": false,
+        "settings": {}
+      },
+      "7147999719060634790": {
+        "type": "shopify://apps/gsc-countdown-timer/blocks/countdown-bar/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "14952540001915115444": {
+        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
+        "disabled": false,
+        "settings": {}
+      },
+      "9685009021672784835": {
+        "type": "shopify://apps/g-combined-listings/blocks/swatch_renderer/b3e63011-8382-4b7f-8929-7fe2b1aec125",
+        "disabled": false,
+        "settings": {
+          "enable_swatch_product_page": false,
+          "enable_swatch_product_card_1": false,
+          "enable_swatch_product_card_2": false,
+          "swatch_option_identifiers": "Color, Colour, Couleur, Colore, Farbe,\nPattern, Patrón, Motif, Muster, Motivo,\nMaterial, Matériau, Materiale,\nFinish, Finition, Finitura, Oberfläche, Acabado",
+          "custom_css_prod": "/* Custom CSS */",
+          "custom_css_card": "/* Custom CSS */"
+        }
+      },
+      "4252583770683550135": {
+        "type": "shopify://apps/redo/blocks/redo_app_embed/c613644b-6df4-4d11-b336-43a5c06745a1",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "1232542678405107163": {
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
+        "disabled": false,
+        "settings": {}
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "6406956604159796213": {
+        "type": "shopify://apps/smart-seo/blocks/smartseo/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "installed_preset_name": "Stiletto",
   "presets": {
