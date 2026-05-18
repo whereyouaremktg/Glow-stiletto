@@ -44,8 +44,8 @@
           "type": "subheading",
           "settings": {
             "subheading": "Glow is in salons across the country. Carry the brush your clients won't stop asking about.",
-            "subheading_tag": "h2",
-            "subheading_font_class": "fs-heading-5-base"
+            "subheading_tag": "h5",
+            "subheading_font_class": "fs-heading-6-base"
           }
         },
         "spacer-2": {
@@ -403,6 +403,7 @@
         "image_3",
         "image_4"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Glow in the wild",
         "heading_tag": "h2",
