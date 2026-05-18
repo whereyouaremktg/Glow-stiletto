@@ -1,0 +1,366 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "product_header": {
+          "type": "product_header",
+          "settings": {
+            "show_divider": true,
+            "show_vendor": false,
+            "show_sku": false,
+            "show_discount": false,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": false,
+            "show_custom_badges": true
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-200",
+            "text": "<p><em>100% boar + nylon bristles</em></p>",
+            "column_placement": "right"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "enable_sticky_atc_bar_desktop": true,
+            "enable_sticky_atc_bar_mobile": true,
+            "divider_width": "none"
+          }
+        },
+        "smile_io_rewards": {
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#171819",
+            "secondary_colour": "#faf6f1",
+            "preview_scenario": "customer_can_earn_points",
+            "should_show_icon": true,
+            "should_show_points_label": true,
+            "points_text_logged_in": "<p>Earn [points_amount] when you buy this item.</p>",
+            "points_text_logged_out": "<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"
+          }
+        },
+        "accordion_details": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Product Details",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p><strong>The Smoothing Brush</strong></p><p>+ 100% natural boar + nylon bristles</p><p>+ Hand-polished acetate plate handle</p><p>+ Comfortable rubber cushion</p><p>+ Complimentary dust bag</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        },
+        "accordion_additional": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Additional Information",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p><strong>Length:</strong> 9\"<br/><strong>Width:</strong> 3\"<br/><strong>Brush Head:</strong> 5\"<br/><strong>Bristle Length:</strong> 0.5\" - 0.75\"</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        },
+        "accordion_bristles": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "100% natural boar + nylon bristles",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>Rich in keratin, boar bristles hydrate and smooth your hair from root to tip.</p><p>Flexible nylon bristles gently exfoliate your scalp while effortlessly detangling.</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        },
+        "accordion_handle": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Hand-polished acetate plate handle",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>Each brush is polished by hand for a shiny &amp; smooth finish to match your strands.</p><p><strong>Please note:</strong> due to the inherent nature of acetate plate and the hand-polishing process, some brushes may show veining.</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        },
+        "accordion_cushion": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Comfortable rubber cushion",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>The Smoothing Brush offers a soft cushion to painlessly smooth all hair types.</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        },
+        "accordion_dust_bag": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Complimentary dust bag",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>Each Smoothing Brush comes with a black velvet dust bag to store and protect your brush when not in use.</p>",
+            "page_for_content": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_header",
+        "subtitle",
+        "smile_io_rewards",
+        "quantity_selector",
+        "buy_buttons",
+        "accordion_details",
+        "accordion_additional",
+        "accordion_bristles",
+        "accordion_handle",
+        "accordion_cushion",
+        "accordion_dust_bag"
+      ],
+      "settings": {
+        "enable_sticky_product_details": true,
+        "show_breadcrumbs": false,
+        "show_navigation_buttons": false,
+        "auto_collapse_rows": false,
+        "show_featured_media_first": false,
+        "gallery_style": "thumbnails",
+        "gallery_style_mobile": "carousel",
+        "gallery_size": "medium",
+        "gallery_overflow": "2",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "natural",
+        "enable_multiple_variant_media": true,
+        "enable_mobile_carousel_looping": true,
+        "show_mobile_carousel_images_full_width": true,
+        "hide_mobile_carousel_dots": false,
+        "enable_gift_card_recipient": true,
+        "enable_animation": true
+      }
+    },
+    "loox_reviews": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_gallery_carousel_section_nVAEVJ": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-gallery-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 60,
+            "itemsPerView": 5,
+            "mobileItemsPerView": 1,
+            "imageRatio": "1",
+            "reviewerNameColor": "#ffffff",
+            "starsColor": "#ffffff",
+            "arrows_backgroundColor": "#FFFFFF",
+            "arrows_iconColor": "#9A9A9A",
+            "shadow": "none",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_gallery_carousel_section_nVAEVJ"
+      ],
+      "settings": {
+        "heading": "What They're Saying",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Not all brushes are created equal",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "spacer": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Fact: you don’t know the importance of a good hairbrush until you have a good hairbrush.</em></p><p>Feel like your brush is ripping your hair out and taking way too long to detangle? Struggle to clean your brush? Tired of your brush looking like an eye sore with the rest of your haircare?</p><p>Our goal at Glow Beauty is to provide you with a functional brush that not only works better than others on the market, but looks good doing it.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "spacer",
+        "text"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "banner": {
+      "type": "image-hero",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 60,
+        "mobile_height": 70,
+        "image": "shopify://shop_images/Email_marketing_portrait_size_1_copy_15639fe6-7d1a-4cf3-8fd5-d4cfe8386c15.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#f4d5d2",
+        "button_text_color": "#171819",
+        "color_overlay": "#171819",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "more_details": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "care": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Care instructions",
+            "text": "<p>Dry clean your brush frequently by removing the loose hair and dust build-up. For best results, use a comb to rake the hair away from the cushion and lightly scrub anywhere dust has accumulated with a small cleaning brush (like a toothbrush). Store your Boar Bristle Brush in its accompanying dust bag.</p><p>Occasionally the brush will need a deeper cleaning. Start by dry cleaning the brush as explained above. Make a lather of lukewarm water and soapy water. Do not use detergents or strong chemicals. Dip a small cleaning brush into the suds and use it to scrub the bristles &amp; pad of the Boar Bristle Brush. Dip the cleaning brush into clean rinsing water and work that through the bristles. Shake the Boar Bristle Brush to remove any water and leave it to dry with the bristles facing downward.</p><p>Do not dry the bristles with a towel or hot tools.</p><p><a href=\"/pages/brushcare\"><em>See our full cleaning instructions here</em></a>.</p>"
+          }
+        },
+        "best_practices": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Best practices",
+            "text": "<p>+ Use the brush daily for best results in achieving smooth, healthy hair. This will also help reduce the amount of static that is created when using the brush.</p><p>+ Do not use heat directly on the bristles.</p><p>+ Do not use strong chemicals or solvents on the brush.</p><p>+ Do not soak the brush.</p><p>+ If you have thin hair, we recommend avoiding using the brush on wet hair.</p>"
+          }
+        },
+        "why_boar": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Why boar + nylon bristles?",
+            "text": "<p><strong>Boar bristles</strong> are rich in keratin, which helps <strong>naturally hydrate and smooth your hair</strong> from root to tip. <strong>Paired with flexible nylon bristles, this combo gently exfoliates the scalp</strong> while effortlessly detangling.</p><p>The result? Softer, shinier strands and a healthier scalp with every brush.</p>"
+          }
+        },
+        "hair_types": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Hair types",
+            "text": "<p><strong>The Smoothing Brushes are made for all hair types (even children)!</strong></p><p>The boar bristles help hydrate and smooth strands, while flexible nylon bristles gently exfoliate the scalp and detangle with ease. This brush is especially loved for adding shine and softness, leaving hair polished and healthy-looking.</p>"
+          }
+        },
+        "credibility": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Credibility + Warranty",
+            "text": "<p>Glow Beauty was created and tested by a professional hair stylist who went back and forth with manufacturers for months to get it <strong>just right.</strong></p><p>Marissa had used so many hairbrushes over the years but could never find anything that performed well AND looked good. Our mission has <em>always</em> been to provide customers with a high-quality brush that has a luxurious, timeless look — because we know how much a good brush matters.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "care",
+        "best_practices",
+        "why_boar",
+        "hair_types",
+        "credibility"
+      ],
+      "settings": {
+        "title": "More details",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "item_heading_font": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "recently_viewed": {
+      "type": "recently-viewed-products",
+      "name": "t:sections.recently_viewed_products.presets.name",
+      "settings": {
+        "title": "You may like",
+        "heading_tag": "h2",
+        "subheading": "",
+        "maximum_products": 8,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "loox_reviews",
+    "rich_text_intro",
+    "banner",
+    "more_details",
+    "recently_viewed"
+  ]
+}
