@@ -24,6 +24,7 @@
         },
         "announcement-bar-1": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "title": "<p>Free shipping on all US orders over $50</p>",
             "title_mobile": "",
