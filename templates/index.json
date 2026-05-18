@@ -459,7 +459,7 @@
         "image_YUt96r": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Email_marketing_portrait_size_1.png",
+            "image": "shopify://shop_images/finals_12.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "title": "",
@@ -721,6 +721,7 @@
     },
     "video_hero_ELjfdg": {
       "type": "video-hero",
+      "disabled": true,
       "name": "t:sections.video_hero.presets.name",
       "settings": {
         "image_aspect": "original",
