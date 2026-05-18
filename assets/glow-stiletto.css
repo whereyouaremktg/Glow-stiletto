@@ -436,3 +436,67 @@ body.glow-cart-open iframe[src*="smile.io"] {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+/* === Upcart drawer styling === */
+
+.upcart-cart,
+.upcart-cart-body,
+.upcart-public-header,
+.upcart-footer,
+.upcart-public-rewards,
+.upcart-public-addons,
+.upcart-public-cart-summary {
+  font-family: var(--font-body, 'Inter'), sans-serif;
+  color: var(--glow-color-text, #171819);
+}
+
+.upcart-header-text,
+.upcart-upsells-title,
+.upcart-addons-title,
+.upcart-recommendations-title,
+.upcart-public-addons__content-title {
+  font-family: 'GothamUltra', var(--font-heading, 'Inter'), sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Stop the checkout button from clipping the price (the trailing "|") */
+.upcart-checkout-button,
+.upcart-checkout-button-container .upcart-checkout-button {
+  white-space: normal !important;
+  line-height: 1.25 !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  min-height: 52px;
+}
+
+/* Redo "Checkout with perks" add-on: blend it into the cart instead of
+   sitting in a separate gray panel that visually disconnects the section */
+.upcart-public-addons,
+.upcart-addons {
+  background-color: transparent !important;
+  border-top: 1px solid rgba(23, 24, 25, 0.08);
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 14px 20px !important;
+}
+
+.upcart-public-addons__content-title,
+.upcart-addons-title {
+  font-size: 15px;
+}
+
+.upcart-public-addons__content-description {
+  font-size: 13px;
+  opacity: 0.72;
+}
+
+/* Custom reward widget — render a real progress bar (matches the
+   .progress-bar / .progress classes in the Upcart custom CSS) */
+#custom-reward-widget {
+  font-family: var(--font-body, 'Inter'), sans-serif;
+}
+#custom-reward-widget .custom-reward-message {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
