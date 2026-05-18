@@ -1,0 +1,30 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "product_header": {"type":"product_header","settings":{"show_divider":true,"show_vendor":false,"show_sku":false,"show_discount":false,"discount_format":"percent_off","show_product_rating":false,"show_sale_badge":false,"show_custom_badges":true}},
+        "subtitle": {"type":"text","settings":{"text_font_class":"fs-body-200","text":"<p><strong>INTENTIONAL DRAINAGE HOLE</strong><br/><em>the dynamic duo</em></p>","column_placement":"right"}},
+        "quantity_selector": {"type":"quantity_selector","settings":{"show_labels":true}},
+        "buy_buttons": {"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"enable_sticky_atc_bar_desktop":true,"enable_sticky_atc_bar_mobile":true,"divider_width":"none"}},
+        "smile_io_rewards": {"type":"shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6","settings":{"primary_colour":"#171819","secondary_colour":"#faf6f1","preview_scenario":"customer_can_earn_points","should_show_icon":true,"should_show_points_label":true,"points_text_logged_in":"<p>Earn [points_amount] when you buy this item.</p>","points_text_logged_out":"<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"}},
+        "accordion_details": {"type":"accordion","settings":{"expand_by_default":false,"column_placement":"right","heading":"Product Details","heading_tag":"h3","icon":"none","content":"<p><strong>The Detangling Brush</strong></p><p>+ Durable, soft cushion, adaptable for all head shapes</p><p>+ Comfortable plastic handle</p><p>+ Gentle, yet durable metal bristles</p><p>+ Intentional drainage hole</p><p><strong>The Mini Detangling Brush</strong></p><p>+ Firm, soft cushion, adaptable for all head shapes</p><p>+ Comfortable plastic handle</p><p>+ Gentle, yet durable metal bristles</p><p>+ Convenient keychain hole</p><p>+ Intentional drainage hole</p>","page_for_content":"","custom_liquid":""}},
+        "accordion_additional": {"type":"accordion","settings":{"expand_by_default":false,"column_placement":"right","heading":"Additional Information","heading_tag":"h3","icon":"none","content":"<p><strong>The Detangling Brush</strong></p><p><strong>Color:</strong> Nude, Blue, White<br/><strong>Length:</strong> 8 3/4\"<br/><strong>Width:</strong> 3\"<br/><strong>Brush Head:</strong> 5\"</p><p><strong>The Mini Detangling Brush</strong></p><p><strong>Color:</strong> Nude, Blue, White<br/><strong>Length:</strong> 6.75\"<br/><strong>Width:</strong> 2.25\"<br/><strong>Brush Head:</strong> 3.75\"</p>","page_for_content":"","custom_liquid":""}}
+      },
+      "block_order": ["product_header","subtitle","smile_io_rewards","quantity_selector","buy_buttons","accordion_details","accordion_additional"],
+      "settings": {"enable_sticky_product_details":true,"show_breadcrumbs":false,"show_navigation_buttons":false,"auto_collapse_rows":false,"show_featured_media_first":false,"gallery_style":"thumbnails","gallery_style_mobile":"carousel","gallery_size":"medium","gallery_overflow":"2","enable_video_looping":true,"enable_product_lightbox":true,"image_aspect_ratio":"natural","enable_multiple_variant_media":true,"enable_mobile_carousel_looping":true,"show_mobile_carousel_images_full_width":true,"hide_mobile_carousel_dots":false,"enable_gift_card_recipient":true,"enable_animation":true}
+    },
+    "loox_reviews": {"type":"apps","blocks":{"loox_reviews_loox_gallery_carousel_section_nVAEVJ":{"type":"shopify://apps/loox-reviews/blocks/loox-gallery-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"maxWidth":1100,"borderRadius":60,"itemsPerView":5,"mobileItemsPerView":1,"imageRatio":"1","reviewerNameColor":"#ffffff","starsColor":"#ffffff","arrows_backgroundColor":"#FFFFFF","arrows_iconColor":"#9A9A9A","shadow":"none","border_active":false,"border_width":2,"border_color":"#000000","productIds":""}}},"block_order":["loox_reviews_loox_gallery_carousel_section_nVAEVJ"],"settings":{"heading":"What They're Saying","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}},
+    "recently_viewed": {"type":"recently-viewed-products","name":"t:sections.recently_viewed_products.presets.name","settings":{"title":"You may like","heading_tag":"h2","subheading":"","maximum_products":8,"columns":"4","mobile_columns":"2","enable_animation":true,"divider_style":"none","section_padding":"section--vertical-padding-top-bottom"}}
+  },
+  "order": ["main","loox_reviews","recently_viewed"]
+}
