@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "smile_header": {
+      "type": "apps",
+      "blocks": {
+        "header": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#171819",
+            "secondary_colour": "#faf6f1",
+            "background_image": "shopify://shop_images/00027456-R1-013-5.jpg",
+            "title_text": "Welcome to the club",
+            "description_text": "Spend money, earn points, and get rewards",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": false,
+            "discover_button_text": "Discover the loyalty program"
+          }
+        }
+      },
+      "block_order": ["header"],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "smile_how_it_works": {
+      "type": "apps",
+      "blocks": {
+        "how_it_works": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-how-it-works/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#171819",
+            "secondary_colour": "#faf6f1",
+            "title_text": "How it works...",
+            "step1_heading_text": "Join",
+            "step1_description_text": "Sign up or login to start earning right away.",
+            "step2_heading_text": "Earn",
+            "step2_description_text": "Earn points for every dollar spent, following us on socials, referring your friends, and more!",
+            "step3_heading_text": "Redeem",
+            "step3_description_text": "Redeem points for discounts on your next purchase."
+          }
+        }
+      },
+      "block_order": ["how_it_works"],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "smile_earning": {
+      "type": "apps",
+      "blocks": {
+        "earning": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-earning-rule-highlight/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#171819",
+            "secondary_colour": "#faf6f1",
+            "image": "shopify://shop_images/00027456-R1-035-16.jpg",
+            "title_text": "Earn points for every order placed",
+            "description_text": "The more you spend, the more you save.",
+            "button_text": "Ways to earn"
+          }
+        }
+      },
+      "block_order": ["earning"],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "smile_redeeming": {
+      "type": "apps",
+      "blocks": {
+        "redeeming": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-redeeming-rule-highlight/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#171819",
+            "secondary_colour": "#faf6f1",
+            "image": "shopify://shop_images/00027456-R1-063-30.jpg",
+            "title_text": "Redeem points for rewards",
+            "description_text": "Redeem points on your next purchase, or save them up for higher value rewards.",
+            "button_text": "Ways to redeem"
+          }
+        }
+      },
+      "block_order": ["redeeming"],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "disclaimer": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Please note: rewards cannot be stacked with other promotions. Wholesale orders do not qualify for rewards.</em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": ["text"],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "smile_header",
+    "smile_how_it_works",
+    "smile_earning",
+    "smile_redeeming",
+    "disclaimer"
+  ]
+}
