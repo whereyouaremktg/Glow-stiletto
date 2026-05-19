@@ -1,0 +1,215 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image-hero": {
+      "type": "image-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Salon Directory",
+            "heading_tag": "h1",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/IMG_0530.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "text_position": "flex-start_flex-start",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich-text-intro": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>find Glow Beauty brushes near you!!!</strong></p><p><em>please reach out to the store prior to stopping by to check inventory♡</em></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "collapsible-row-list-states": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item-az": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Arizona",
+            "text": "<p><strong>Mist Salon</strong><br/>222 E Warner Road #3<br/>Chandler, AZ 85225<br/><a href=\"https://www.instagram.com/hairbykenzie.t/\" target=\"_blank\" title=\"https://www.instagram.com/hairbykenzie.t/\">@hairbykenzie.t</a></p><p><strong>Hainsworth & Co</strong><br/>4147 N Goldwater Blvd #105<br/>Scottsdale, AZ 85251<br/><a href=\"https://www.instagram.com/hainsworthcosalon/\" target=\"_blank\" title=\"https://www.instagram.com/hainsworthcosalon/\">@hainsworthcosalon</a><br/><a href=\"https://www.hainsworthco.com\" target=\"_blank\" title=\"https://www.hainsworthco.com\">www.hainsworthco.com</a><br/>480-280-3331 (call)<br/>info@hainsworthco.com</p><p><strong>Hair by Alison</strong><br/>1511 S Higley Rd #15<br/>Gilbert, AZ 85296<br/><a href=\"https://www.instagram.com/alisongrothhair\" target=\"_blank\" title=\"https://www.instagram.com/alisongrothhair\">@alisongrothhair</a><br/><a href=\"https://www.hairbyalison.com\" target=\"_blank\" title=\"https://www.hairbyalison.com\">www.hairbyalison.com</a><br/>480-276-2669 (text)</p><p><strong>Hair Habits with Aly Bigler</strong><br/>1434 W Elliot Rd Suite 103, Room 8<br/>Gilbert, AZ 85233<br/><a href=\"https://www.instagram.com/alybigler\" target=\"_blank\" title=\"https://www.instagram.com/alybigler\">@alybigler</a><br/><a href=\"https://vagaro.com/alybigler\" target=\"_blank\" title=\"https://vagaro.com/alybigler\">vagaro.com/alybigler</a><br/>833-969-0900 (text)</p><p><strong>KB Styling</strong><br/>1511 S Higley Rd Level 2<br/>Gilbert, AZ 85296<br/><a href=\"https://www.instagram.com/Kbstyling\" target=\"_blank\" title=\"https://www.instagram.com/Kbstyling\">@kbstyling</a><br/><a href=\"https://www.kbstyling.co\" target=\"_blank\" title=\"https://www.kbstyling.co\">www.kbstyling.co</a><br/>928-322-7985<br/>kayle@kbstyling.co</p><p><strong>Marigold Salon</strong><br/>1823 S. Greenfield Rd #102<br/>Mesa, AZ 85206<br/><a href=\"https://www.instagram.com/Marigoldsalonaz\" target=\"_blank\" title=\"https://www.instagram.com/Marigoldsalonaz\">@marigoldsalonaz</a><br/>480-632-2060 (call)<br/>marigoldsalonarizona@gmail.com</p><p><strong>Kopper Blonde Company</strong><br/>15323 N Scottsdale Rd, ste 180 loft 21<br/>Scottsdale, AZ 85254<br/><a href=\"https://www.instagram.com/thekopperblonde\" target=\"_blank\" title=\"https://www.instagram.com/thekopperblonde\">@thekopperblonde</a><br/><a href=\"https://KopperBlondeCo.com\" target=\"_blank\" title=\"https://KopperBlondeCo.com\">KopperBlondeCo.com</a><br/>602-791-2979<br/>hairbykayleekauffman@gmail.com</p><p><strong>Sunshine Valley Hair</strong><br/>23150 n Pima rd, Suite 32<br/>Scottsdale, AZ 85255<br/><a href=\"https://www.instagram.com/sunshinevalleyhair\" target=\"_blank\" title=\"https://www.instagram.com/sunshinevalleyhair\">@sunshinevalleyhair</a><br/><a href=\"https://www.sunshinevalleyhair.com/\" target=\"_blank\" title=\"https://www.sunshinevalleyhair.com/\">www.sunshinevalleyhair.com</a><br/>612-723-2893</p><p><strong>Lovlee Salon</strong><br/>6644 E Tanque Verde Rd Unit 205<br/>Tucson, AZ 85715<br/><a href=\"https://www.instagram.com/lovleesalon\" target=\"_blank\" title=\"https://www.instagram.com/lovleesalon\">@lovleesalon</a><br/>520-808-3686 (text)<br/><a href=\"https://lovleesalon.com\" target=\"_blank\" title=\"https://lovleesalon.com\">lovleesalon.com</a></p>"
+          }
+        },
+        "item-ca": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "California",
+            "text": "<p><strong>Stone a luxury blow dry bar Janie + co.</strong><br/>1101 18th Street, Suite 200<br/>Bakersfield, CA 93301<br/><a href=\"https://www.instagram.com/stonedrybar\" target=\"_blank\" title=\"https://www.instagram.com/stonedrybar\">@stonedrybar</a><br/><a href=\"https://www.stineblowdrybar.com\" target=\"_blank\" title=\"https://www.stineblowdrybar.com\">www.stineblowdrybar.com</a><br/>661-932-0003<br/>info@stoneblowdrybar.com</p><p><strong>Cura</strong><br/>1901 corporate drive, suite 4<br/>Ladera ranch, CA 92694<br/><a href=\"https://www.instagram.com/marchingbeauty\" target=\"_blank\" title=\"https://www.instagram.com/marchingbeauty\">@marchingbeauty</a><br/><a href=\"https://cristinamarch.glossgenius.com\" target=\"_blank\" title=\"https://cristinamarch.glossgenius.com\">cristinamarch.glossgenius.com</a><br/>949-394-5010<br/>hairbycristinamarch@gmail.com</p><p><strong>M+C Manes</strong><br/>921 East Main Street, Suite E<br/>Ventura, CA 93036<br/><a href=\"https://www.instagram.com/mc_manes/\" target=\"_blank\" title=\"https://www.instagram.com/mc_manes/\">@mc_manes</a><br/>805-794-1961 (call or text)<br/>megan@maneandcoventura.com</p>"
+          }
+        },
+        "item-fl": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Florida",
+            "text": "<p><strong>Pure & Couture Salon</strong><br/>36150 Emerald Coast Pkwy.<br/>Destin, FL 32541<br/><a href=\"https://www.instagram.com/pureandcouture/\" target=\"_blank\" title=\"https://www.instagram.com/pureandcouture/\">@pureandcouture</a><br/><a href=\"https://pureandcouture.com/\" target=\"_blank\" title=\"https://pureandcouture.com/\">www.pureandcouture.com</a><br/>850-424-3935<br/>info@pureandcouturesalon.com</p><p><strong>Flaminio Beauty Co</strong><br/>2668 US Highway 98<br/>Santa Rosa Beach, FL 32459<br/><a href=\"https://www.instagram.com/flaminiobeautyco\" target=\"_blank\" title=\"https://www.instagram.com/flaminiobeautyco\">@flaminiobeautyco</a><br/><a href=\"https://flaminiobeautyco.com/\" target=\"_blank\" title=\"https://flaminiobeautyco.com/\">www.flaminiobeautyco.com</a><br/>850-524-1306 (IG DM, text)<br/>jennifer.flaminio@gmail.com</p><p><strong>Gather A Luxury Salon</strong><br/>2910 Kerry Forest Parkway, Suite D6<br/>Tallahassee, FL 32309<br/><a href=\"https://www.instagram.com/gatheraluxurysalon/\" target=\"_blank\" title=\"https://www.instagram.com/gatheraluxurysalon/\">@gatheraluxurysalon</a><br/><a href=\"https://www.gatheraluxurysalon.com\" title=\"https://www.gatheraluxurysalon.com\">www.gatheraluxurysalon.com</a><br/>850-329-7305 (text)</p><p><strong>Trove Salon + Style Bar</strong><br/>799 W Gaines Street, Unit 109<br/>Tallahassee, FL 32304<br/><a href=\"https://www.instagram.com/Trovesalonstylebar\" target=\"_blank\" title=\"https://www.instagram.com/Trovesalonstylebar\">@trovesalonstylebar</a><br/><a href=\"https://trovesalonstylebar.net\" target=\"_blank\" title=\"https://trovesalonstylebar.net\">trovesalonstylebar.com</a><br/>850-727-4279<br/>brenna.trovesalon@gmail.com</p>"
+          }
+        },
+        "item-ia": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Iowa",
+            "text": "<p><strong>Mallory Camus Salon</strong><br/>7300 Westown pkwy, suite 250, room 261<br/>Urbandale, IA 50266<br/><a href=\"https://www.instagram.com/mallory.camus.salon\" target=\"_blank\" title=\"https://www.instagram.com/mallory.camus.salon\">@mallory.camus.salon</a><br/>515-508-1303 (text)</p>"
+          }
+        },
+        "item-md": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Maryland",
+            "text": "<p><strong>Good Hair Collective</strong><br/>487 Ritchie Highway Ste. 104<br/>Severna Park, MD 21146<br/><a href=\"https://www.instagram.com/goodhaircollective/\" target=\"_blank\" title=\"https://www.instagram.com/goodhaircollective/\">@goodhaircollective</a><br/><a href=\"https://www.goodhaircollective.com\" target=\"_blank\" title=\"https://www.goodhaircollective.com\">www.goodhaircollective.com</a><br/>410-431-2002 (text)</p>"
+          }
+        },
+        "item-mi": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Michigan",
+            "text": "<p><strong>The Beauty Lounge by Abby</strong><br/>6794 S Westnedge Ave Suite D<br/>Portage, MI 49002<br/><a href=\"https://www.instagram.com/beautybyabbybontrager\" target=\"_blank\" title=\"https://www.instagram.com/beautybyabbybontrager\">@beautybyabbybontrager</a><br/><a href=\"https://beautybyabbybontrager.com\" target=\"_blank\" title=\"https://beautybyabbybontrager.com\">beautybyabbybontrager.com</a><br/>thebeautyloungebyabby@gmail.com</p>"
+          }
+        },
+        "item-mn": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Minnesota",
+            "text": "<p><strong>The Hair District Collective Plymouth</strong><br/>3525 Vicksburg Ln N #100<br/>Plymouth, MN 55447<br/><a href=\"https://www.instagram.com/hairdistrictcollectiveply/\" target=\"_blank\" title=\"https://www.instagram.com/hairdistrictcollectiveply/\">@hairdistrictcollectiveply</a><br/><a href=\"https://thehairdistrict.com/locations/plymouth/\" target=\"_blank\" title=\"https://thehairdistrict.com/locations/plymouth/\">thehairdistrict.com/locations/plymouth/</a><br/>763-746-9229 (text, call)<br/>thehairdistrictplymouth@gmail.com</p>"
+          }
+        },
+        "item-ny": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "New York",
+            "text": "<p><strong>Hair Reformation</strong><br/>9912 Transit Road<br/>East Amherst, NY 14051<br/><a href=\"https://www.instagram.com/hairreformationbynatalie\" target=\"_blank\" title=\"https://www.instagram.com/hairreformationbynatalie\">@hairreformationbynatalie</a> | <a href=\"https://www.instagram.com/hairreformation\" target=\"_blank\" title=\"https://www.instagram.com/hairreformation\">@hairreformation</a><br/><a href=\"https://www.hairreformation.com/\" target=\"_blank\" title=\"https://www.hairreformation.com/\">www.hairreformation.com</a><br/>716-276-8690<br/>info.hairreformation@gmail.com</p>"
+          }
+        },
+        "item-nc": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "North Carolina",
+            "text": "<p><strong>Copper Willow Salon</strong><br/>1213 W Morehead st, suite 110<br/>Charlotte, NC 28208<br/><a href=\"https://www.instagram.com/karleehairartistry\" target=\"_blank\" title=\"https://www.instagram.com/karleehairartistry\">@karleehairartistry</a><br/><a href=\"https://www.karleehairartistry.com\" target=\"_blank\" title=\"https://www.karleehairartistry.com\">www.karleehairartistry.com</a><br/>704-363-9940<br/>karleehairartistry.cw@gmail.com</p>"
+          }
+        },
+        "item-tn": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Tennessee",
+            "text": "<p><strong>Alma Bella Salon</strong><br/>2981 Canada rd. Suite 104<br/>Lakeland, TN 38002<br/><a href=\"https://www.instagram.com/almabellasalon\" target=\"_blank\" title=\"https://www.instagram.com/almabellasalon\">@almabellasalon</a><br/><a href=\"https://almabellasalon.com\" target=\"_blank\" title=\"https://almabellasalon.com\">almabellasalon.com</a><br/>901-347-3135<br/>lauren@almabellasalon.com</p>"
+          }
+        },
+        "item-ut": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Utah",
+            "text": "<p><strong>Rooted Salon</strong><br/>541 E 12300 S, Ste C<br/>Draper, UT 84020<br/><a href=\"https://www.instagram.com/rootedsalondraper\" target=\"_blank\" title=\"https://www.instagram.com/rootedsalondraper\">@rootedsalondraper</a><br/><a href=\"https://www.rootedutah.com\" target=\"_blank\" title=\"https://www.rootedutah.com\">www.rootedutah.com</a><br/>801-349-2535<br/>info@rootedutah.com</p><p><strong>Opal & Ovie Salon and Co.</strong><br/>1095 N. Washington Blvd.<br/>Harrisville, UT 84404<br/><a href=\"https://www.instagram.com/opalandoviesalon\" target=\"_blank\" title=\"https://www.instagram.com/opalandoviesalon\">@opalandoviesalon</a><br/><a href=\"https://www.vagaro.com/opalandoviesalonco\" target=\"_blank\" title=\"https://www.vagaro.com/opalandoviesalonco\">vagaro.com/opalandoviesalonco</a><br/>801-737-5900 (call)<br/>opalandoviesalon@gmail.com</p><p><strong>The Edit</strong><br/>3775 south highland drive<br/>Millcreek, UT 84117<br/><a href=\"https://www.instagram.com/tiffaneyeverson\" target=\"_blank\" title=\"https://www.instagram.com/tiffaneyeverson\">@tiffaneyeverson</a><br/>801-815-1619 (text)</p><p><strong>Fringe Salon</strong><br/>748 S State Street<br/>Orem, UT 84058<br/><a href=\"https://www.instagram.com/fringesalon.ut\" target=\"_blank\" title=\"https://www.instagram.com/fringesalon.ut\">@fringesalon.ut</a><br/><a href=\"https://fringesalonut.square.site/\" target=\"_blank\" title=\"https://fringesalonut.square.site/\">fringesalonut.square.site</a><br/>801-607-1266 (call)</p><p><strong>Aspen Salon</strong><br/>3222 N University Ave<br/>Provo, UT 84604<br/><a href=\"https://www.instagram.com/aspensalon/\" target=\"_blank\" title=\"https://www.instagram.com/aspensalon/\">@aspensalon</a><br/><a href=\"https://aspensalonutah.com\" target=\"_blank\" title=\"https://aspensalonutah.com\">aspensalonutah.com</a><br/>aspensalon@gmail.com</p><p><strong>Meraki House Salon</strong><br/>156 E 900 S #105<br/>Salt Lake City, UT 84111<br/><a href=\"https://www.instagram.com/merakihouse\" target=\"_blank\" title=\"https://www.instagram.com/merakihouse\">@merakihouse</a><br/><a href=\"https://merakihousesalon.com\" target=\"_blank\" title=\"https://merakihousesalon.com\">merakihousesalon.com</a><br/>merakihousesalon@gmail.com</p><p><strong>Remedy Salon</strong><br/>1370 S 2100 E suite 107<br/>Salt Lake City, UT 84108<br/><a href=\"https://www.instagram.com/remedysalonslc\" target=\"_blank\" title=\"https://www.instagram.com/remedysalonslc\">@remedysalonslc</a><br/><a href=\"https://remedysalonslc.com\" target=\"_blank\" title=\"https://remedysalonslc.com\">remedysalonslc.com</a><br/>435-513-9454</p><p><strong>Sanctuary Salon and Spa</strong><br/>10450 State St<br/>Sandy, UT 84070<br/><a href=\"https://www.instagram.com/beauty_by_britgordon\" target=\"_blank\" title=\"https://www.instagram.com/beauty_by_britgordon\">@beauty_by_britgordon</a></p>"
+          }
+        },
+        "item-wa": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "heart",
+            "title": "Washington",
+            "text": "<p><strong>Blonde Brigade</strong><br/>1417 NW 54th ST<br/>Seattle, WA 98107<br/><a href=\"https://www.instagram.com/abigail.blondebrigade\" target=\"_blank\" title=\"https://www.instagram.com/abigail.blondebrigade\">@abigail.blondebrigade</a><br/><a href=\"https://www.blondebrigadesalon.com\" target=\"_blank\" title=\"https://www.blondebrigadesalon.com\">www.blondebrigadesalon.com</a><br/>hello@blondebrigadesalon.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-az",
+        "item-ca",
+        "item-fl",
+        "item-ia",
+        "item-md",
+        "item-mi",
+        "item-mn",
+        "item-ny",
+        "item-nc",
+        "item-tn",
+        "item-ut",
+        "item-wa"
+      ],
+      "settings": {
+        "title": "United States",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-1-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-4-base",
+        "heading_alignment": "left",
+        "item_heading_font": "heading",
+        "enable_animation": false,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 850
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-hero",
+    "rich-text-intro",
+    "collapsible-row-list-states"
+  ]
+}

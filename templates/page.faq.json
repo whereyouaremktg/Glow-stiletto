@@ -9,14 +9,14 @@
         "custom_content_width": 700
       }
     },
-    "rich-text": {
+    "rich-text-header": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "FAQ",
-            "heading_tag": "h2",
+            "title": "FREQUENTLY ASKED QUESTIONS",
+            "heading_tag": "h1",
             "heading_font_class": "fs-heading-1-base"
           }
         },
@@ -25,34 +25,11 @@
           "settings": {
             "space": 12
           }
-        },
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Have questions? We've got answers!</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "text-2": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "spacer-2": {
-          "type": "spacer",
-          "settings": {
-            "space": 12
-          }
         }
       },
       "block_order": [
         "heading",
-        "spacer-1",
-        "text-1",
-        "text-2",
-        "spacer-2"
+        "spacer-1"
       ],
       "settings": {
         "alignment": "center_center",
@@ -63,7 +40,7 @@
         "custom_content_width": 700
       }
     },
-    "collapsible-row-list-1": {
+    "collapsible-row-list-shipping": {
       "type": "collapsible-row-list",
       "blocks": {
         "item-1": {
@@ -71,8 +48,8 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "How do I make a purchase?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "WHAT DOES IT MEAN TO “CHECKOUT WITH PERKS”?",
+            "text": "<p>For your peace of mind, we offer Package Protection/Free Returns when you \"<strong>Checkout with perks</strong>\", which includes:</p><p>→ A free return shipping label for unused products.<br/>→ Protection against lost, stolen, or damaged packages due to shipping issues.</p><p>This protection cannot be removed from an order once placed.</p><p>PLEASE NOTE: If you choose <strong>not</strong> to add Package Protection/Free Returns to your order, you accept that Glow Beauty is not liable for items that are lost, stolen or damaged in transit. You will also be responsible for return shipping costs if you choose to return your item(s).</p>"
           }
         },
         "item-2": {
@@ -80,8 +57,8 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "How do I know if my order is confirmed?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "WHAT HAPPENS IF MY PACKAGE IS LOST, STOLEN OR DAMAGED?",
+            "text": "<p><strong>DAMAGED:</strong> If your product or package arrives damaged or defective, please file a claim <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a> or contact our team within 7 days, providing details and photographic evidence. We will work with you to resolve defective product issues.</p><p><strong>LOST/STOLEN:</strong> In our experience packages marked \"delivered\" may still arrive up to 5 days later. If your tracking shows “delivered” but you haven’t received your package we recommend looking in unexpected places (side doors, porches, mail rooms, etc) or checking with neighbors or your building's front desk.</p><p>If you still have not received your package within 5 days of it being marked \"delivered\":</p><p><strong>Customers who checked out WITH perks: </strong>Please file a claim within 30 days of the order date. Our customer service team can assist you with this process. For help, please reach out to us here. To start a claim, click <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a>.</p><p><strong>Customers who checked out WITHOUT perks:</strong> You may need to reach out directly to your local postal service for further assistance.</p>"
           }
         },
         "item-3": {
@@ -89,28 +66,18 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "Can I change my shipping address after my order is placed?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "expand_by_default": false,
-            "icon": "none",
-            "title": "Can I change my billing address after placing my order?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "I PAID FOR FASTER SHIPPING. WHEN CAN I EXPECT MY ORDER?",
+            "text": "<p>Once your order has been processed and shipped, the estimated delivery time for <strong>priority shipping </strong>is 2 business days, and <strong>overnight shipping </strong>is 1 business day.</p><p><strong>THE SHIPPING TIME ESTIMATE DOES NOT INCLUDE THE TIME IT TAKES TO PROCESS YOUR ORDER. </strong>Please allow up to 3 business days for us to process and prepare your order for shipment.</p><p><em>Paying for priority or overnight shipping does not make the processing time faster than standard orders.</em></p>"
           }
         }
       },
       "block_order": [
         "item-1",
         "item-2",
-        "item-3",
-        "item-4"
+        "item-3"
       ],
       "settings": {
-        "title": "Orders",
+        "title": "SHIPPING",
         "heading_tag": "h2",
         "heading_font_class": "fs-heading-2-base",
         "subheading": "",
@@ -125,7 +92,7 @@
         "custom_content_width": 850
       }
     },
-    "collapsible-row-list-2": {
+    "collapsible-row-list-orders": {
       "type": "collapsible-row-list",
       "blocks": {
         "item-1": {
@@ -133,8 +100,8 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "Do you ship internationally?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "CAN I MAKE CHANGES TO MY ORDER AFTER IT’S BEEN PLACED?",
+            "text": "<p>After your order has been placed and <strong>prior</strong> to it being fulfilled, you can sign into your account <a href=\"https://shop.glowbeautyhair.com/account/login\" title=\"https://shop.glowbeautyhair.com/account/login\">HERE</a> with the email address used on your order to update the shipping address or cancel your order. Unfortunately, we can’t add or remove items from your order after it’s already been placed.</p><p><strong>If your order has already been fulfilled no changes can be made.</strong> Please contact us <a href=\"/pages/contact\" title=\"Contact\">HERE</a> for assistance.</p>"
           }
         },
         "item-2": {
@@ -142,8 +109,8 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "When will my order be shipped?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "HOW DO I CANCEL MY ORDER?",
+            "text": "<p>Up until your order has been fulfilled, you can sign into your account <a href=\"https://shop.glowbeautyhair.com/account/login\" title=\"https://shop.glowbeautyhair.com/account/login\">HERE</a> with the email address used on your order to cancel your order.</p><p><strong>If your order has already been fulfilled no changes can be made. </strong>Please contact us <a href=\"/pages/contact\" title=\"Contact\">HERE</a> for assistance.</p>"
           }
         },
         "item-3": {
@@ -151,8 +118,112 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "How long will it take until I receive my order?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "MY ORDER SAYS DELIVERED BUT I NEVER RECEIVED IT.",
+            "text": "<p>Please confirm that the shipping address you used is correct. In our experience packages marked \"delivered\" may still arrive up to 5 days later. If your tracking shows “delivered” but you haven’t received your package we recommend looking in unexpected places (side doors, porches, mail rooms, etc) or checking with neighbors or your building's front desk.</p><p>If you still have not received your package within 5 days of it being marked \"delivered\"...</p><p><strong>Customers who checked out WITH perks: </strong>Please file a claim within 30 days of the order date. Our customer service team can assist you with this process. For help, please reach out to us here. To start a claim, click <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a>.</p><p><strong>Customers who checked out WITHOUT perks: </strong>You may need to reach out directly to your local postal service for further assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "settings": {
+        "title": "ORDERS",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-4-base",
+        "heading_alignment": "left",
+        "item_heading_font": "heading",
+        "enable_animation": false,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "full",
+        "custom_content_width": 850
+      }
+    },
+    "collapsible-row-list-returns": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "WHAT IS YOUR DOMESTIC RETURN POLICY?",
+            "text": "<p><strong>Due to hygiene reasons, we cannot under any circumstances accept returns or offer refunds on any used products. </strong>Do not send your product back without filing a claim or contacting our team first.</p><p><strong>Customers who checked out WITH perks: </strong>Your order qualifies for free returns on unused products. If you have an unused product please file a claim or contact us within 14 days from the date of delivery. Once we receive the returned item and verify its condition, we will initiate the refund process. Refunds will be issued to the original payment method used for the purchase. <em>All shipping and package protection costs are ineligible for refunds.</em></p><p><strong>Customers who checked out WITHOUT perks: </strong>You will be responsible for the return shipping costs. If you have an unused product please file a claim or contact us within 14 days from the date of delivery. Once we receive the returned item and verify its condition, we will initiate the refund process. Refunds will be issued to the original payment method used for the purchase. <em>All shipping and package protection costs are ineligible for refunds.</em></p><p>TO START A RETURN, CLICK <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a>.</p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "WHAT IS YOUR INTERNATIONAL RETURN POLICY?",
+            "text": "<p>All international orders are FINAL SALE. Please reach out to our customer service team <a href=\"/pages/contact\" title=\"Contact\">HERE</a> if you have any questions.</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "HOW DO I START A RETURN?",
+            "text": "<p>Please review our full <a href=\"/policies/refund-policy\" title=\"Refund Policy\">Return Policy</a> to see if your order qualifies for a return.</p><p>PLEASE NOTE: once your item has been in contact with hair, it is considered “used” and no longer able to be returned. All returned items will be inspected upon arriving at our facility. If our team deems your product used, no refund will be issued and the product will not be returned back to you.</p><p>To initiate an exchange or return, please visit our return portal <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a>. Once we receive your exchange or return, please allow 7-14 days for our team to process it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "settings": {
+        "title": "RETURNS",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-4-base",
+        "heading_alignment": "left",
+        "item_heading_font": "heading",
+        "enable_animation": false,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "full",
+        "custom_content_width": 850
+      }
+    },
+    "collapsible-row-list-general": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "IS MY BRUSH MISSING A BRISTLE?",
+            "text": "<p>No! Our brushes feature a drainage hole (as seen <a href=\"/pages/missing-bristle\" title=\"missing bristle\">here</a>), in order to prevent water retention & damage.</p><p>If your brush has the drainage hole, plus an additional hole from a missing bristle, please file a claim with us <a href=\"https://glowbeautyhair.com/apps/redo/account\" title=\"https://glowbeautyhair.com/apps/redo/account\">HERE</a>.</p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "HOW DO I CLEAN MY BRUSH?",
+            "text": "<p>TO WASH YOUR BRUSH...</p><p>🧼 get all hair out of the cushion using a wide tooth comb<br/>🧼 fill sink w/ gentle shampoo or dish soap + warm water<br/>🧼 let soak face down 5 min + gently scrub bristles/cushion (with hands or an old toothbrush)<br/>🧼 rinse with water<br/>🧼 expel any excess water from the brush by pushing on the pad to squeeze it out through the drainage hole.<br/>🧼 lay face down to dry (bristles facing down will allow water to drain out via the drainage hole)</p><p>Repeat every 3-4 weeks + remove hair from your brush’s cushion every few days!</p><p><strong>p.s make sure you store your brush in a cool, dry area!</strong></p><p><a href=\"/pages/brush-care\" title=\"Brush Care\">Please see our full care instructions here</a>.</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "WHAT IS THE MARK ON THE SIDE OF MY BRUSH?",
+            "text": "<p>What you are seeing is what we refer to as our brushes \"<strong>beauty mark</strong>\". All brushes come with this mark, due to where it is detached from the mold during production. We try our best to take the mark down as much as possible... However, with this material, there is only so much we can do before risking the integrity of the handle's construction.</p><p>Although it is a minor imperfection, we would rather that than interfere with the function and longevity of the brush.</p>"
           }
         },
         "item-4": {
@@ -160,8 +231,8 @@
           "settings": {
             "expand_by_default": false,
             "icon": "none",
-            "title": "What is your return policy?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "title": "WHERE ELSE CAN I BUY YOUR BRUSH?",
+            "text": "<p>Our brushes are currently sold at Revolve, Anthropologie and Urban Outfitters.</p><p>For a list of local salons and boutiques that carry our brushes, see our retailer list <a href=\"/pages/salon-directory\" title=\"Retailer Directory\">HERE</a>.</p>"
           }
         }
       },
@@ -172,12 +243,12 @@
         "item-4"
       ],
       "settings": {
-        "title": "Shipping & Returns",
+        "title": "GENERAL",
         "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
+        "heading_font_class": "fs-heading-2-base",
         "subheading": "",
         "subheading_tag": "h3",
-        "subheading_font_class": "fs-heading-5-base",
+        "subheading_font_class": "fs-heading-4-base",
         "heading_alignment": "left",
         "item_heading_font": "heading",
         "enable_animation": false,
@@ -187,89 +258,37 @@
         "custom_content_width": 850
       }
     },
-    "collapsible-row-list-3": {
-      "type": "collapsible-row-list",
+    "rich-text-footer": {
+      "type": "rich-text",
       "blocks": {
-        "item-1": {
-          "type": "item",
+        "text": {
+          "type": "text",
           "settings": {
-            "expand_by_default": false,
-            "icon": "none",
-            "title": "What size should I order?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "expand_by_default": false,
-            "icon": "none",
-            "title": "Where can I find information on sustainability?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "expand_by_default": false,
-            "icon": "none",
-            "title": "Do you offer gift cards?",
-            "text": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
+            "text": "<p><em>Have additional questions that weren't answered above? Contact us </em><a href=\"/pages/contact\" title=\"Contact\"><em>here</em></a><em>.</em></p>",
+            "text_font_class": "fs-body-100"
           }
         }
       },
       "block_order": [
-        "item-1",
-        "item-2",
-        "item-3"
+        "text"
       ],
       "settings": {
-        "title": "Our Products",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-3-base",
-        "subheading": "",
-        "subheading_tag": "h3",
-        "subheading_font_class": "fs-heading-5-base",
-        "heading_alignment": "left",
-        "item_heading_font": "heading",
-        "enable_animation": false,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-bottom-only",
-        "content_width": "full",
-        "custom_content_width": 850
-      }
-    },
-    "promotion_bar": {
-      "type": "promotion-bar",
-      "settings": {
-        "min_height": 100,
-        "min_height_mobile": 60,
-        "heading": "Didn't find your answer?",
-        "heading_tag": "h2",
-        "text": "<p>Don't hesitate to reach out with any questions</p>",
-        "link_text": "Contact us",
-        "button_style": "btn--primary",
-        "focal_point": "image_presentation",
-        "mobile_focal_point": "image_presentation",
-        "text_color": "#f7f7e8",
-        "button_background_color": "#faf7c3",
-        "button_text_color": "#2b3135",
-        "background_color": "#2b3135",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 0,
+        "alignment": "center_center",
         "enable_animation": true,
-        "full_width": false,
-        "section_padding": "section--vertical-padding-top-bottom"
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
       }
     }
   },
   "order": [
     "main",
-    "rich-text",
-    "collapsible-row-list-1",
-    "collapsible-row-list-2",
-    "collapsible-row-list-3",
-    "promotion_bar"
+    "rich-text-header",
+    "collapsible-row-list-shipping",
+    "collapsible-row-list-orders",
+    "collapsible-row-list-returns",
+    "collapsible-row-list-general",
+    "rich-text-footer"
   ]
 }

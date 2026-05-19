@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich-text-heading": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Brush Care",
+            "heading_tag": "h1",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "rich-text-care-steps": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Glow Beauty Hair brush is designed with durability in mind, using high-quality materials and innovative features. The brush features 100% stainless steel bristles and a drainage hole that offer excellent performance and longevity.</p><p><strong>TO WASH YOUR BRUSHES...</strong></p><p>🧼 get all hair out of the cushion using a wide tooth comb<br/>🧼 fill sink w/ gentle shampoo or dish soap + warm water<br/>🧼 let soak face down 5 min + gently scrub bristles/cushion (with hands or an old toothbrush)<br/>🧼 rinse with water<br/>🧼 expel any excess water from the brush by pushing on the pad to squeeze it out through the drainage hole.<br/>🧼 lay face down to dry (bristles facing down will allow water to drain out via the drainage hole)</p><p><strong>Repeat every 3-4 weeks + remove hair from your brush’s cushion every few days!</strong></p><p><em>p.s make sure you store your brush in a cool, dry area!</em></p><p>It is important to note that the frequency of use and the care taken during usage can affect the lifespan of the hairbrush. We recommend using the brush with care around heat sources and water, as excessive exposure to these elements may impact its performance and longevity. Additionally, regular cleaning and proper maintenance can help prolong the lifespan of the brush.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "alignment": "center_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich-text-hairstylists": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>HAIRSTYLISTS:</strong></p><p>For hairstylist users who rely on our hairbrush daily and serve multiple clients, the average lifespan of the brush is typically between 6 to 9 months. The duration can vary depending on factors such as the number of clients served and the frequency of use behind the chair. We understand that hairstylists have demanding workloads, and our brush is designed to withstand frequent use in a professional setting.</p><p>Please be aware that while BARBICIDE® is a useful disinfectant, spraying or leaving our brushes soaking in Barbicide (<em>or any strong cleaners or solvents</em>), will result in rusting and deterioration of the bristles and other components. To sanitize your brush, spray with isopropyl alcohol and allow it to air dry.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "alignment": "center_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich-text-footer": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are committed to providing high-quality products that meet the needs of both hairstylist professionals and non-hairstylist users. If you have any questions or concerns about the performance or lifespan of our hairbrush, please don't hesitate to reach out to our customer support team at hello@glowbeautyhair.com. We are here to assist you.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-heading",
+    "rich-text-care-steps",
+    "rich-text-hairstylists",
+    "rich-text-footer"
+  ]
+}
