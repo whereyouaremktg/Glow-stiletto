@@ -54,6 +54,53 @@
         "padding_bottom": 0
       }
     },
+    "glow_press_strip_BwpKGF": {
+      "type": "glow-press-strip",
+      "blocks": {
+        "pillar_TNdy4x": {
+          "type": "pillar",
+          "settings": {
+            "label": "CARRIED AT:",
+            "body": ""
+          }
+        },
+        "logo_y3qaKV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Revolve-Logo.png",
+            "label": ""
+          }
+        },
+        "logo_jFcHLA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Urban_Outfitters_logo_svg.png",
+            "label": ""
+          }
+        },
+        "logo_VW7giK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
+            "label": ""
+          }
+        }
+      },
+      "block_order": [
+        "pillar_TNdy4x",
+        "logo_y3qaKV",
+        "logo_jFcHLA",
+        "logo_VW7giK"
+      ],
+      "name": "Glow press strip",
+      "settings": {
+        "background": "#f4d5d2",
+        "columns": "4",
+        "greyscale": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "grid_aPqkXj": {
       "type": "grid",
       "blocks": {
@@ -143,45 +190,6 @@
         "spacing": 0,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "glow_press_strip_BwpKGF": {
-      "type": "glow-press-strip",
-      "blocks": {
-        "logo_jFcHLA": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Urban_Outfitters_logo_svg.png",
-            "label": ""
-          }
-        },
-        "logo_y3qaKV": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Revolve-Logo.png",
-            "label": ""
-          }
-        },
-        "logo_VW7giK": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
-            "label": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_jFcHLA",
-        "logo_y3qaKV",
-        "logo_VW7giK"
-      ],
-      "name": "Glow press strip",
-      "settings": {
-        "background": "#f4d5d2",
-        "columns": "3",
-        "greyscale": true,
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "collection_list_grid_PnLJ9A": {
@@ -635,12 +643,24 @@
     "testimonials_EYEVmp": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_HURtMj": {
+          "type": "testimonial",
+          "settings": {
+            "product": "glow-beauty-hair-brush",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "image_presentation",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "\"I’m 50, and I can honestly say this is the best hairbrush I’ve ever owned. It feels amazing on my scalp, like a gentle massage every time I use it. My 19-year-old triplet daughters discovered these brushes first and got me hooked, and now our whole family loves them. It glides through wet or dry hair without tugging or pulling, and somehow makes my hair feel healthier. I never thought I’d rave about a hairbrush, but this one deserves it.\"",
+            "author": ""
+          }
+        },
         "testimonial_eiwLf7": {
           "type": "testimonial",
           "settings": {
-            "product": "",
+            "product": "the-detangling-brush-green",
             "image_position": "right",
-            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
             "aspect_ratio": "portrait",
             "focal_point": "image_presentation",
             "show_rating": true,
@@ -665,6 +685,7 @@
         }
       },
       "block_order": [
+        "testimonial_HURtMj",
         "testimonial_eiwLf7",
         "testimonial_LK3jqL"
       ],
@@ -811,8 +832,8 @@
   },
   "order": [
     "glow_hero_main",
-    "grid_aPqkXj",
     "glow_press_strip_BwpKGF",
+    "grid_aPqkXj",
     "collection_list_grid_PnLJ9A",
     "multi_column_gfiWbn",
     "featured_brush",
