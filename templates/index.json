@@ -64,10 +64,10 @@
             "body": ""
           }
         },
-        "logo_y3qaKV": {
+        "logo_VW7giK": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Revolve-Logo.png",
+            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
             "label": ""
           }
         },
@@ -78,19 +78,19 @@
             "label": ""
           }
         },
-        "logo_VW7giK": {
+        "logo_y3qaKV": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
+            "image": "shopify://shop_images/Revolve-Logo.png",
             "label": ""
           }
         }
       },
       "block_order": [
         "pillar_TNdy4x",
-        "logo_y3qaKV",
+        "logo_VW7giK",
         "logo_jFcHLA",
-        "logo_VW7giK"
+        "logo_y3qaKV"
       ],
       "name": "Glow press strip",
       "settings": {
