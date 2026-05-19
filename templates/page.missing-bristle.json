@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Missing bristle?",
+            "heading_tag": "h1",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each of our detangling brushes features an intentional drainage hole for use on wet hair or at the shampoo bowl without fear of water damage or retention.</p><p>If this is the hole your brush has - good news, your brush arrived as intended. <strong>It is </strong><em><strong>not</strong></em><strong> missing a bristle.</strong></p><p>If you aren't sure, please email a picture of your brush to our team at hello@glowbeautyhair.com.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image": "shopify://shop_images/GlowBeautywebsite_vertical_copy.png",
+        "aspect_ratio": "portrait",
+        "focal_point": "image_presentation",
+        "text_alignment": "left",
+        "show_small_image": false,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image-with-text"
+  ]
+}
