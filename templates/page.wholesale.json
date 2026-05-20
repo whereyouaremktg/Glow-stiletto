@@ -456,7 +456,7 @@
           "type": "item",
           "settings": {
             "expand_by_default": false,
-            "icon": "leaf",
+            "icon": "paper-airplane",
             "title": "How fast do orders ship?",
             "text": "<p>Most wholesale orders ship within 2–3 business days of approval. Restocks ship same-day where possible.</p>"
           }
