@@ -129,6 +129,15 @@
         "custom_content_width": 750
       }
     },
+    "custom_liquid_FMXW78": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script src=\"https://js-na2.hsforms.net/forms/embed/245729861.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na2\" data-form-id=\"70560d90-21d6-4050-9677-c5818aa6703d\" data-portal-id=\"245729861\"></div>",
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "177888514119bdea36": {
       "type": "apps",
       "blocks": {
@@ -554,28 +563,19 @@
         "enable_animation": true,
         "section_padding": "section--vertical-padding-none"
       }
-    },
-    "custom_liquid_FMXW78": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script src=\"https://js-na2.hsforms.net/forms/embed/245729861.js\" defer></script>\n<div class=\"hs-form-frame\" data-region=\"na2\" data-form-id=\"70560d90-21d6-4050-9677-c5818aa6703d\" data-portal-id=\"245729861\"></div>",
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
     }
   },
   "order": [
     "main",
     "hero",
     "form_intro",
+    "custom_liquid_FMXW78",
     "177888514119bdea36",
     "why_glow",
     "salon_testimonial",
     "what_you_get",
     "gallery",
     "faq",
-    "final_cta",
-    "custom_liquid_FMXW78"
+    "final_cta"
   ]
 }
