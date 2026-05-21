@@ -25,14 +25,6 @@
             "show_custom_badges": true
           }
         },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text_font_class": "fs-body-200",
-            "text": "<p><strong>INTENTIONAL DRAINAGE HOLE</strong><br/><em>on the go with glow</em></p>",
-            "column_placement": "right"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -46,18 +38,6 @@
             "enable_sticky_atc_bar_desktop": true,
             "enable_sticky_atc_bar_mobile": true,
             "divider_width": "none"
-          }
-        },
-        "smile_io_rewards": {
-          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-          "settings": {
-            "primary_colour": "#171819",
-            "secondary_colour": "#faf6f1",
-            "preview_scenario": "customer_can_earn_points",
-            "should_show_icon": true,
-            "should_show_points_label": true,
-            "points_text_logged_in": "<p>Earn [points_amount] when you buy this item.</p>",
-            "points_text_logged_out": "<p>Members earn [points_amount] when they buy this item. <a href=\"/account/register/\">Sign up</a> or <a href=\"/account/login/\">log in</a>.</p>"
           }
         },
         "accordion_details": {
@@ -89,8 +69,6 @@
       },
       "block_order": [
         "product_header",
-        "subtitle",
-        "smile_io_rewards",
         "quantity_selector",
         "buy_buttons",
         "accordion_details",
@@ -130,8 +108,8 @@
             "imageRatio": "1",
             "reviewerNameColor": "#ffffff",
             "starsColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
             "shadow": "none",
             "border_active": false,
             "border_width": 2,
@@ -276,6 +254,7 @@
         "subheading_tag": "h3",
         "subheading_font_class": "fs-heading-5-base",
         "item_heading_font": "heading",
+        "auto_collapse_rows": false,
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom",
