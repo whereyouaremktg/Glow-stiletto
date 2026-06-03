@@ -1,0 +1,464 @@
+{%- liquid
+  assign hero_image = section.settings.image
+  if hero_image == blank and section.settings.product != blank
+    assign hero_image = section.settings.product.featured_image
+  endif
+
+  assign density = section.settings.ray_density | at_least: 6
+  assign deg_pair = 360.0 | divided_by: density
+  assign deg_half = deg_pair | divided_by: 2.0
+
+  assign spin = 'glow-spin-' | append: section.id
+  assign float = 'glow-float-' | append: section.id
+
+  assign prioritize_loading = false
+  if section.index == 1
+    assign prioritize_loading = true
+  endif
+
+  capture content
+    for block in section.blocks
+      case block.type
+        when 'chip'
+          unless block.settings.text == blank
+            echo '<span class="glow-chip glow-sunburst__chip" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</span>'
+          endunless
+        when 'eyebrow'
+          unless block.settings.text == blank
+            echo '<span class="glow-eyebrow glow-sunburst__eyebrow" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</span>'
+          endunless
+        when 'rating'
+          unless block.settings.text == blank
+            echo '<p class="glow-sunburst__rating" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</p>'
+          endunless
+        when 'heading'
+          unless block.settings.text == blank
+            echo '<' | append: block.settings.tag | append: ' class="glow-sunburst__heading ff-glow-display-2" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</' | append: block.settings.tag | append: '>'
+          endunless
+        when 'subheading'
+          unless block.settings.text == blank
+            echo '<p class="glow-sunburst__subheading" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</p>'
+          endunless
+        when 'body'
+          unless block.settings.text == blank
+            echo '<div class="glow-sunburst__body rte" ' | append: block.shopify_attributes | append: '>' | append: block.settings.text | append: '</div>'
+          endunless
+        when 'button'
+          render 'button-block',
+            wrapper_class: 'glow-sunburst__button',
+            link: block.settings.link,
+            label: block.settings.text,
+            button_style: block.settings.button_style,
+            shopify_attributes: block.shopify_attributes,
+            is_overlay: false,
+            button_alignment: section.settings.alignment
+      endcase
+    endfor
+  endcapture
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} .glow-sunburst {
+    background: {{ section.settings.outer_bg }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    --glow-sb-text: {{ section.settings.text_color }};
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: {% if section.settings.alignment == 'left' %}flex-start{% elsif section.settings.alignment == 'right' %}flex-end{% else %}center{% endif %};
+    text-align: {{ section.settings.alignment }};
+    gap: clamp(24px, 4vw, 44px);
+    color: var(--glow-sb-text);
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__stage {
+    position: relative;
+    width: 100%;
+    max-width: {{ section.settings.stage_max_width }}px;
+    aspect-ratio: {% if section.settings.stage_ratio == 'portrait' %}4 / 5{% elsif section.settings.stage_ratio == 'landscape' %}16 / 10{% else %}1 / 1{% endif %};
+    border-radius: {{ section.settings.stage_radius }}px;
+    overflow: hidden;
+    background: {{ section.settings.stage_bg }};
+    isolation: isolate;
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__rays {
+    position: absolute;
+    inset: -25%;
+    background: repeating-conic-gradient(from 0deg at 50% 50%, {{ section.settings.ray_color_1 }} 0deg {{ deg_half }}deg, {{ section.settings.ray_color_2 }} {{ deg_half }}deg {{ deg_pair }}deg);
+    -webkit-mask: radial-gradient(circle at 50% 50%, #000 18%, rgba(0,0,0,0.85) 42%, transparent 74%);
+            mask: radial-gradient(circle at 50% 50%, #000 18%, rgba(0,0,0,0.85) 42%, transparent 74%);
+    {% if section.settings.animate %}animation: {{ spin }} {{ section.settings.spin_speed }}s linear infinite;{% endif %}
+    transform-origin: 50% 50%;
+    z-index: 1;
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__halo {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 48%, {{ section.settings.glow_color }} 0%, transparent 46%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__product {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    padding: 8%;
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__product-img {
+    width: {{ section.settings.product_scale }}%;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 18px 30px rgba(23,24,25,0.22));
+    {% if section.settings.animate %}animation: {{ float }} 6s ease-in-out infinite;{% endif %}
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__product-img img { width: 100%; height: auto; display: block; }
+  #shopify-section-{{ section.id }} .glow-sunburst__content {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    gap: clamp(12px, 2vw, 18px);
+    max-width: {{ section.settings.content_max_width }}px;
+  }
+  #shopify-section-{{ section.id }} .glow-sunburst__chip { margin-bottom: 4px; }
+  #shopify-section-{{ section.id }} .glow-sunburst__rating { font-size: 0.95rem; letter-spacing: 0.04em; opacity: 0.9; margin: 0; }
+  #shopify-section-{{ section.id }} .glow-sunburst__heading { margin: 0; }
+  #shopify-section-{{ section.id }} .glow-sunburst__subheading { font-size: clamp(1.05rem, 2.4vw, 1.35rem); margin: 0; opacity: 0.92; }
+  #shopify-section-{{ section.id }} .glow-sunburst__body { opacity: 0.9; }
+  #shopify-section-{{ section.id }} .glow-sunburst__content .button-block__button { margin-top: 6px; }
+  @keyframes {{ spin }} { to { transform: rotate(360deg); } }
+  @keyframes {{ float }} { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  @media (prefers-reduced-motion: reduce) {
+    #shopify-section-{{ section.id }} .glow-sunburst__rays,
+    #shopify-section-{{ section.id }} .glow-sunburst__product-img { animation: none !important; }
+  }
+  @media (max-width: 749px) {
+    #shopify-section-{{ section.id }} .glow-sunburst__inner { text-align: center; align-items: center; }
+  }
+</style>
+
+<div
+  class="glow-sunburst section {% if section.settings.full_bleed %}section--full-width{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-sunburst-hero"
+>
+  <div class="glow-container glow-sunburst__inner">
+    <div class="glow-sunburst__stage">
+      <div class="glow-sunburst__rays" aria-hidden="true"></div>
+      <div class="glow-sunburst__halo" aria-hidden="true"></div>
+      <div class="glow-sunburst__product">
+        {%- render 'image',
+          image: hero_image,
+          wrapper_class: 'glow-sunburst__product-img',
+          sizes: '(max-width: 749px) 80vw, 520px',
+          focal_point: section.settings.focal_point,
+          include_placeholder: true,
+          placeholder_name: 'product-1',
+          prioritize_loading: prioritize_loading
+        -%}
+      </div>
+    </div>
+
+    {%- if content != blank -%}
+      <div class="glow-sunburst__content">
+        {{ content }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow sunburst hero",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product (uses its featured image)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image override (optional)"
+    },
+    {
+      "type": "select",
+      "id": "focal_point",
+      "label": "Focal point",
+      "default": "center",
+      "options": [
+        { "value": "image_presentation", "label": "From image" },
+        { "value": "center", "label": "Center" },
+        { "value": "top", "label": "Top" },
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "product_scale",
+      "label": "Product size",
+      "min": 30,
+      "max": 100,
+      "step": 2,
+      "unit": "%",
+      "default": 64
+    },
+    {
+      "type": "header",
+      "content": "Sunburst"
+    },
+    {
+      "type": "color",
+      "id": "ray_color_1",
+      "label": "Ray color 1",
+      "default": "#F4D5D2"
+    },
+    {
+      "type": "color",
+      "id": "ray_color_2",
+      "label": "Ray color 2",
+      "default": "#FBEDEA"
+    },
+    {
+      "type": "color",
+      "id": "glow_color",
+      "label": "Center glow",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "stage_bg",
+      "label": "Stage background",
+      "default": "#F4D5D2"
+    },
+    {
+      "type": "range",
+      "id": "ray_density",
+      "label": "Number of rays",
+      "min": 8,
+      "max": 48,
+      "step": 2,
+      "default": 24
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animate (rotate rays + float product)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "spin_speed",
+      "label": "Ray rotation speed",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "s",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "stage_ratio",
+      "label": "Stage shape",
+      "default": "square",
+      "options": [
+        { "value": "square", "label": "Square" },
+        { "value": "portrait", "label": "Portrait" },
+        { "value": "landscape", "label": "Landscape" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "stage_max_width",
+      "label": "Stage max width",
+      "min": 360,
+      "max": 900,
+      "step": 20,
+      "unit": "px",
+      "default": 620
+    },
+    {
+      "type": "range",
+      "id": "stage_radius",
+      "label": "Stage corner radius",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 360,
+      "max": 820,
+      "step": 20,
+      "unit": "px",
+      "default": 600
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Content alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed (edge to edge)",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Color & spacing"
+    },
+    {
+      "type": "color",
+      "id": "outer_bg",
+      "label": "Section background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#171819"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Chip / pill badge",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Chip text", "default": "30-DAY GUARANTEE" }
+      ]
+    },
+    {
+      "type": "eyebrow",
+      "name": "Eyebrow",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Eyebrow text", "default": "READY FOR GLASS HAIR?" }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "Star rating",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Rating text", "default": "★★★★★  4.9/5 — 2,400+ reviews" }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Heading", "default": "Your best hair starts with one brush." },
+        {
+          "type": "select",
+          "id": "tag",
+          "label": "Heading tag",
+          "default": "h2",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Subheading", "default": "Salon shine, zero heat." }
+      ]
+    },
+    {
+      "type": "body",
+      "name": "Body",
+      "limit": 1,
+      "settings": [
+        { "type": "richtext", "id": "text", "label": "Body", "default": "<p>Handcrafted boar + nylon bristles, backed by our 30-day money-back guarantee.</p>" }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 2,
+      "settings": [
+        { "type": "text", "id": "text", "label": "Label", "default": "Add to bag — $58" },
+        { "type": "url", "id": "link", "label": "Link" },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--primary",
+          "options": [
+            { "value": "btn--primary", "label": "Solid (filled)" },
+            { "value": "btn--secondary", "label": "Outline" },
+            { "value": "btn--callout", "label": "Text" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow sunburst hero",
+      "blocks": [
+        { "type": "eyebrow" },
+        { "type": "heading" },
+        { "type": "subheading" },
+        { "type": "button" }
+      ]
+    }
+  ]
+}
+{% endschema %}
