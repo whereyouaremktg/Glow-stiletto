@@ -1,0 +1,987 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "product_header": {
+          "type": "product_header",
+          "settings": {
+            "show_divider": true,
+            "show_vendor": false,
+            "show_sku": false,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<p>★★★★★ <strong>4.9/5</strong> &middot; Loved by 10,000+ for glass-like shine</p><p><strong>Turn frizz into glass-hair shine in 60 seconds — no heat required.</strong> Our handcrafted blend of 100% natural boar bristle and clear nylon glides your hair&rsquo;s natural oils from root to tip for sleek, healthy, lit-from-within shine.</p>",
+            "column_placement": "right"
+          }
+        },
+        "callouts_mini": {
+          "type": "product_callouts_mini",
+          "settings": {
+            "icon_1": "leaf",
+            "text_1": "100% natural boar bristle",
+            "icon_2": "lipstick",
+            "text_2": "Salon shine, zero heat",
+            "icon_3": "package-closed",
+            "text_3": "Free dust bag included",
+            "icon_4": "heart",
+            "text_4": "10,000+ happy customers",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": ""
+          }
+        },
+        "inventory_counter": {
+          "type": "inventory-counter",
+          "settings": {
+            "label": "In stock · selling fast",
+            "inventory_max": "150",
+            "low_inventory_threshold": "40",
+            "show_status_bar": true,
+            "show_untracked_quantity": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_sticky_atc_bar_desktop": true,
+            "enable_sticky_atc_bar_mobile": true,
+            "divider_width": "border--thin"
+          }
+        },
+        "callouts_trust": {
+          "type": "product_callouts",
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "add_box": true,
+            "add_dividers": true,
+            "icon_1": "moving-truck",
+            "text_1": "<p><strong>Free shipping</strong> on orders over $50</p>",
+            "icon_2": "security-badge",
+            "text_2": "<p><strong>30-day money-back</strong> shine guarantee</p>",
+            "icon_3": "recycle-symbol",
+            "text_3": "<p><strong>Free returns &amp; exchanges</strong></p>",
+            "icon_4": "leaf",
+            "text_4": "<p>Ships <strong>carbon neutral</strong></p>",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false,
+            "icon": "none"
+          }
+        },
+        "row_description": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": true,
+            "column_placement": "right",
+            "heading": "The full story",
+            "heading_tag": "h3",
+            "icon": "lipstick",
+            "content": "<p>Meet the brush that does what hot tools can&rsquo;t. The Glow Beauty <strong>Smoothing Brush</strong> is handcrafted with a signature mix of <strong>100% natural boar bristle</strong> and <strong>clear nylon bristles</strong> — a combination stylists swear by for one simple reason: it works.</p><p>The natural boar bristles gently carry the oils from your scalp down the length of every strand, conditioning your hair and sealing the cuticle for instant, mirror-like shine. The clear nylon bristles reach deeper to tame frizz, smooth flyaways and add the perfect amount of tension for a polished, salon-smooth finish.</p><p>The result? Sleek, shiny, healthy-looking hair — without a single degree of heat. Every brush arrives with a <strong>complimentary dust bag</strong> to keep it pristine at home or on the go. And because boar bristle is a natural material, slight variations make each brush beautifully one-of-a-kind.</p>"
+          }
+        },
+        "row_how": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "How to use",
+            "heading_tag": "h3",
+            "icon": "stopwatch",
+            "content": "<p><strong>1. Start smooth.</strong> Use on dry or damp, detangled hair.</p><p><strong>2. Brush root to tip.</strong> Glide slowly from your scalp to your ends, letting the boar bristles distribute your natural oils.</p><p><strong>3. Polish &amp; set.</strong> Finish with a final pass over the top layer for that signature glass-hair shine.</p><p><strong>4. Store it right.</strong> Tuck your brush into its complimentary dust bag between uses.</p>"
+          }
+        },
+        "row_materials": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Materials & care",
+            "heading_tag": "h3",
+            "icon": "leaf",
+            "content": "<p><strong>Bristles:</strong> 100% natural boar bristle + clear nylon.</p><p><strong>Handle:</strong> Smooth, ergonomic and hand-finished.</p><p><strong>Includes:</strong> One Smoothing Brush + complimentary dust bag.</p><p><strong>Care:</strong> Remove hair after each use. Occasionally clean the bristles with a drop of gentle shampoo and lukewarm water, then lay flat to air dry. Avoid soaking the cushion base.</p><p><em>Because boar bristle is a natural product, slight variation between brushes is normal — and a mark of authentic quality.</em></p>"
+          }
+        },
+        "row_shipping": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Shipping & returns",
+            "heading_tag": "h3",
+            "icon": "moving-truck",
+            "content": "<p><strong>Free shipping</strong> on all US orders over $50. Most orders ship within 1–2 business days, carbon neutral.</p><p><strong>30-day money-back guarantee.</strong> If you&rsquo;re not obsessed with your shine, return it within 30 days for a full refund.</p><p><strong>Free returns &amp; exchanges.</strong> Email us and we&rsquo;ll send a prepaid label — no hassle, ever.</p>"
+          }
+        },
+        "secure_payment": {
+          "type": "secure_payment",
+          "settings": {
+            "column_placement": "right",
+            "text_alignment": "left",
+            "text_position": "below",
+            "show_payment_icons": true,
+            "heading_text": "Secure, encrypted checkout",
+            "heading_icon": "padlock",
+            "optional_text": "<p>Your payment details are protected with bank-level encryption.</p>",
+            "text_size": "small",
+            "trust_image_size": 100,
+            "display_as_collapsible_row": false,
+            "expand_by_default": true,
+            "icon": "none",
+            "collapsible_row_title": "Secure checkout",
+            "title_tag": "h3"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_header",
+        "subtitle",
+        "callouts_mini",
+        "inventory_counter",
+        "quantity_selector",
+        "buy_buttons",
+        "callouts_trust",
+        "row_description",
+        "row_how",
+        "row_materials",
+        "row_shipping",
+        "secure_payment",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_product_details": true,
+        "show_breadcrumbs": true,
+        "show_navigation_buttons": false,
+        "auto_collapse_rows": true,
+        "show_featured_media_first": false,
+        "gallery_style": "thumbnails",
+        "gallery_style_mobile": "carousel",
+        "gallery_size": "large",
+        "gallery_overflow": "2",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "natural",
+        "enable_multiple_variant_media": false,
+        "enable_mobile_carousel_looping": true,
+        "show_mobile_carousel_images_full_width": true,
+        "hide_mobile_carousel_dots": false,
+        "enable_gift_card_recipient": true,
+        "enable_animation": true
+      }
+    },
+    "trust_marquee": {
+      "type": "scrolling-content",
+      "blocks": {
+        "t1": { "type": "text", "settings": { "text": "FREE SHIPPING OVER $50", "link": "" } },
+        "i1": { "type": "icon", "settings": { "icon": "stiletto", "icon_width": 22, "icon_width_mobile": 18, "link": "" } },
+        "t2": { "type": "text", "settings": { "text": "HANDCRAFTED BOAR + NYLON BRISTLES", "link": "" } },
+        "i2": { "type": "icon", "settings": { "icon": "stiletto", "icon_width": 22, "icon_width_mobile": 18, "link": "" } },
+        "t3": { "type": "text", "settings": { "text": "30-DAY MONEY-BACK GUARANTEE", "link": "" } },
+        "i3": { "type": "icon", "settings": { "icon": "stiletto", "icon_width": 22, "icon_width_mobile": 18, "link": "" } },
+        "t4": { "type": "text", "settings": { "text": "COMPLIMENTARY DUST BAG", "link": "" } },
+        "i4": { "type": "icon", "settings": { "icon": "stiletto", "icon_width": 22, "icon_width_mobile": 18, "link": "" } },
+        "t5": { "type": "text", "settings": { "text": "10,000+ FIVE-STAR REVIEWS", "link": "" } },
+        "i5": { "type": "icon", "settings": { "icon": "stiletto", "icon_width": 22, "icon_width_mobile": 18, "link": "" } }
+      },
+      "block_order": ["t1", "i1", "t2", "i2", "t3", "i3", "t4", "i4", "t5", "i5"],
+      "settings": {
+        "font_choice": "ff-heading",
+        "text_font_class": "fs-heading-2-base",
+        "duration": 20,
+        "direction": "normal",
+        "gap": 48,
+        "padding_top": 7,
+        "padding_bottom": 7,
+        "borders": "none",
+        "text_color": "#FAF6F1",
+        "background_color": "#171819",
+        "border_color": "#AAAAAA",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "value_pillars": {
+      "type": "glow-press-strip",
+      "blocks": {
+        "p1": { "type": "pillar", "settings": { "label": "HANDCRAFTED", "body": "Every brush is finished by hand for salon-grade quality you can feel." } },
+        "p2": { "type": "pillar", "settings": { "label": "BOAR + NYLON BLEND", "body": "Natural bristles carry your oils root to tip for real, lasting shine." } },
+        "p3": { "type": "pillar", "settings": { "label": "30-DAY GUARANTEE", "body": "Love your shine or get your money back — no questions asked." } },
+        "p4": { "type": "pillar", "settings": { "label": "FREE DUST BAG", "body": "Each brush ships with a complimentary travel dust bag." } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "background": "#F4D5D2",
+        "columns": "4",
+        "greyscale": true,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "benefits": {
+      "type": "multi-column",
+      "blocks": {
+        "f1": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "leaf",
+            "icon_width": 44,
+            "icon_width_mobile": 38,
+            "accent": "NATURAL BOAR BRISTLE",
+            "heading": "Distributes your natural oils",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>→ Real, lasting shine — no serum, no heat needed.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "f2": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "lipstick",
+            "icon_width": 44,
+            "icon_width_mobile": 38,
+            "accent": "CLEAR NYLON BRISTLE",
+            "heading": "Smooths frizz & flyaways",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>→ A sleek, glass-like, salon-smooth finish.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "f3": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "heart",
+            "icon_width": 44,
+            "icon_width_mobile": 38,
+            "accent": "ZERO HEAT, EVER",
+            "heading": "No hot tools required",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>→ Stronger, softer, breakage-free strands.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "f4": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "package-closed",
+            "icon_width": 44,
+            "icon_width_mobile": 38,
+            "accent": "FREE DUST BAG",
+            "heading": "Travels beautifully",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>→ Salon-fresh at home or on the go.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["f1", "f2", "f3", "f4"],
+      "settings": {
+        "title": "What you'll notice",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "<p>Two bristles, working together to do what heat never could.</p>",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "4",
+        "column_spacing": 36,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 18,
+        "row_spacing_mobile": 28,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "#FAF6F1",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#FAF6F1",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "results_compare": {
+      "type": "glow-results-compare",
+      "blocks": {
+        "before": { "type": "image", "settings": { "focal_point": "center" } },
+        "after": { "type": "image", "settings": { "focal_point": "center" } }
+      },
+      "block_order": ["before", "after"],
+      "settings": {
+        "heading": "Frizz on the left. Glass hair on the right.",
+        "subheading": "<p>One minute with the Smoothing Brush — no heat, no styling product.</p>",
+        "show_labels": true,
+        "before_label": "BEFORE",
+        "after_label": "AFTER",
+        "caption": "Drag the slider — that's 60 seconds of brushing, nothing else.",
+        "background": "#EBE9E6",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "pull_quote_1": {
+      "type": "glow-quote",
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "text": "<p>I stopped using my flat iron completely. This brush gives me better shine in 60 seconds.</p>",
+            "attribution": "— TARYN M., VERIFIED BUYER"
+          }
+        }
+      },
+      "block_order": ["quote"],
+      "settings": {
+        "background": "#F4D5D2",
+        "text_color": "#171819",
+        "full_bleed": false,
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "routine": {
+      "type": "glow-routine-grid",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "product": "glow-beauty-hair-brush",
+            "show_index": true,
+            "eyebrow": "STEP",
+            "heading": "Detangle",
+            "body": "<p>On wet or dry hair, gently work out knots with The Detangling Brush to create a smooth, even canvas.</p>",
+            "link": "/products/glow-beauty-hair-brush"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "product": "the-smoothing-brush",
+            "show_index": true,
+            "eyebrow": "STEP",
+            "heading": "Smooth & shine",
+            "body": "<p>Brush slowly from root to tip. Boar bristles distribute your natural oils while nylon polishes every strand to a glass-like finish.</p>",
+            "link": "/products/the-smoothing-brush"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "product": "the-beauty-bag",
+            "show_index": true,
+            "eyebrow": "STEP",
+            "heading": "Style & store",
+            "body": "<p>Finish your look, then tuck your brush into its dust bag or The Beauty Bag to keep it salon-fresh.</p>",
+            "link": "/products/the-beauty-bag"
+          }
+        }
+      },
+      "block_order": ["s1", "s2", "s3"],
+      "settings": {
+        "heading": "The three-step glow routine",
+        "subheading": "<p>Salon-smooth hair is a routine, not an accident. Here&rsquo;s ours.</p>",
+        "columns": "3",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "feature_bristles": {
+      "type": "image-with-text-split",
+      "blocks": {
+        "accent": { "type": "accent", "settings": { "accent": "THE BRISTLE BLEND" } },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Two bristles. One flawless finish.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Natural boar bristle</strong> carries your scalp&rsquo;s nourishing oils down each strand — conditioning, sealing and adding that lit-from-within shine no serum can fake.</p><p><strong>Clear nylon bristle</strong> reaches deeper to smooth frizz, catch flyaways and add gentle tension for a polished, salon-smooth result every time.</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "/products/the-smoothing-brush",
+            "link_text": "Add to bag — $58",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "text", "button"],
+      "settings": {
+        "image_position": "left",
+        "image_mobile_position": "above-content",
+        "image_padding": "none",
+        "aspect_ratio": "portrait",
+        "focal_point": "center",
+        "content_alignment": "left",
+        "background_color": "#D9A49C",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#FAF6F1",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "feature_handcrafted": {
+      "type": "image-with-text",
+      "blocks": {
+        "accent": { "type": "accent", "settings": { "accent": "HANDCRAFTED" } },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Made by hand. Made to last.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Smoothing Brush is finished by hand around a smooth, ergonomic handle that feels as good as it works. It&rsquo;s the kind of tool you&rsquo;ll reach for every single morning — and still love years from now.</p><p>Yours arrives with a <strong>complimentary dust bag</strong> to keep it beautiful at home or in your weekender.</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "/products/the-smoothing-brush",
+            "link_text": "Add to bag — $58",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "text", "button"],
+      "settings": {
+        "image_position": "right",
+        "aspect_ratio": "portrait",
+        "focal_point": "center",
+        "text_alignment": "left",
+        "show_small_image": false,
+        "image_small_aspect": "square",
+        "image_small_focal_point": "center",
+        "background_color": "#EBE9E6",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#FAF6F1",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "editorial": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "chip": { "type": "chip_overlay", "settings": { "text": "BEST SELLER" } },
+        "rating": { "type": "rating", "settings": { "text": "4.9/5 ★ — 2,400+ reviews" } },
+        "eyebrow": { "type": "eyebrow", "settings": { "text": "GLOW BEAUTY HAIR" } },
+        "heading": { "type": "heading", "settings": { "text": "The last brush you'll ever need", "tag": "h2" } },
+        "subheading": { "type": "subheading", "settings": { "text": "Handcrafted for the shine you've been chasing." } },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Thousands have traded their hot tools and frizz serums for one handcrafted brush. Sleek, shiny, healthy-looking hair — in less time, with zero heat. Once you feel the difference, there&rsquo;s no going back.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Shop the Smoothing Brush — $58",
+            "link": "/products/the-smoothing-brush",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["chip", "rating", "eyebrow", "heading", "subheading", "body", "button"],
+      "settings": {
+        "focal_point": "center",
+        "image_position": "left",
+        "mobile_order": "image_first",
+        "show_band": false,
+        "band_text": "BEST SELLER",
+        "band_bg": "#B8C5D6",
+        "outer_bg": "#FAF6F1",
+        "content_bg": "#EBE9E6",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ugc": {
+      "type": "multi-column",
+      "blocks": {
+        "u1": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "portrait",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "★★★★★",
+            "heading": "@maya.glows",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>“My shiniest hair ever — and I haven't touched a hot tool in weeks.”</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "u2": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "portrait",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "★★★★★",
+            "heading": "@priya.hair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>“One pass and the frizz is gone. It looks like I left the salon.”</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "u3": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "portrait",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "★★★★★",
+            "heading": "@jordanloves",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>“Feels luxe, came with the cutest dust bag, blowouts last twice as long.”</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "u4": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "portrait",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "small_caption": "",
+            "accent": "★★★★★",
+            "heading": "@sofiastyles",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>“The boar bristles make my hair so glossy and healthy. Obsessed.”</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["u1", "u2", "u3", "u4"],
+      "settings": {
+        "title": "#GlowHair",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "<p>Real results from real people. Tag #GlowHair to be featured.</p>",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "small",
+        "columns": "4",
+        "column_spacing": 24,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": true,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 14,
+        "row_spacing_mobile": 24,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "#FAF6F1",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#FAF6F1",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "blocks": {
+        "r1": {
+          "type": "testimonial",
+          "settings": {
+            "product": "the-smoothing-brush",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“My hair has never been this shiny — and I haven't touched a flat iron in weeks. I use it every morning and get compliments constantly.”",
+            "author": "— Maya R., verified buyer"
+          }
+        },
+        "r2": {
+          "type": "testimonial",
+          "settings": {
+            "product": "the-smoothing-brush",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“I was skeptical a brush could do this. One pass and the frizz is just… gone. The boar bristles make my hair look glossy and healthy.”",
+            "author": "— Priya S., verified buyer"
+          }
+        },
+        "r3": {
+          "type": "testimonial",
+          "settings": {
+            "product": "the-smoothing-brush",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "“Worth every penny. It feels luxurious, it came with the cutest dust bag, and my blowouts last twice as long now.”",
+            "author": "— Jordan L., verified buyer"
+          }
+        }
+      },
+      "block_order": ["r1", "r2", "r3"],
+      "settings": {
+        "image_size": "large",
+        "quote_font": "heading",
+        "background_color": "#FAF6F1",
+        "text_color": "#171819",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "comparison": {
+      "type": "multi-column",
+      "blocks": {
+        "ordinary": {
+          "type": "column",
+          "settings": {
+            "accent": "",
+            "heading": "Ordinary brushes",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<ul><li>✕ Snag, pull and create static</li><li>✕ Leave hair dull and frizzy</li><li>✕ Rely on heat &amp; product for shine</li><li>✕ Plastic bristles that wear out fast</li></ul>",
+            "text_font_class": "fs-body-200",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--secondary"
+          }
+        },
+        "glow": {
+          "type": "column",
+          "settings": {
+            "accent": "",
+            "heading": "The Smoothing Brush",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<ul><li>✓ Glides root to tip, no snagging</li><li>✓ Natural oils for real, lasting shine</li><li>✓ Zero heat, zero damage</li><li>✓ Handcrafted boar + nylon, built to last</li></ul>",
+            "text_font_class": "fs-body-200",
+            "text_max_width": 100,
+            "link": "/products/the-smoothing-brush",
+            "link_text": "Add to bag — $58",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["ordinary", "glow"],
+      "settings": {
+        "title": "The Glow difference",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "subheading": "<p>See why thousands made the switch.</p>",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "large",
+        "columns": "2",
+        "column_spacing": 32,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": true,
+        "background_color": "#B8C5D6",
+        "text_color": "#171819",
+        "button_background_color": "#171819",
+        "button_text_color": "#FAF6F1",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "faq": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Will it work on my hair type?",
+            "text": "<p>Yes. The Smoothing Brush is designed for all hair types and lengths. For very thick or curly hair, detangle first, then smooth in sections.</p>"
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Is boar bristle good for my hair?",
+            "text": "<p>Boar bristle is a stylist favorite because it distributes your scalp&rsquo;s natural oils down the hair shaft — conditioning strands and adding shine without product. Our blend pairs it with clear nylon to smooth frizz and add gentle grip.</p>"
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "Can I use it on wet hair?",
+            "text": "<p>It works best on dry or damp, detangled hair. For wet detangling, start with our Detangling Brush, then finish with the Smoothing Brush for shine.</p>"
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "How is this different from the Detangling Brush?",
+            "text": "<p>The Detangling Brush glides through knots on wet hair. The Smoothing Brush is your finishing tool — it polishes, smooths frizz and adds shine. Most people love using them together.</p>"
+          }
+        },
+        "q5": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "How do I clean it?",
+            "text": "<p>Remove hair after each use. Occasionally clean the bristles with a drop of gentle shampoo and lukewarm water, then lay flat to dry. Avoid soaking the base.</p>"
+          }
+        },
+        "q6": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "What if I don't love it?",
+            "text": "<p>You&rsquo;re covered by our 30-day money-back guarantee and free returns. If it&rsquo;s not for you, we&rsquo;ll make it right.</p>"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "title": "Questions, answered",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "subheading": "<p>Everything you need to know before you brush.</p>",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "item_heading_font": "heading",
+        "auto_collapse_rows": true,
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 760
+      }
+    },
+    "cross_sell": {
+      "type": "complete-the-look",
+      "blocks": {
+        "c1": { "type": "product", "settings": { "product_item": "the-slick-back-duo" } },
+        "c2": { "type": "product", "settings": { "product_item": "the-beauty-bag" } },
+        "c3": { "type": "product", "settings": { "product_item": "round-brush" } },
+        "c4": { "type": "product", "settings": { "product_item": "glow-beauty-hair-brush" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4"],
+      "settings": {
+        "video_loop": true,
+        "video_controls": false,
+        "image_position": "left",
+        "aspect_ratio": "portrait_alt",
+        "heading": "Complete your routine",
+        "heading_tag": "h2",
+        "subheading": "<p>The pieces our community pairs with the Smoothing Brush.</p>",
+        "link": "/collections/all",
+        "link_text": "Shop all",
+        "button_style": "btn--callout",
+        "product_image_size": "medium",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "press_quote": {
+      "type": "glow-quote",
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "text": "<p>The one brush that finally gave me the glass-hair finish I&rsquo;d only ever gotten at the salon.</p>",
+            "attribution": "— THE GLOW COMMUNITY"
+          }
+        }
+      },
+      "block_order": ["quote"],
+      "settings": {
+        "background": "#FAF6F1",
+        "text_color": "#171819",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "final_cta": {
+      "type": "image-hero",
+      "blocks": {
+        "accent": { "type": "accent", "settings": { "accent": "READY FOR GLASS HAIR?" } },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Your best hair starts with one brush.",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Handcrafted boar + nylon bristles. Salon shine, zero heat. Backed by our 30-day money-back guarantee.</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "/products/the-smoothing-brush",
+            "link_text": "Add to bag — $58",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "text", "button"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 78,
+        "mobile_height": 72,
+        "focal_point": "center",
+        "mobile_focal_point": "center",
+        "media_link": "",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#171819",
+        "color_overlay": "#171819",
+        "overlay_opacity": 42,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "trust_marquee",
+    "value_pillars",
+    "benefits",
+    "results_compare",
+    "pull_quote_1",
+    "routine",
+    "feature_bristles",
+    "feature_handcrafted",
+    "editorial",
+    "ugc",
+    "reviews",
+    "comparison",
+    "faq",
+    "cross_sell",
+    "press_quote",
+    "final_cta"
+  ]
+}
