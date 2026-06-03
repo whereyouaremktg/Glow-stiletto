@@ -427,3 +427,24 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   }
   .glow-ugc__card { scroll-snap-align: start; }
 }
+
+/* ============================================================
+   Section: glow-badge-row
+   ============================================================ */
+.glow-badge-row__intro { text-align: center; max-width: 640px; margin: 0 auto var(--glow-space-m, 32px); }
+.glow-badge-row__heading { font-family: "GothamUltra", var(--font-heading), serif; font-size: clamp(20px, 2.2vw, 28px); line-height: 1.1; margin: 0 0 10px; text-transform: uppercase; }
+.glow-badge-row__subheading { color: var(--glow-color-muted); font-size: 15px; line-height: 1.5; }
+.glow-badge-row__subheading p { margin: 0; }
+.glow-badge-row__items { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(20px, 4vw, 56px); }
+.glow-badge-row__item { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 130px; text-align: center; }
+.glow-badge-row__coin { width: 88px; height: 88px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: var(--glow-blush); }
+.glow-badge-row__coin img, .glow-badge-row__coin .image { width: 100%; height: 100%; object-fit: cover; display: block; }
+.glow-badge-row__coin--placeholder { background: var(--glow-cream); border: 2px dashed var(--glow-color-muted); color: var(--glow-color-muted); }
+.glow-badge-row__coin--placeholder svg { width: 30px; height: 30px; }
+.glow-badge-row__label { font-family: "GothamUltra", var(--font-heading), sans-serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; color: var(--glow-color-dark); line-height: 1.25; }
+.glow-badge-row__sublabel { font-size: 12px; color: var(--glow-color-muted); line-height: 1.3; }
+@media (max-width: 749px) {
+  .glow-badge-row__items { gap: 20px; }
+  .glow-badge-row__item { width: 104px; }
+  .glow-badge-row__coin { width: 72px; height: 72px; }
+}

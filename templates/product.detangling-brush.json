@@ -757,6 +757,24 @@
         "padding_bottom": 0
       }
     },
+    "badges": {
+      "type": "glow-badge-row",
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "label": "ALL HAIR TYPES" } },
+        "b2": { "type": "badge", "settings": { "label": "DRAINAGE HOLE" } },
+        "b3": { "type": "badge", "settings": { "label": "METAL BRISTLES" } },
+        "b4": { "type": "badge", "settings": { "label": "CRUELTY-FREE" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
     "comparison": {
       "type": "glow-comparison",
       "blocks": {
@@ -864,6 +882,7 @@
     "main",
     "press",
     "feature",
+    "badges",
     "comparison",
     "compare",
     "pillars",
