@@ -691,6 +691,19 @@
         "padding_bottom": 96
       }
     },
+    "checker": {
+      "type": "glow-checker-strip",
+      "settings": {
+        "color_1": "#A7BBE6",
+        "color_2": "#FFFFFF",
+        "square_size": 28,
+        "height": 56,
+        "label": "",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "closing": {
       "type": "glow-editorial-split",
       "blocks": {
@@ -892,6 +905,7 @@
     "reviews",
     "tabs",
     "routine",
+    "checker",
     "closing",
     "recommended"
   ]

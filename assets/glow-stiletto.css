@@ -448,3 +448,19 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
   .glow-badge-row__item { width: 104px; }
   .glow-badge-row__coin { width: 72px; height: 72px; }
 }
+
+/* ============================================================
+   Section: glow-checker-strip
+   ============================================================ */
+.glow-checker-strip {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background:
+    repeating-conic-gradient(
+      var(--glow-checker-1, #A7BBE6) 0% 25%,
+      var(--glow-checker-2, #FFFFFF) 0% 50%
+    ) 0 0 / var(--glow-checker-cell, 56px) var(--glow-checker-cell, 56px);
+}
+.glow-checker-strip__label { position: relative; z-index: 1; }
