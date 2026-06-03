@@ -1,0 +1,278 @@
+{%- liquid
+  assign ours = section.settings.ours_title | default: 'The Detangling Brush'
+  assign theirs = section.settings.theirs_title | default: 'Ordinary brushes'
+  assign rows = section.blocks | where: 'type', 'row'
+-%}
+
+{%- capture mark_yes -%}
+  <span class="glow-comparison__mark glow-comparison__mark--yes" aria-label="Yes">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </span>
+{%- endcapture -%}
+{%- capture mark_no -%}
+  <span class="glow-comparison__mark glow-comparison__mark--no" aria-label="No">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 5l6 6M11 5l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </span>
+{%- endcapture -%}
+{%- capture mark_partial -%}
+  <span class="glow-comparison__mark glow-comparison__mark--partial" aria-label="Sometimes">
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 8h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </span>
+{%- endcapture -%}
+
+<div
+  class="glow-section glow-comparison section {% if section.settings.full_bleed %}section--full-width{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-comparison"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background }};
+  "
+>
+  <div class="glow-container glow-comparison__inner">
+    {%- if section.settings.eyebrow != blank or section.settings.heading != blank or section.settings.subheading != blank -%}
+      <div class="glow-comparison__intro">
+        {%- if section.settings.eyebrow != blank -%}
+          <span class="glow-eyebrow glow-comparison__eyebrow">{{ section.settings.eyebrow }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="glow-comparison__heading ff-glow-display-2">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <div class="glow-comparison__subheading rte">{{ section.settings.subheading }}</div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="glow-comparison__table" role="table" aria-label="{{ ours }} compared to {{ theirs }}">
+      <div class="glow-comparison__cell glow-comparison__cell--feature glow-comparison__cell--head" role="columnheader"></div>
+      <div class="glow-comparison__cell glow-comparison__cell--ours glow-comparison__cell--head" role="columnheader">
+        {%- if section.settings.ours_badge != blank -%}
+          <span class="glow-chip glow-comparison__col-badge">{{ section.settings.ours_badge }}</span>
+        {%- endif -%}
+        {%- if section.settings.ours_image != blank -%}
+          <span class="glow-comparison__col-image">
+            {%- render 'image', image: section.settings.ours_image, sizes_px: 120, focal_point: 'image_presentation', include_placeholder: false -%}
+          </span>
+        {%- endif -%}
+        <span class="glow-comparison__col-title">{{ ours }}</span>
+      </div>
+      <div class="glow-comparison__cell glow-comparison__cell--theirs glow-comparison__cell--head" role="columnheader">
+        <span class="glow-comparison__col-title">{{ theirs }}</span>
+      </div>
+
+      {%- for block in rows -%}
+        {%- assign last = '' -%}
+        {%- if forloop.last -%}{%- assign last = 'glow-comparison__cell--last' -%}{%- endif -%}
+        <div class="glow-comparison__cell glow-comparison__cell--feature {{ last }}" role="rowheader" {{ block.shopify_attributes }}>
+          <span class="glow-comparison__feature-text">{{ block.settings.feature }}</span>
+        </div>
+        <div class="glow-comparison__cell glow-comparison__cell--ours {{ last }}" role="cell">
+          {%- case block.settings.ours -%}
+            {%- when 'no' -%}{{ mark_no }}
+            {%- when 'partial' -%}{{ mark_partial }}
+            {%- else -%}{{ mark_yes }}
+          {%- endcase -%}
+          {%- if block.settings.ours_note != blank -%}<span class="glow-comparison__note">{{ block.settings.ours_note }}</span>{%- endif -%}
+        </div>
+        <div class="glow-comparison__cell glow-comparison__cell--theirs {{ last }}" role="cell">
+          {%- case block.settings.theirs -%}
+            {%- when 'yes' -%}{{ mark_yes }}
+            {%- when 'partial' -%}{{ mark_partial }}
+            {%- else -%}{{ mark_no }}
+          {%- endcase -%}
+          {%- if block.settings.theirs_note != blank -%}<span class="glow-comparison__note">{{ block.settings.theirs_note }}</span>{%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.cta_text != blank -%}
+      <div class="glow-comparison__cta">
+        <a href="{{ section.settings.cta_link | default: '#' }}" class="btn btn--primary glow-btn">{{ section.settings.cta_text }}</a>
+        {%- if section.settings.cta_note != blank -%}
+          <span class="glow-comparison__cta-note">{{ section.settings.cta_note }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Glow comparison",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Intro"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "THE GLOW DIFFERENCE"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Not all brushes are created equal"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>See how The Detangling Brush stacks up against the brush in your drawer right now.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "text",
+      "id": "ours_title",
+      "label": "Your product column",
+      "default": "The Detangling Brush"
+    },
+    {
+      "type": "image_picker",
+      "id": "ours_image",
+      "label": "Your product image (optional)"
+    },
+    {
+      "type": "text",
+      "id": "ours_badge",
+      "label": "Your product badge (optional)",
+      "default": "BEST SELLER"
+    },
+    {
+      "type": "text",
+      "id": "theirs_title",
+      "label": "Comparison column",
+      "default": "Ordinary brushes"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button label",
+      "default": "Upgrade your brush — $33"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "cta_note",
+      "label": "Note under button",
+      "default": "30-day happy-hair guarantee"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#FAF6F1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature",
+          "default": "Painless detangling"
+        },
+        {
+          "type": "select",
+          "id": "ours",
+          "label": "Your product",
+          "default": "yes",
+          "options": [
+            { "value": "yes", "label": "Yes (check)" },
+            { "value": "partial", "label": "Sometimes (dash)" },
+            { "value": "no", "label": "No (cross)" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ours_note",
+          "label": "Your product note (optional)"
+        },
+        {
+          "type": "select",
+          "id": "theirs",
+          "label": "Comparison",
+          "default": "no",
+          "options": [
+            { "value": "yes", "label": "Yes (check)" },
+            { "value": "partial", "label": "Sometimes (dash)" },
+            { "value": "no", "label": "No (cross)" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "theirs_note",
+          "label": "Comparison note (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow comparison",
+      "blocks": [
+        { "type": "row", "settings": { "feature": "Painless, snag-free detangling", "ours": "yes", "theirs": "no" } },
+        { "type": "row", "settings": { "feature": "Works on wet or dry hair", "ours": "yes", "theirs": "partial" } },
+        { "type": "row", "settings": { "feature": "Drainage hole — never traps water", "ours": "yes", "theirs": "no" } },
+        { "type": "row", "settings": { "feature": "Scalp-exfoliating metal bristles", "ours": "yes", "theirs": "no" } },
+        { "type": "row", "settings": { "feature": "Prevents breakage, static & frizz", "ours": "yes", "theirs": "no" } },
+        { "type": "row", "settings": { "feature": "Safe for all hair types & extensions", "ours": "yes", "theirs": "partial" } },
+        { "type": "row", "settings": { "feature": "Built to last for years", "ours": "yes", "theirs": "no" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

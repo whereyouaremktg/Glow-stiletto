@@ -1,0 +1,111 @@
+{%- liquid
+  assign cell = section.settings.square_size | times: 2
+-%}
+
+<div
+  class="glow-checker-strip section {% if section.settings.full_bleed %}section--full-width{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="glow-checker-strip"
+  style="
+    height: {{ section.settings.height }}px;
+    margin-top: {{ section.settings.padding_top }}px;
+    margin-bottom: {{ section.settings.padding_bottom }}px;
+    --glow-checker-1: {{ section.settings.color_1 }};
+    --glow-checker-2: {{ section.settings.color_2 }};
+    --glow-checker-cell: {{ cell }}px;
+  "
+  role="presentation"
+>
+  {%- if section.settings.label != blank -%}
+    <span class="glow-checker-strip__label glow-chip">{{ section.settings.label }}</span>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Glow checker strip",
+  "tag": "section",
+  "class": "shopify-section--full-width",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "A full-bleed checkerboard divider. Pure CSS — stays crisp at any size."
+    },
+    {
+      "type": "color",
+      "id": "color_1",
+      "label": "Checker color",
+      "default": "#A7BBE6"
+    },
+    {
+      "type": "color",
+      "id": "color_2",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "square_size",
+      "label": "Square size",
+      "min": 8,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Strip height",
+      "min": 16,
+      "max": 320,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Center label (optional)"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_bleed",
+      "label": "Full-bleed (edge to edge)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Space above",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Space below",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glow checker strip"
+    }
+  ]
+}
+{% endschema %}

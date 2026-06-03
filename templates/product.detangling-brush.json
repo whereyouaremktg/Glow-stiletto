@@ -1,0 +1,912 @@
+/*
+ * The Detangling Brush — conversion landing page template.
+ *
+ * An all-in-one product lander composed from this theme's own sections:
+ * a fully loaded buy box (main-product--default) followed by an editorial
+ * story flow (press, feature splits, before/after, benefits, reviews,
+ * routine cross-sell, and a closing CTA). Wired to the live product photos,
+ * press logos, and related products so it renders ready-to-sell. Every block
+ * remains fully editable in the theme editor.
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "product_header": {
+          "type": "product_header",
+          "settings": {
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_discount": false,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": false,
+            "show_custom_badges": true
+          }
+        },
+        "hook": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-200",
+            "text": "<p>★★★★★ <strong>4.9</strong> &nbsp;·&nbsp; Loved by 2,400+ reviewers</p><p>This isn’t your average hairbrush. The Detangling Brush glides through wet or dry hair to painlessly melt away knots — no pulling, no breakage, no frizz.</p>",
+            "column_placement": "right"
+          }
+        },
+        "benefits": {
+          "type": "product_callouts",
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "add_box": false,
+            "add_dividers": true,
+            "icon_1": "water-bottle",
+            "text_1": "<p>Works on wet <em>or</em> dry hair</p>",
+            "icon_2": "heart",
+            "text_2": "<p>Painless, snag-free detangling</p>",
+            "icon_3": "leaf",
+            "text_3": "<p>Hidden drainage hole stays fresh</p>",
+            "icon_4": "checked-box",
+            "text_4": "<p>Safe for all hair types &amp; extensions</p>",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "inventory": {
+          "type": "inventory-counter",
+          "settings": {
+            "label": "In stock & ready to ship",
+            "inventory_max": "50",
+            "low_inventory_threshold": "10",
+            "show_status_bar": true,
+            "show_untracked_quantity": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_sticky_atc_bar_desktop": true,
+            "enable_sticky_atc_bar_mobile": true,
+            "divider_width": "border--thin"
+          }
+        },
+        "secure_payment": {
+          "type": "secure_payment",
+          "settings": {
+            "column_placement": "right",
+            "text_alignment": "center",
+            "text_position": "above",
+            "show_payment_icons": true,
+            "heading_text": "Guaranteed safe & secure checkout",
+            "heading_icon": "padlock"
+          }
+        },
+        "trust": {
+          "type": "product_callouts",
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "add_box": true,
+            "add_dividers": true,
+            "icon_1": "moving-truck",
+            "text_1": "<p><strong>Free shipping</strong> on US orders over $50</p>",
+            "icon_2": "package-open",
+            "text_2": "<p><strong>30-day</strong> happy-hair guarantee &amp; easy returns</p>",
+            "icon_3": "leaf",
+            "text_3": "<p>Ships <strong>carbon neutral</strong> from the USA</p>",
+            "icon_4": "chat",
+            "text_4": "<p>Questions? <a href=\"/pages/contact\">Talk to a real human</a></p>",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "details": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": true,
+            "column_placement": "right",
+            "heading": "The details",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p><strong>This isn’t your average hairbrush.</strong> We reimagined the haircare staple to be functional, reliable, and timeless. The Detangling Brush painlessly detangles hair while preventing breakage, static, and frizz.</p><p>Use it on wet or dry hair — a hidden <strong>drainage hole</strong> prevents water retention and damage, so it never gets gross. Gentle metal bristles exfoliate the scalp to lift buildup, boost shine, and support healthy hair growth.</p><p><em>Safe to use on all hair types and extensions.</em></p>"
+          }
+        },
+        "how_to_use": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "How to use",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p><strong>1.</strong> Start at the ends of damp or dry hair and gently work upward toward the roots.</p><p><strong>2.</strong> In the shower, brush through conditioner to distribute it evenly and detangle with ease.</p><p><strong>3.</strong> Finish with long strokes from scalp to ends to stimulate circulation and bring out shine.</p><p><strong>4.</strong> Rinse the brush under water — the drainage hole lets it dry fast and stay fresh.</p>"
+          }
+        },
+        "shipping": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Shipping & returns",
+            "heading_tag": "h3",
+            "icon": "moving-truck",
+            "content": "<p>Free standard shipping on US orders over $50. Orders ship within 24 hours, Monday–Friday.</p><p>Not in love? Return or exchange within 30 days for a full refund — we’ll even cover the return label. <a href=\"/pages/contact\">Contact us</a> and we’ll take care of you.</p>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_header",
+        "hook",
+        "benefits",
+        "inventory",
+        "quantity_selector",
+        "buy_buttons",
+        "secure_payment",
+        "trust",
+        "details",
+        "how_to_use",
+        "shipping",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_product_details": true,
+        "show_breadcrumbs": true,
+        "show_navigation_buttons": false,
+        "auto_collapse_rows": true,
+        "show_featured_media_first": false,
+        "gallery_style": "thumbnails",
+        "gallery_style_mobile": "carousel",
+        "gallery_size": "large",
+        "gallery_overflow": "2",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "natural",
+        "enable_multiple_variant_media": false,
+        "enable_mobile_carousel_looping": true,
+        "show_mobile_carousel_images_full_width": true,
+        "hide_mobile_carousel_dots": false,
+        "enable_gift_card_recipient": true,
+        "enable_animation": true
+      }
+    },
+    "press": {
+      "type": "glow-press-strip",
+      "blocks": {
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Anthropologie_Logo_svg.png",
+            "label": "Anthropologie"
+          }
+        },
+        "logo-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Revolve-Logo.png",
+            "label": "Revolve"
+          }
+        },
+        "logo-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Urban_Outfitters_logo_svg.png",
+            "label": "Urban Outfitters"
+          }
+        }
+      },
+      "block_order": ["logo-1", "logo-2", "logo-3"],
+      "settings": {
+        "background": "#FAF6F1",
+        "columns": "3",
+        "greyscale": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "feature": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "chip_overlay": {
+          "type": "chip_overlay",
+          "settings": {
+            "text": "BEST SELLER"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "text": "4.9/5 · 2,400+ Reviews"
+          }
+        },
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "FUNCTIONAL · RELIABLE · TIMELESS"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Not your average hairbrush",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Meet The Detangling Brush"
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>We reimagined the haircare staple to be functional, reliable, and timeless. It glides through wet or dry hair to painlessly melt away knots — preventing breakage, static, and frizz. A hidden drainage hole keeps it fresh, while gentle metal bristles exfoliate your scalp for healthier, shinier-looking hair.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Add to cart — $33",
+            "link": "/cart/40103502643223:1",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "chip_overlay",
+        "rating",
+        "eyebrow",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
+        "focal_point": "image_presentation",
+        "image_position": "left",
+        "mobile_order": "image_first",
+        "show_band": false,
+        "band_text": "THE GLOW EDIT",
+        "band_bg": "#F4D5D2",
+        "outer_bg": "#FAF6F1",
+        "content_bg": "#EBE9E6",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "compare": {
+      "type": "glow-results-compare",
+      "blocks": {
+        "before": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/19_f7f93beb-33c3-4e1e-84b7-721f8b3fbb4d.png",
+            "focal_point": "image_presentation"
+          }
+        },
+        "after": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
+            "focal_point": "image_presentation"
+          }
+        }
+      },
+      "block_order": ["before", "after"],
+      "settings": {
+        "heading": "See the difference",
+        "subheading": "<p>Real results, one stroke at a time. Drag the slider to watch wet, tangled hair transform into smooth and shiny.</p>",
+        "show_labels": true,
+        "before_label": "BEFORE",
+        "after_label": "AFTER",
+        "caption": "From knotted to gleaming — in a single pass",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "pillars": {
+      "type": "multi-column",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "accent": "PAINLESS",
+            "heading": "Detangles without the drama",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>Flexible metal bristles slip through knots in wet or dry hair — no yanking, no snapping, no tears. Just smooth, one-stroke detangling.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "accent": "INGENIOUS",
+            "heading": "The drainage hole",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>A hidden hole lets water drain straight through, so your brush never traps moisture, never gets gunky, and dries in minutes. Shower-safe and squeaky clean.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "accent": "HEALTHIER HAIR",
+            "heading": "Scalp-loving bristles",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>Gentle metal bristles exfoliate the scalp to lift buildup, distribute natural oils, and bring out serious shine — supporting healthier growth over time.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "The difference is in the details",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "large",
+        "columns": "3",
+        "column_spacing": 48,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 4,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "#F4D5D2",
+        "text_color": "#171819",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "story": {
+      "type": "glow-story-stack",
+      "blocks": {
+        "moment-1": {
+          "type": "moment",
+          "settings": {
+            "image": "shopify://shop_images/19_f7f93beb-33c3-4e1e-84b7-721f8b3fbb4d.png",
+            "focal_point": "image_presentation",
+            "reverse": false,
+            "eyebrow": "GLIDES, NEVER YANKS",
+            "heading": "Knots don’t stand a chance",
+            "body": "<p>Wet or dry, the bristles flex and glide to lift tangles apart instead of ripping through them. You get faster styling with far less breakage, static, and frizz — and a lot less ouch.</p>",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--callout"
+          }
+        },
+        "moment-2": {
+          "type": "moment",
+          "settings": {
+            "image": "shopify://shop_images/OG-001_2_2b7fc700-839c-4363-9da7-eb44966c05dc.png",
+            "focal_point": "image_presentation",
+            "reverse": true,
+            "eyebrow": "STAYS FRESH",
+            "heading": "The drainage hole changes everything",
+            "body": "<p>Most brushes trap water and turn into a soggy mess. Ours doesn’t. A built-in drainage hole channels water straight through — so it dries fast, resists buildup, and is genuinely happy in the shower.</p>",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--callout"
+          }
+        },
+        "moment-3": {
+          "type": "moment",
+          "settings": {
+            "image": "shopify://shop_images/18_8434790d-90e1-4613-9d6c-8a07ee4d57c0.png",
+            "focal_point": "image_presentation",
+            "reverse": false,
+            "eyebrow": "HEALTHY-HAIR HABIT",
+            "heading": "Bristles your scalp will thank you for",
+            "body": "<p>Rounded metal bristles gently exfoliate the scalp, sweep away product buildup, and spread your hair’s natural oils from root to tip. The result: more shine, more bounce, and support for healthier growth.</p>",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--callout"
+          }
+        }
+      },
+      "block_order": ["moment-1", "moment-2", "moment-3"],
+      "settings": {
+        "heading": "Engineered for your best hair",
+        "subheading": "<p>Three details that make The Detangling Brush different.</p>",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "quote": {
+      "type": "glow-quote",
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "image": "",
+            "text": "<p>“It detangles in seconds with zero tugging — the only brush I’ll ever need.”</p>",
+            "attribution": "— ELLE"
+          }
+        }
+      },
+      "block_order": ["quote"],
+      "settings": {
+        "background": "#B8C5D6",
+        "text_color": "#171819",
+        "full_bleed": true,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/maryselects_4.jpg",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "\"I have thick, curly hair that used to take twenty minutes to detangle. This does it in two — no tears, no breakage. I'm obsessed.\"",
+            "author": "— Maya R., Verified Buyer"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "\"The drainage hole is genius. I use it in the shower with conditioner and it never gets gross. My hair has honestly never been shinier.\"",
+            "author": "— Priya S., Verified Buyer"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image": "shopify://shop_images/20_b8f8a191-952d-417b-8ef8-e8c0d6523714.png",
+            "image_position": "right",
+            "aspect_ratio": "portrait",
+            "focal_point": "center",
+            "show_rating": true,
+            "rating": 5,
+            "quote": "\"Bought one for me and three as gifts. Everyone's hooked. The metal bristles feel amazing on your scalp.\"",
+            "author": "— Jordan L., Verified Buyer"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "image_size": "large",
+        "quote_font": "body",
+        "background_color": "#FAF6F1",
+        "text_color": "#22292d",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "tabs": {
+      "type": "product-tabs",
+      "blocks": {
+        "why": {
+          "type": "one_column",
+          "settings": {
+            "tab_heading": "Why it’s different",
+            "heading_column_1": "Reimagined from the bristles up",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p><strong>This isn’t your average hairbrush.</strong> We rethought every part of the haircare staple to be functional, reliable, and timeless — a tool you’ll actually love reaching for.</p><ul><li><strong>Painless detangling</strong> on wet or dry hair, with less breakage, static, and frizz.</li><li><strong>Drainage hole</strong> that prevents water retention so it never gets gross.</li><li><strong>Metal bristles</strong> that exfoliate the scalp, lift buildup, and add shine.</li><li><strong>Universally kind</strong> — safe for all hair types and extensions.</li></ul>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "content_width": "custom",
+            "text_max_width": 760,
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text"
+          }
+        },
+        "science": {
+          "type": "two_column_tab",
+          "settings": {
+            "tab_heading": "The science",
+            "content_vertical_alignment": "top",
+            "column_spacing": 28,
+            "heading_column_1": "Metal bristles",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p>Rounded metal bristles gently exfoliate the scalp to remove buildup and stimulate circulation — which helps distribute natural oils, boost shine, and support healthy hair growth over time.</p>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text",
+            "heading_column_2": "The drainage hole",
+            "heading_font_class_column_2": "fs-heading-4-base",
+            "heading_tag_column_2": "h3",
+            "text_column_2": "<p>A purpose-built drainage hole lets water pass straight through the handle. No trapped moisture means no mildew, no damage, and a brush that dries in minutes — shower-safe by design.</p>",
+            "page_for_content_column_2": "",
+            "custom_liquid_column_2": "",
+            "text_font_class_column_2": "fs-body-100",
+            "image_width_column_2": 100,
+            "image_position_column_2": "above_text"
+          }
+        },
+        "care": {
+          "type": "one_column",
+          "settings": {
+            "tab_heading": "Care & materials",
+            "heading_column_1": "Built to last",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p>Rinse under warm water after use — the drainage hole helps it dry quickly. Wipe the handle clean and store upright. With simple care, your Detangling Brush is built to stay with you for years.</p><p><strong>Materials:</strong> durable molded handle with rounded stainless-steel bristles. Cruelty-free. Safe for all hair types and extensions.</p>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "content_width": "custom",
+            "text_max_width": 760,
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text"
+          }
+        },
+        "faq": {
+          "type": "one_column",
+          "settings": {
+            "tab_heading": "FAQ",
+            "heading_column_1": "Questions, answered",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p><strong>Can I use it on wet hair?</strong><br>Yes — wet or dry. The drainage hole makes it perfect for the shower.</p><p><strong>Will it work on my hair type?</strong><br>Absolutely. It’s designed for all hair types and textures, plus extensions.</p><p><strong>Is it gentle on the scalp?</strong><br>Very. The rounded metal bristles exfoliate gently without scratching.</p><p><strong>Will it cause breakage?</strong><br>The opposite — the flexible bristles glide through knots to help prevent breakage, static, and frizz.</p><p><strong>How do I clean it?</strong><br>Rinse under water and let it air-dry. The drainage hole keeps it fresh.</p>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "content_width": "custom",
+            "text_max_width": 760,
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text"
+          }
+        }
+      },
+      "block_order": ["why", "science", "care", "faq"],
+      "settings": {
+        "tab_alignment": "left",
+        "tab_spacing": 40,
+        "font_choice": "ff-heading",
+        "tab_font_size": "fs-body-150",
+        "background_color": "",
+        "text_color": "#000000",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "routine": {
+      "type": "glow-routine-grid",
+      "blocks": {
+        "step-1": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/glow-beauty-hair-brush",
+            "show_index": true,
+            "eyebrow": "STEP 01",
+            "heading": "Detangle",
+            "body": "<p>The Detangling Brush melts through knots on wet or dry hair.</p>",
+            "link": ""
+          }
+        },
+        "step-2": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/the-mini-detangling-brush",
+            "show_index": true,
+            "eyebrow": "STEP 02",
+            "heading": "On the go",
+            "body": "<p>The Mini slips into any bag for smooth hair anywhere.</p>",
+            "link": ""
+          }
+        },
+        "step-3": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/round-brush",
+            "show_index": true,
+            "eyebrow": "STEP 03",
+            "heading": "Style",
+            "body": "<p>The Round Brush adds volume and a salon-worthy blowout.</p>",
+            "link": ""
+          }
+        },
+        "step-4": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/the-detangling-duo",
+            "show_index": true,
+            "eyebrow": "BEST VALUE",
+            "heading": "Get the set",
+            "body": "<p>The Detangling Duo pairs full-size + mini and saves you more.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["step-1", "step-2", "step-3", "step-4"],
+      "settings": {
+        "heading": "Complete your routine",
+        "subheading": "<p>The Glow lineup — everything you need for smooth, salon-worthy hair at home.</p>",
+        "columns": "4",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "checker": {
+      "type": "glow-checker-strip",
+      "settings": {
+        "color_1": "#A7BBE6",
+        "color_2": "#FFFFFF",
+        "square_size": 28,
+        "height": 56,
+        "label": "",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "closing": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "chip_overlay": {
+          "type": "chip_overlay",
+          "settings": {
+            "text": "JOIN 50,000+ MANES"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "text": "4.9/5 · 2,400+ Reviews"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Your best hair day, every day",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Wet or dry. All hair types. Zero tugging."
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Smooth, shiny, healthier-looking hair from the very first stroke. Backed by our 30-day happy-hair guarantee — if you don’t love it, we’ll make it right.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Add to cart — $33",
+            "link": "/cart/40103502643223:1",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "chip_overlay",
+        "rating",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/18_b165525b-410b-48c0-8364-6f6ce0a38e9e.png",
+        "focal_point": "image_presentation",
+        "image_position": "right",
+        "mobile_order": "image_first",
+        "show_band": false,
+        "band_text": "THE GLOW EDIT",
+        "band_bg": "#F4D5D2",
+        "outer_bg": "#FAF6F1",
+        "content_bg": "#F4D5D2",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "badges": {
+      "type": "glow-badge-row",
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "label": "ALL HAIR TYPES" } },
+        "b2": { "type": "badge", "settings": { "label": "DRAINAGE HOLE" } },
+        "b3": { "type": "badge", "settings": { "label": "METAL BRISTLES" } },
+        "b4": { "type": "badge", "settings": { "label": "CRUELTY-FREE" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "comparison": {
+      "type": "glow-comparison",
+      "blocks": {
+        "r1": { "type": "row", "settings": { "feature": "Painless, snag-free detangling", "ours": "yes", "theirs": "no" } },
+        "r2": { "type": "row", "settings": { "feature": "Works on wet or dry hair", "ours": "yes", "ours_note": "Wet or dry", "theirs": "partial", "theirs_note": "Dry only" } },
+        "r3": { "type": "row", "settings": { "feature": "Drainage hole — never traps water", "ours": "yes", "theirs": "no" } },
+        "r4": { "type": "row", "settings": { "feature": "Scalp-exfoliating metal bristles", "ours": "yes", "theirs": "no" } },
+        "r5": { "type": "row", "settings": { "feature": "Prevents breakage, static & frizz", "ours": "yes", "theirs": "no" } },
+        "r6": { "type": "row", "settings": { "feature": "Safe for all hair types & extensions", "ours": "yes", "theirs": "partial" } },
+        "r7": { "type": "row", "settings": { "feature": "Built to last for years", "ours": "yes", "theirs": "no" } }
+      },
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "eyebrow": "THE GLOW DIFFERENCE",
+        "heading": "Not all brushes are created equal",
+        "subheading": "<p>See how The Detangling Brush compares to the brush in your drawer right now.</p>",
+        "ours_title": "The Detangling Brush",
+        "ours_image": "shopify://shop_images/OG-001_5cf83a11-abc5-4b33-8cf9-7edf4e4b8e86.png",
+        "ours_badge": "BEST SELLER",
+        "theirs_title": "Ordinary brushes",
+        "cta_text": "Upgrade your brush — $33",
+        "cta_link": "/cart/40103502643223:1",
+        "cta_note": "30-day happy-hair guarantee",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "ugc": {
+      "type": "glow-ugc",
+      "blocks": {
+        "p1": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/maryselects_4.jpg",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "Twenty minutes of detangling down to two. Zero tears, zero breakage.",
+            "author": "Maya R.",
+            "handle": "@maya.r",
+            "badge": "VERIFIED"
+          }
+        },
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>It detangles in seconds with zero tugging.</p>",
+            "author": "— ELLE"
+          }
+        },
+        "p2": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "I use it in the shower every day — the drainage hole means it never gets gross.",
+            "author": "Priya S.",
+            "handle": "@priya.styles",
+            "badge": "VERIFIED"
+          }
+        },
+        "p3": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/19_f7f93beb-33c3-4e1e-84b7-721f8b3fbb4d.png",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "Bought one for me and three as gifts. Everyone's obsessed.",
+            "author": "Jordan L.",
+            "handle": "@jordanl",
+            "badge": "VERIFIED"
+          }
+        }
+      },
+      "block_order": ["p1", "q1", "p2", "p3"],
+      "settings": {
+        "eyebrow": "#GLOWBRUSH",
+        "heading": "Loved by real hair, everywhere",
+        "subheading": "<p>Tag @glowbeautyhair to be featured.</p>",
+        "rating_text": "4.9/5 from 2,400+ happy customers",
+        "columns": "4",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "recommended": {
+      "type": "recommended-products",
+      "settings": {
+        "title": "You may also like",
+        "subheading": "",
+        "maximum_products": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "press",
+    "feature",
+    "badges",
+    "comparison",
+    "compare",
+    "pillars",
+    "story",
+    "quote",
+    "ugc",
+    "reviews",
+    "tabs",
+    "routine",
+    "checker",
+    "closing",
+    "recommended"
+  ]
+}
