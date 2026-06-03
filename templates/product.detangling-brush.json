@@ -757,6 +757,95 @@
         "padding_bottom": 0
       }
     },
+    "comparison": {
+      "type": "glow-comparison",
+      "blocks": {
+        "r1": { "type": "row", "settings": { "feature": "Painless, snag-free detangling", "ours": "yes", "theirs": "no" } },
+        "r2": { "type": "row", "settings": { "feature": "Works on wet or dry hair", "ours": "yes", "ours_note": "Wet or dry", "theirs": "partial", "theirs_note": "Dry only" } },
+        "r3": { "type": "row", "settings": { "feature": "Drainage hole — never traps water", "ours": "yes", "theirs": "no" } },
+        "r4": { "type": "row", "settings": { "feature": "Scalp-exfoliating metal bristles", "ours": "yes", "theirs": "no" } },
+        "r5": { "type": "row", "settings": { "feature": "Prevents breakage, static & frizz", "ours": "yes", "theirs": "no" } },
+        "r6": { "type": "row", "settings": { "feature": "Safe for all hair types & extensions", "ours": "yes", "theirs": "partial" } },
+        "r7": { "type": "row", "settings": { "feature": "Built to last for years", "ours": "yes", "theirs": "no" } }
+      },
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "eyebrow": "THE GLOW DIFFERENCE",
+        "heading": "Not all brushes are created equal",
+        "subheading": "<p>See how The Detangling Brush compares to the brush in your drawer right now.</p>",
+        "ours_title": "The Detangling Brush",
+        "ours_image": "shopify://shop_images/OG-001_5cf83a11-abc5-4b33-8cf9-7edf4e4b8e86.png",
+        "ours_badge": "BEST SELLER",
+        "theirs_title": "Ordinary brushes",
+        "cta_text": "Upgrade your brush — $33",
+        "cta_link": "/cart/40103502643223:1",
+        "cta_note": "30-day happy-hair guarantee",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "ugc": {
+      "type": "glow-ugc",
+      "blocks": {
+        "p1": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/maryselects_4.jpg",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "Twenty minutes of detangling down to two. Zero tears, zero breakage.",
+            "author": "Maya R.",
+            "handle": "@maya.r",
+            "badge": "VERIFIED"
+          }
+        },
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>It detangles in seconds with zero tugging.</p>",
+            "author": "— ELLE"
+          }
+        },
+        "p2": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/productsselects_5.jpg",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "I use it in the shower every day — the drainage hole means it never gets gross.",
+            "author": "Priya S.",
+            "handle": "@priya.styles",
+            "badge": "VERIFIED"
+          }
+        },
+        "p3": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/19_f7f93beb-33c3-4e1e-84b7-721f8b3fbb4d.png",
+            "focal_point": "center",
+            "rating": 5,
+            "quote": "Bought one for me and three as gifts. Everyone's obsessed.",
+            "author": "Jordan L.",
+            "handle": "@jordanl",
+            "badge": "VERIFIED"
+          }
+        }
+      },
+      "block_order": ["p1", "q1", "p2", "p3"],
+      "settings": {
+        "eyebrow": "#GLOWBRUSH",
+        "heading": "Loved by real hair, everywhere",
+        "subheading": "<p>Tag @glowbeautyhair to be featured.</p>",
+        "rating_text": "4.9/5 from 2,400+ happy customers",
+        "columns": "4",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
     "recommended": {
       "type": "recommended-products",
       "settings": {
@@ -775,10 +864,12 @@
     "main",
     "press",
     "feature",
+    "comparison",
     "compare",
     "pillars",
     "story",
     "quote",
+    "ugc",
     "reviews",
     "tabs",
     "routine",
