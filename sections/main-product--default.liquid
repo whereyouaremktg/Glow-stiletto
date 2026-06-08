@@ -661,6 +661,14 @@
       "@type": "Thing",
       "name": {{ product.vendor | json }}
     },
+    {%- if product.metafields.reviews.rating_count > 0 -%}
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": {{ product.metafields.reviews.rating.value.rating | json }},
+      "reviewCount": {{ product.metafields.reviews.rating_count | json }},
+      "bestRating": {{ product.metafields.reviews.rating.value.scale_max | json }}
+    },
+    {%- endif -%}
     "offers": [
       {% for variant in product.variants -%}
         {
