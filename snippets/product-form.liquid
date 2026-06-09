@@ -157,7 +157,7 @@
           aria-disabled="true" disabled
         {% endunless %}
         aria-label="{% unless current_variant.available %}{{ product_unavailable_label }}{% else %}{{ product_available_label }}{% endunless %}"
-        class="product-form__cart-submit btn btn--medium btn--full {% if show_dynamic_checkout %}btn--secondary{% else %}btn--primary{% endif %}"
+        class="product-form__cart-submit btn btn--medium btn--full btn--primary"
         data-add-to-cart
         data-lang-available="{{ product_available_label }}"
         data-lang-unavailable="{{ 'product.unavailable' | t }}"
