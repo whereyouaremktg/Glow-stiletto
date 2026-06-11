@@ -84,6 +84,10 @@
     <title>{{ seo_title | strip }}</title>
 
     {% render 'social-meta-tags' %}
+    {% render 'structured-data-organization' %}
+
+    <link rel="preload" href="{{ 'gotham-ultra.otf' | asset_url }}" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="https://245729861.fs1.hubspotusercontent-na2.net/hubfs/245729861/Proxima%20Nova%20Regular.ttf" as="font" type="font/ttf" crossorigin>
 
     {% render 'theme-setup' %}
     {% render 'theme-setting-vars' %}

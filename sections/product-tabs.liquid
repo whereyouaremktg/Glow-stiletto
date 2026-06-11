@@ -130,6 +130,32 @@
   </div>
 </div>
 
+{%- capture faq_entities -%}
+  {%- assign faq_first = true -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'one_column' and block.settings.enable_faq_schema and block.settings.text_column_1 contains '<strong>' -%}
+      {%- assign faq_chunks = block.settings.text_column_1 | split: '</p>' -%}
+      {%- for chunk in faq_chunks -%}
+        {%- if chunk contains '<strong>' and chunk contains '</strong>' -%}
+          {%- assign faq_question = chunk | split: '<strong>' | last | split: '</strong>' | first | strip_html | strip -%}
+          {%- assign faq_answer = chunk | split: '</strong>' | last | strip_html | strip -%}
+          {%- if faq_question != blank and faq_answer != blank -%}
+            {%- unless faq_first -%},{%- endunless -%}
+            {"@type":"Question","name":{{ faq_question | json }},"acceptedAnswer":{"@type":"Answer","text":{{ faq_answer | json }}}}
+            {%- assign faq_first = false -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign faq_entities = faq_entities | strip -%}
+{%- if faq_entities != blank -%}
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ faq_entities }}]}
+  </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.product_tabs.name",
@@ -409,6 +435,13 @@
           "label": "t:sections.product_tabs.blocks.shared.settings.tab_heading.label",
           "default": "t:sections.product_tabs.blocks.one_column.settings.tab_heading.default",
           "info": "t:sections.product_tabs.blocks.shared.settings.tab_heading.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_faq_schema",
+          "label": "Mark up as FAQ for search engines",
+          "info": "Adds FAQPage structured data. Content must be question-and-answer pairs with the question in bold, e.g. <strong>Question?</strong> followed by the answer.",
+          "default": false
         },
         {
           "type": "header",

@@ -10,7 +10,9 @@
   @font-face {
     font-family: "GothamUltra";
     src: url("{{ 'gotham-ultra.otf' | asset_url }}") format("opentype");
-    font-weight: 400;
+    /* Single ultra-weight face covers all requested weights so the browser
+       never stacks synthetic bold on top of an already-ultra design */
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
   }

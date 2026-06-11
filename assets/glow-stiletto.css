@@ -464,3 +464,9 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
     ) 0 0 / var(--glow-checker-cell, 56px) var(--glow-checker-cell, 56px);
 }
 .glow-checker-strip__label { position: relative; z-index: 1; }
+
+/* --- Shared intro/link utilities (replaces per-section inline styles) --- */
+.glow-intro-subheading { line-height: 1.6; color: var(--glow-color-muted); }
+.glow-intro-subheading--spaced { margin-top: var(--glow-space-s); }
+.glow-section-intro--gap { margin-bottom: var(--glow-space-l, 64px); }
+.glow-card-link { color: inherit; text-decoration: none; }

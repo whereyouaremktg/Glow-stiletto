@@ -20,12 +20,12 @@
   "
 >
   {%- if section.settings.heading != blank or section.settings.subheading != blank -%}
-    <div class="glow-results-compare__intro" style="margin-bottom: var(--glow-space-l, 64px);">
+    <div class="glow-results-compare__intro glow-section-intro--gap">
       {%- unless section.settings.heading == blank -%}
         <h2 class="glow-story-stack__heading ff-glow-display-2">{{ section.settings.heading }}</h2>
       {%- endunless -%}
       {%- unless section.settings.subheading == blank -%}
-        <div class="rte" style="line-height: 1.6; color: var(--glow-color-muted); margin-top: var(--glow-space-s);">{{ section.settings.subheading }}</div>
+        <div class="rte glow-intro-subheading glow-intro-subheading--spaced">{{ section.settings.subheading }}</div>
       {%- endunless -%}
     </div>
   {%- endif -%}

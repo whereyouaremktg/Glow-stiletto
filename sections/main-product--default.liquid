@@ -316,8 +316,9 @@
                 data-product-media-wrapper
                 data-aspect-ratio="{{ media_aspect_ratio }}"
               >
+                {%- capture media_fallback_alt -%}{{ product.title }} — view {{ media.position }}{%- endcapture -%}
                 {% render 'media',
-                  fallback_alt: product.title,
+                  fallback_alt: media_fallback_alt,
                   media: media,
                   featured_media: featured_media,
                   enable_product_lightbox: section.settings.enable_product_lightbox,
@@ -386,9 +387,10 @@
                   data-aspect-ratio="{{ media_aspect_ratio }}"
                 {%- endif %}
               >
+                {%- capture media_fallback_alt -%}{{ product.title }} — view {{ media.position }}{%- endcapture -%}
                 {% render 'media',
                   media: media,
-                  fallback_alt: product.title,
+                  fallback_alt: media_fallback_alt,
                   featured_media: featured_media,
                   enable_product_lightbox: section.settings.enable_product_lightbox,
                   loop_video: section.settings.enable_video_looping,
@@ -482,9 +484,10 @@
                 data-aspect-ratio="{{ media_aspect_ratio }}"
               {%- endif %}
             >
+              {%- capture media_fallback_alt -%}{{ product.title }} — view {{ media.position }}{%- endcapture -%}
               {% render 'media',
                 media: media,
-                fallback_alt: product.title,
+                fallback_alt: media_fallback_alt,
                 featured_media: featured_media,
                 enable_product_lightbox: section.settings.enable_product_lightbox,
                 loop_video: section.settings.enable_video_looping,
@@ -658,9 +661,20 @@
       "sku": {{ current_variant.sku | json }},
     {%- endif %}
     "brand": {
-      "@type": "Thing",
+      "@type": "Brand",
       "name": {{ product.vendor | json }}
     },
+    {%- liquid
+      assign rating_value = product.metafields.reviews.rating.value.rating | default: settings.glow_rating_value
+      assign rating_count = product.metafields.reviews.rating_count.value | default: settings.glow_rating_count
+    -%}
+    {% if settings.glow_rating_enable and rating_value != blank and rating_count != blank -%}
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": {{ rating_value | json }},
+        "reviewCount": {{ rating_count | json }}
+      },
+    {%- endif %}
     "offers": [
       {% for variant in product.variants -%}
         {
@@ -668,6 +682,10 @@
           {% if variant.sku != blank -%}
             "sku": {{ variant.sku | json }},
           {%- endif %}
+          {% if variant.barcode != blank -%}
+            "gtin": {{ variant.barcode | json }},
+          {%- endif %}
+          "itemCondition": "https://schema.org/NewCondition",
           "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
           "price" : {{ variant.price | divided_by: 100.00 | json }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},

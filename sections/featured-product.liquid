@@ -302,9 +302,20 @@
       "sku": {{ current_variant.sku | json }},
     {%- endif %}
     "brand": {
-      "@type": "Thing",
+      "@type": "Brand",
       "name": {{ featured_product.vendor | json }}
     },
+    {%- liquid
+      assign rating_value = featured_product.metafields.reviews.rating.value.rating | default: settings.glow_rating_value
+      assign rating_count = featured_product.metafields.reviews.rating_count.value | default: settings.glow_rating_count
+    -%}
+    {% if settings.glow_rating_enable and rating_value != blank and rating_count != blank -%}
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": {{ rating_value | json }},
+        "reviewCount": {{ rating_count | json }}
+      },
+    {%- endif %}
     "offers": [
       {% for variant in featured_product.variants -%}
         {
@@ -312,6 +323,10 @@
           {% if variant.sku != blank -%}
             "sku": {{ variant.sku | json }},
           {%- endif %}
+          {% if variant.barcode != blank -%}
+            "gtin": {{ variant.barcode | json }},
+          {%- endif %}
+          "itemCondition": "https://schema.org/NewCondition",
           "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
           "price" : {{ variant.price | divided_by: 100.00 | json }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},

@@ -1,0 +1,56 @@
+{%- comment -%}
+  Organization JSON-LD — rendered once from layout/theme.liquid.
+  Pulls identity from shop object and social links from theme settings.
+{%- endcomment -%}
+{%- liquid
+  assign social_links = ''
+  if settings.social_facebook_link != blank
+    assign social_links = social_links | append: settings.social_facebook_link | append: '|'
+  endif
+  if settings.social_instagram_link != blank
+    assign social_links = social_links | append: settings.social_instagram_link | append: '|'
+  endif
+  if settings.social_tiktok_link != blank
+    assign social_links = social_links | append: settings.social_tiktok_link | append: '|'
+  endif
+  if settings.social_youtube_link != blank
+    assign social_links = social_links | append: settings.social_youtube_link | append: '|'
+  endif
+  if settings.social_pinterest_link != blank
+    assign social_links = social_links | append: settings.social_pinterest_link | append: '|'
+  endif
+  if settings.social_twitter_link != blank
+    assign social_links = social_links | append: settings.social_twitter_link | append: '|'
+  endif
+  assign social_links = social_links | split: '|'
+-%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    "url": {{ shop.url | json }},
+    {%- if shop.brand.logo %}
+    "logo": {{ shop.brand.logo | image_url: width: 600 | prepend: 'https:' | json }},
+    {%- endif %}
+    {%- if social_links.size > 0 %}
+    "sameAs": {{ social_links | json }},
+    {%- endif %}
+    "@id": {{ shop.url | append: '#organization' | json }}
+  }
+</script>
+{%- if request.page_type == 'index' %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ shop.url | append: '/search?q={search_term_string}' | json }},
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+{%- endif %}

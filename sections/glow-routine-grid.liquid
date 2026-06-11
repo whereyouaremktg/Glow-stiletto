@@ -27,7 +27,7 @@
         <h2 class="glow-routine-grid__heading ff-glow-display-2">{{ section.settings.heading }}</h2>
       {%- endunless -%}
       {%- unless section.settings.subheading == blank -%}
-        <div class="rte" style="line-height: 1.6; color: var(--glow-color-muted); margin-top: var(--glow-space-s);">{{ section.settings.subheading }}</div>
+        <div class="rte glow-intro-subheading glow-intro-subheading--spaced">{{ section.settings.subheading }}</div>
       {%- endunless -%}
     </div>
   {%- endif -%}
@@ -61,7 +61,7 @@
         {%- capture step_index -%}{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}{%- endcapture -%}
 
         <div class="glow-routine-grid__step" {{ block.shopify_attributes }}>
-          {%- if link != blank -%}<a href="{{ link }}" style="color: inherit; text-decoration: none;">{%- endif -%}
+          {%- if link != blank -%}<a href="{{ link }}" class="glow-card-link">{%- endif -%}
             <div class="glow-routine-grid__media">
               {%- render 'image',
                 image: image,

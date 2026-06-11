@@ -1,0 +1,561 @@
+/*
+ * The Smoothing Brush — conversion landing page template.
+ *
+ * Cloned from the Detangling Brush lander structure. Filename matches this
+ * product's existing template suffix (brb001-thesmoothingbrush) so it takes
+ * effect on deploy with no admin changes. All product copy is sourced from
+ * this product's own store description. Sections that depend on review
+ * counts, press mentions, or testimonials are DISABLED with placeholder
+ * copy — supply real, verifiable content in the theme editor before
+ * enabling them.
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product--default",
+      "blocks": {
+        "product_header": {
+          "type": "product_header",
+          "settings": {
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_discount": false,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": false,
+            "show_custom_badges": true
+          }
+        },
+        "hook": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-200",
+            "text": "<p>Handcrafted with a mix of 100% natural boar bristle and clear nylon bristles — the ultimate tool to achieve sleek, shiny, and healthy hair.</p>",
+            "column_placement": "right"
+          }
+        },
+        "benefits": {
+          "type": "product_callouts",
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "add_box": false,
+            "add_dividers": true,
+            "icon_1": "leaf",
+            "text_1": "<p>100% natural boar bristle + clear nylon bristles</p>",
+            "icon_2": "heart",
+            "text_2": "<p>Moves natural oils through hair for smoothness &amp; shine</p>",
+            "icon_3": "checked-box",
+            "text_3": "<p>Handcrafted for quality and consistency</p>",
+            "icon_4": "package-open",
+            "text_4": "<p>Complimentary dust bag included</p>",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "inventory": {
+          "type": "inventory-counter",
+          "settings": {
+            "label": "In stock & ready to ship",
+            "inventory_max": "50",
+            "low_inventory_threshold": "10",
+            "show_status_bar": true,
+            "show_untracked_quantity": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_sticky_atc_bar_desktop": true,
+            "enable_sticky_atc_bar_mobile": true,
+            "divider_width": "border--thin"
+          }
+        },
+        "secure_payment": {
+          "type": "secure_payment",
+          "settings": {
+            "column_placement": "right",
+            "text_alignment": "center",
+            "text_position": "above",
+            "show_payment_icons": true,
+            "heading_text": "Guaranteed safe & secure checkout",
+            "heading_icon": "padlock"
+          }
+        },
+        "details": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": true,
+            "column_placement": "right",
+            "heading": "The details",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>Elevate your hair care routine with our handcrafted Smoothing Brush. With a mix of <strong>100% natural boar bristle</strong> and clear nylon bristles, this brush helps move oils throughout your hair to increase smoothness and shine. This is the ultimate tool to achieve sleek, shiny, and healthy hair.</p><p>Every brush comes with a <strong>complimentary dust bag</strong>.</p>"
+          }
+        },
+        "care": {
+          "type": "accordion",
+          "settings": {
+            "expand_by_default": false,
+            "column_placement": "right",
+            "heading": "Good to know",
+            "heading_tag": "h3",
+            "icon": "none",
+            "content": "<p>Because the boar bristles are a natural product there may be some variation between hairbrushes. We take every effort to ensure the consistency and quality of our brushes.</p>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_header",
+        "hook",
+        "benefits",
+        "inventory",
+        "quantity_selector",
+        "buy_buttons",
+        "secure_payment",
+        "details",
+        "care",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_product_details": true,
+        "show_breadcrumbs": true,
+        "show_navigation_buttons": false,
+        "auto_collapse_rows": true,
+        "show_featured_media_first": false,
+        "gallery_style": "thumbnails",
+        "gallery_style_mobile": "carousel",
+        "gallery_size": "large",
+        "gallery_overflow": "2",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "natural",
+        "enable_multiple_variant_media": false,
+        "enable_mobile_carousel_looping": true,
+        "show_mobile_carousel_images_full_width": true,
+        "hide_mobile_carousel_dots": false,
+        "enable_gift_card_recipient": true,
+        "enable_animation": true
+      }
+    },
+    "press": {
+      "type": "glow-press-strip",
+      "disabled": true,
+      "blocks": {
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "label": "[NEEDS YOUR COPY — real press/retailer logos only]"
+          }
+        }
+      },
+      "block_order": ["logo-1"],
+      "settings": {
+        "background": "#FAF6F1",
+        "columns": "3",
+        "greyscale": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "feature": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "HANDCRAFTED · NATURAL BOAR BRISTLE"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Sleek, shiny, healthy hair",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Meet The Smoothing Brush"
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>With a mix of 100% natural boar bristle and clear nylon bristles, this handcrafted brush helps move oils throughout your hair to increase smoothness and shine — the ultimate tool for sleek, shiny, healthy hair.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Add to cart — $58",
+            "link": "/cart/41863437582359:1",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/195.png",
+        "focal_point": "image_presentation",
+        "image_position": "left",
+        "mobile_order": "image_first",
+        "show_band": false,
+        "band_text": "THE GLOW EDIT",
+        "band_bg": "#F4D5D2",
+        "outer_bg": "#FAF6F1",
+        "content_bg": "#EBE9E6",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "badges": {
+      "type": "glow-badge-row",
+      "blocks": {
+        "b1": { "type": "badge", "settings": { "label": "HANDCRAFTED" } },
+        "b2": { "type": "badge", "settings": { "label": "NATURAL BOAR BRISTLE" } },
+        "b3": { "type": "badge", "settings": { "label": "SMOOTHNESS & SHINE" } },
+        "b4": { "type": "badge", "settings": { "label": "DUST BAG INCLUDED" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "pillars": {
+      "type": "multi-column",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "accent": "NATURAL",
+            "heading": "100% natural boar bristle",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>A mix of natural boar bristle and clear nylon bristles, handcrafted for quality and consistency.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "accent": "SMOOTHING",
+            "heading": "Moves oils through your hair",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>The bristle mix helps distribute oils throughout your hair to increase smoothness and shine.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "accent": "FINISHING",
+            "heading": "The sleek-hair tool",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text": "<p>The ultimate tool to achieve sleek, shiny, and healthy hair — with a complimentary dust bag included.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "The difference is in the details",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-2-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "large",
+        "columns": "3",
+        "column_spacing": 48,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 4,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "#B8C5D6",
+        "text_color": "#171819",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "ugc": {
+      "type": "glow-ugc",
+      "disabled": true,
+      "blocks": {
+        "p1": {
+          "type": "post",
+          "settings": {
+            "rating": 5,
+            "quote": "[NEEDS YOUR COPY — real customer reviews only]",
+            "author": "",
+            "handle": "",
+            "badge": ""
+          }
+        }
+      },
+      "block_order": ["p1"],
+      "settings": {
+        "eyebrow": "#GLOWBRUSH",
+        "heading": "[NEEDS YOUR COPY — enable once real reviews are added]",
+        "subheading": "",
+        "rating_text": "",
+        "columns": "4",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "tabs": {
+      "type": "product-tabs",
+      "blocks": {
+        "why": {
+          "type": "one_column",
+          "settings": {
+            "tab_heading": "Why it’s different",
+            "heading_column_1": "Handcrafted to smooth and shine",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p>Elevate your hair care routine with our handcrafted Smoothing Brush.</p><ul><li><strong>100% natural boar bristle</strong> mixed with clear nylon bristles.</li><li><strong>Moves oils throughout your hair</strong> to increase smoothness and shine.</li><li><strong>The ultimate finishing tool</strong> for sleek, shiny, and healthy hair.</li><li><strong>Complimentary dust bag</strong> included with every brush.</li></ul>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "content_width": "custom",
+            "text_max_width": 760,
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text"
+          }
+        },
+        "faq": {
+          "type": "one_column",
+          "settings": {
+            "tab_heading": "FAQ",
+            "enable_faq_schema": true,
+            "heading_column_1": "Questions, answered",
+            "heading_font_class_column_1": "fs-heading-4-base",
+            "heading_tag_column_1": "h3",
+            "text_column_1": "<p><strong>What are the bristles made of?</strong><br>A mix of 100% natural boar bristle and clear nylon bristles.</p><p><strong>What does it do for my hair?</strong><br>The bristles help move oils throughout your hair to increase smoothness and shine — for sleek, shiny, healthy hair.</p><p><strong>Does it come with anything?</strong><br>Yes — every brush comes with a complimentary dust bag.</p><p><strong>Why does my brush look slightly different from the photos?</strong><br>Because the boar bristles are a natural product there may be some variation between hairbrushes. We take every effort to ensure the consistency and quality of our brushes.</p>",
+            "page_for_content_column_1": "",
+            "custom_liquid_column_1": "",
+            "text_font_class_column_1": "fs-body-100",
+            "content_width": "custom",
+            "text_max_width": 760,
+            "image_width_column_1": 100,
+            "image_position_column_1": "above_text"
+          }
+        }
+      },
+      "block_order": ["why", "faq"],
+      "settings": {
+        "tab_alignment": "left",
+        "tab_spacing": 40,
+        "font_choice": "ff-heading",
+        "tab_font_size": "fs-body-150",
+        "background_color": "",
+        "text_color": "#000000",
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "routine": {
+      "type": "glow-routine-grid",
+      "blocks": {
+        "step-1": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/glow-beauty-hair-brush",
+            "show_index": true,
+            "eyebrow": "STEP 01",
+            "heading": "Detangle",
+            "body": "<p>The Detangling Brush painlessly detangles wet or dry hair.</p>",
+            "link": ""
+          }
+        },
+        "step-2": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/the-smoothing-brush",
+            "show_index": true,
+            "eyebrow": "STEP 02",
+            "heading": "Smooth",
+            "body": "<p>The Smoothing Brush distributes oils for smoothness and shine.</p>",
+            "link": ""
+          }
+        },
+        "step-3": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/silk-hair-ties",
+            "show_index": true,
+            "eyebrow": "STEP 03",
+            "heading": "Tie it back",
+            "body": "<p>100% silk hair ties hold your style without snagging, pulling, or creasing.</p>",
+            "link": ""
+          }
+        },
+        "step-4": {
+          "type": "step",
+          "settings": {
+            "product": "shopify://products/the-slick-back-duo",
+            "show_index": true,
+            "eyebrow": "THE BUNDLE",
+            "heading": "The Slick Back Duo",
+            "body": "<p>The Smoothing Brush + Silk Hair Ties, together.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["step-1", "step-2", "step-3", "step-4"],
+      "settings": {
+        "heading": "Complete your routine",
+        "subheading": "<p>More from the Glow lineup.</p>",
+        "columns": "4",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "checker": {
+      "type": "glow-checker-strip",
+      "settings": {
+        "color_1": "#B8C5D6",
+        "color_2": "#FFFFFF",
+        "square_size": 28,
+        "height": 56,
+        "label": "",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "closing": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Elevate your hair care routine",
+            "tag": "h2"
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "Handcrafted. Natural boar bristle. Built for shine."
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>The ultimate tool to achieve sleek, shiny, and healthy hair — with a complimentary dust bag included.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Add to cart — $58",
+            "link": "/cart/41863437582359:1",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "subheading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/195.png",
+        "focal_point": "image_presentation",
+        "image_position": "right",
+        "mobile_order": "image_first",
+        "show_band": false,
+        "band_text": "THE GLOW EDIT",
+        "band_bg": "#F4D5D2",
+        "outer_bg": "#FAF6F1",
+        "content_bg": "#B8C5D6",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "recommended": {
+      "type": "recommended-products",
+      "settings": {
+        "title": "You may also like",
+        "subheading": "",
+        "maximum_products": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "press",
+    "feature",
+    "badges",
+    "pillars",
+    "ugc",
+    "tabs",
+    "routine",
+    "checker",
+    "closing",
+    "recommended"
+  ]
+}
