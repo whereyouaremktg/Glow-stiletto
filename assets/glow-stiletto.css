@@ -60,23 +60,46 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 
 /* ---------- Neo-brutalist button treatment ---------- */
 .btn,
-.glow-btn {
+.glow-btn,
+.shopify-payment-button .shopify-payment-button__button--unbranded {
   --glow-btn-shadow: var(--glow-button-border, var(--glow-color-dark, #171819));
   border: var(--glow-button-border-weight, 2px) solid var(--glow-btn-shadow);
   box-shadow: 4px 4px 0 0 var(--glow-btn-shadow);
   transition: transform 90ms ease-out, box-shadow 90ms ease-out, background-color 120ms ease-out, color 120ms ease-out;
   font-weight: 700;
 }
-.btn,
-.glow-btn,
+
+/* Element-level skin. Stiletto renders .btn.btn--primary as a transparent
+   element whose text uses the native --color-text-button, with the fill
+   painted by a skewed ::before layer — so any lower-specificity override
+   ends up with native text color sitting on the Glow background. Match the
+   theme's specificity, set real background/text colors, and drop the swipe
+   pseudo-elements; Glow buttons animate via translate + hard shadow. */
+.btn.btn--primary,
+input.btn.btn--primary,
 .btn--primary,
-.btn--primary span {
+.shopify-challenge__button,
+.shopify-payment-button .shopify-payment-button__button--unbranded {
   background-color: var(--glow-button-bg, #F4D5D2);
   color: var(--glow-button-text, #171819);
 }
+.btn.btn--primary::before,
+.btn.btn--primary::after,
+.shopify-challenge__button::before,
+.shopify-challenge__button::after,
+.shopify-payment-button .shopify-payment-button__button--unbranded::before,
+.shopify-payment-button .shopify-payment-button__button--unbranded::after {
+  content: none;
+}
+.btn--primary span,
+.btn--secondary span {
+  background-color: transparent;
+  color: inherit;
+}
 .btn:hover,
 .glow-btn:hover,
-.btn--primary:hover {
+.btn.btn--primary:hover,
+.shopify-payment-button .shopify-payment-button__button--unbranded:not([disabled]):hover {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 0 var(--glow-btn-shadow);
   background-color: var(--glow-button-bg-hover, var(--glow-button-bg, #E8B5B0));
@@ -84,16 +107,27 @@ html[data-glow-button-shape="square"] .glow-btn { border-radius: 2px; }
 }
 .btn:active,
 .glow-btn:active,
-.btn--primary:active {
+.btn.btn--primary:active {
   transform: translate(4px, 4px);
   box-shadow: 0 0 0 0 var(--glow-btn-shadow);
 }
-.btn--secondary,
-.btn--secondary span {
+.btn.btn--primary[disabled],
+.btn.btn--primary[aria-disabled="true"] {
+  background-color: var(--color-background-meta);
+  color: var(--color-text-meta);
+  box-shadow: none;
+  transform: none;
+}
+.btn.btn--secondary,
+.btn--secondary {
+  border: var(--glow-button-border-weight, 2px) solid var(--glow-btn-shadow);
   background-color: var(--glow-button-secondary-bg, transparent);
   color: var(--glow-button-secondary-text, var(--glow-color-dark, #171819));
 }
-.btn--secondary:hover {
+.btn.btn--secondary::before {
+  content: none;
+}
+.btn.btn--secondary:hover {
   background-color: var(--glow-button-bg-hover, var(--glow-button-bg, #F4D5D2));
   color: var(--glow-button-text-hover, var(--glow-button-text, #171819));
 }
