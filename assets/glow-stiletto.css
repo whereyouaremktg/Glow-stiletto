@@ -50,6 +50,39 @@ html.glow-gotham-logo .logo {
   text-transform: uppercase;
 }
 
+/* ---------- Navigation type ---------- */
+/* Top-level links pick up the Glow eyebrow language */
+.header__links-list .navigation__link,
+.header__links-list .navigation__submenu-trigger {
+  text-transform: uppercase;
+  letter-spacing: var(--glow-eyebrow-letter-spacing, 0.08em);
+}
+/* Mega-menu column headings render as GothamUltra eyebrows,
+   matching .glow-press-strip__label / section eyebrows */
+.meganav__nav h4,
+.meganav__nav h4 a {
+  font-family: "GothamUltra", var(--font-heading), sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: var(--glow-eyebrow-letter-spacing, 0.16em);
+  text-transform: uppercase;
+  color: var(--glow-color-muted, #7A7873);
+}
+.meganav__nav h4 {
+  margin-bottom: 1em;
+}
+/* Mega-menu product links: body font, calm dark, blush underline on hover */
+.meganav__nav ul[depth="1"] a {
+  color: var(--glow-color-text, #171819);
+  text-decoration: none;
+}
+.meganav__nav ul[depth="1"] a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--glow-blush-strong, #E8B5B0);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 /* ---------- Button shape ---------- */
 html[data-glow-button-shape="pill"] .btn,
 html[data-glow-button-shape="pill"] .glow-btn { border-radius: 999px; }
