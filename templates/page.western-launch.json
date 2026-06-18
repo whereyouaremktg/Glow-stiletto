@@ -1,0 +1,390 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true
+      }
+    },
+    "hero": {
+      "type": "glow-hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "ARRIVING AUGUST 1 · WHOLESALE PRE-ORDER"
+          }
+        },
+        "chip": {
+          "type": "chip",
+          "settings": {
+            "text": "LIMITED FIRST RUN"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "The Western Brush",
+            "tag": "h1"
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>Our boldest brush yet — built for the salon chair and styled for the shelf. Reserve your wholesale allocation before it lands.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Reserve Your Pre-Order",
+            "link": "#preorder",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "chip",
+        "heading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "height": "full",
+        "alignment": "left",
+        "full_bleed": true,
+        "outer_bg": "#171819",
+        "text_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "story": {
+      "type": "glow-editorial-split",
+      "blocks": {
+        "eyebrow": {
+          "type": "eyebrow",
+          "settings": {
+            "text": "CRAFTED FOR PROS"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "Made to perform. Designed to sell.",
+            "tag": "h2"
+          }
+        },
+        "body": {
+          "type": "body",
+          "settings": {
+            "text": "<p>The Western Brush pairs salon-grade bristles with a statement handle your clients will reach for every day. A limited first run — secure your inventory before it lands on August 1.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "text": "Pre-order for your salon",
+            "link": "#preorder",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "eyebrow",
+        "heading",
+        "body",
+        "button"
+      ],
+      "settings": {
+        "image_position": "left",
+        "focal_point": "image_presentation",
+        "show_band": true,
+        "band_text": "NOW TAKING WHOLESALE PRE-ORDERS",
+        "band_bg": "#B8C5D6",
+        "content_bg": "#EBE9E6",
+        "full_bleed": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "badges": {
+      "type": "glow-badge-row",
+      "blocks": {
+        "badge-1": {
+          "type": "badge",
+          "settings": {
+            "label": "SALON-GRADE",
+            "sublabel": "Built for daily professional use"
+          }
+        },
+        "badge-2": {
+          "type": "badge",
+          "settings": {
+            "label": "LIMITED FIRST RUN",
+            "sublabel": "Allocations reserved in the order received"
+          }
+        },
+        "badge-3": {
+          "type": "badge",
+          "settings": {
+            "label": "SHIPS AUGUST 1",
+            "sublabel": "Pre-order now, delivered at launch"
+          }
+        },
+        "badge-4": {
+          "type": "badge",
+          "settings": {
+            "label": "RESERVE INVENTORY",
+            "sublabel": "Lock in your units before they sell out"
+          }
+        }
+      },
+      "block_order": [
+        "badge-1",
+        "badge-2",
+        "badge-3",
+        "badge-4"
+      ],
+      "settings": {
+        "heading": "Why stock the Western Brush",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "moments": {
+      "type": "glow-story-stack",
+      "blocks": {
+        "moment-1": {
+          "type": "moment",
+          "settings": {
+            "reverse": false,
+            "eyebrow": "THE HANDLE",
+            "heading": "A statement in every detail",
+            "body": "<p>A sculpted, western-inspired handle that feels balanced in the hand and looks the part on the shelf. The kind of piece customers notice and ask about.</p>",
+            "link_text": ""
+          }
+        },
+        "moment-2": {
+          "type": "moment",
+          "settings": {
+            "reverse": true,
+            "eyebrow": "THE BRISTLES",
+            "heading": "Glide, lift, and shine",
+            "body": "<p>Engineered bristles work through wet or dry hair without tugging — lifting buildup, smoothing strands, and bringing out shine wash after wash.</p>",
+            "link_text": ""
+          }
+        },
+        "moment-3": {
+          "type": "moment",
+          "settings": {
+            "reverse": false,
+            "eyebrow": "SHELF APPEAL",
+            "heading": "Merchandising that moves",
+            "body": "<p>A limited-edition look that sells itself at the front desk. Stock the Western Brush as a hero retail piece and an everyday workhorse.</p>",
+            "link": "#preorder",
+            "link_text": "Pre-order now",
+            "button_style": "btn--callout"
+          }
+        }
+      },
+      "block_order": [
+        "moment-1",
+        "moment-2",
+        "moment-3"
+      ],
+      "settings": {
+        "heading": "Inside the Western Brush",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "comparison": {
+      "type": "glow-comparison",
+      "blocks": {
+        "row-1": {
+          "type": "row",
+          "settings": {
+            "feature": "Salon-grade durability",
+            "ours": "yes",
+            "theirs": "partial"
+          }
+        },
+        "row-2": {
+          "type": "row",
+          "settings": {
+            "feature": "Statement shelf appeal",
+            "ours": "yes",
+            "theirs": "no"
+          }
+        },
+        "row-3": {
+          "type": "row",
+          "settings": {
+            "feature": "Wholesale margins",
+            "ours": "yes",
+            "ours_note": "Strong retail markup",
+            "theirs": "partial"
+          }
+        },
+        "row-4": {
+          "type": "row",
+          "settings": {
+            "feature": "Limited-edition demand",
+            "ours": "yes",
+            "theirs": "no"
+          }
+        }
+      },
+      "block_order": [
+        "row-1",
+        "row-2",
+        "row-3",
+        "row-4"
+      ],
+      "settings": {
+        "eyebrow": "THE GLOW DIFFERENCE",
+        "heading": "Not all brushes earn their place on your shelf",
+        "subheading": "<p>See how the Western Brush compares to the brushes your customers settle for.</p>",
+        "ours_title": "The Western Brush",
+        "ours_badge": "LIMITED EDITION",
+        "theirs_title": "Ordinary brushes",
+        "cta_text": "Reserve your pre-order",
+        "cta_link": "#preorder",
+        "cta_note": "Ships August 1 · Limited first run",
+        "background": "#FAF6F1",
+        "full_bleed": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "quote": {
+      "type": "glow-quote",
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "text": "<p>“This is the brush our clients ask to buy at the front desk.”</p>",
+            "attribution": "— GLOW SALON PARTNER"
+          }
+        }
+      },
+      "block_order": [
+        "quote"
+      ],
+      "settings": {
+        "background": "#171819",
+        "text_color": "#FAF6F1",
+        "full_bleed": true,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "preorder": {
+      "type": "featured-product",
+      "blocks": {
+        "anchor": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"preorder\" style=\"scroll-margin-top:120px\" aria-hidden=\"true\"></div>",
+            "column_placement": "left"
+          }
+        },
+        "product_header": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": false,
+            "show_vendor": false,
+            "show_sku": true,
+            "show_discount": false,
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "preorder_note": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Wholesale pre-order.</strong> Reserve your units now — orders ship at launch on August 1. Quantities are limited and allocated in the order received.</p>",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right"
+          }
+        },
+        "inventory_counter": {
+          "type": "inventory-counter",
+          "settings": {
+            "label": "Allocation remaining",
+            "inventory_max": "100",
+            "low_inventory_threshold": "20",
+            "show_status_bar": true
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "anchor",
+        "product_header",
+        "preorder_note",
+        "inventory_counter",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "large",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "story",
+    "badges",
+    "moments",
+    "comparison",
+    "quote",
+    "preorder"
+  ]
+}
