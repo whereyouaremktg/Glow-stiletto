@@ -101,7 +101,7 @@
             "add_box": true,
             "add_dividers": true,
             "icon_1": "moving-truck",
-            "text_1": "<p><strong>Free shipping</strong> on US orders over $50</p>",
+            "text_1": "<p><strong>Free shipping</strong> on US orders over $55</p>",
             "icon_2": "package-open",
             "text_2": "<p><strong>30-day</strong> happy-hair guarantee &amp; easy returns</p>",
             "icon_3": "leaf",
@@ -146,7 +146,7 @@
             "heading": "Shipping & returns",
             "heading_tag": "h3",
             "icon": "moving-truck",
-            "content": "<p>Free standard shipping on US orders over $50. Orders ship within 24 hours, Monday–Friday.</p><p>Not in love? Return or exchange within 30 days for a full refund — we’ll even cover the return label. <a href=\"/pages/contact\">Contact us</a> and we’ll take care of you.</p>"
+            "content": "<p>Free standard shipping on US orders over $55. Orders ship within 24 hours, Monday–Friday.</p><p>Not in love? Return or exchange within 30 days for a full refund — we’ll even cover the return label. <a href=\"/pages/contact\">Contact us</a> and we’ll take care of you.</p>"
           }
         },
         "share": {
